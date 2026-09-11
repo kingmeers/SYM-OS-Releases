@@ -29,6 +29,8 @@ Link directly to GitHub Release assets so installer traffic does not pass throug
 
 Do not store credentials, signing keys, customer data, diagnostic reports or private source in this repository. Build automation and its billing are separate from release-download hosting.
 
-## Initial repository status
+## Current release
 
-No installers have been migrated or published here yet. Creating this repository does not change existing release locations, installed-client updater feeds or website download links. Those remain unchanged until a separately verified release migration.
+The unified archive begins with `v0.4.1-beta.3`, published as a preview for Linux x64, macOS Apple Silicon and macOS Intel. See `releases.json` for machine-readable platform status and checksums.
+
+This archive does not automatically change installed-client updater feeds or website download links. Those remain separate rollout contracts.

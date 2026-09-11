@@ -1,0 +1,6 @@
+# Keep binary distributions in GitHub Release assets, not Git history.
+*.AppImage
+*.dmg
+*.zip
+*.blockmap
+.DS_Store
