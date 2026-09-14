@@ -31,6 +31,17 @@ Do not store credentials, signing keys, customer data, diagnostic reports or pri
 
 ## Current release
 
-The unified archive begins with `v0.4.1-beta.3`, published as a preview for Linux x64, macOS Apple Silicon and macOS Intel. See `releases.json` for machine-readable platform status and checksums.
+**[v0.5.0-beta.5 — private networking included](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.5)** is the current Linux/Mac preview. Tailscale is bundled: no separate Tailscale installation or login.
+
+| Platform | Download |
+| --- | --- |
+| macOS Intel | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-mac-x64.dmg) |
+| macOS Apple Silicon | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-mac-arm64.dmg) |
+| Linux x64 AppImage | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-linux-x64.AppImage) |
+| Linux x64 Debian package | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-linux-x64.deb) |
+
+Both Mac packages are signed and notarized. Final packages passed native acceptance checks; public downloads were independently SHA-256 verified. Fully quit the old Bridge before installing. Normal macOS Open/Keychain prompts can still occur. Windows is unchanged.
+
+See `releases.json` for machine-readable platform status and checksums. Older releases remain available for rollback.
 
 This archive does not automatically change installed-client updater feeds or website download links. Those remain separate rollout contracts.

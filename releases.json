@@ -3,10 +3,44 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.4.1-beta.3",
+    "preview": "0.5.0-beta.5",
     "stable": null
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.5",
+      "channel": "preview",
+      "release_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.5",
+      "platforms": {
+        "linux-x64": {
+          "filename": "Symposium-Bridge-0.5.0-beta.5-linux-x64.AppImage",
+          "sha256": "e05ac615ea02353f304ee56a2b65d03926908f6e72a96fbeadde0f57964bccaa",
+          "download_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-linux-x64.AppImage",
+          "bundled_private_network": true,
+          "debian": {
+            "filename": "Symposium-Bridge-0.5.0-beta.5-linux-x64.deb",
+            "sha256": "6a6e3c8fc710da2b9a06ca18affe6ef2b062905d585b3544921da5b00e2015ed",
+            "download_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-linux-x64.deb"
+          }
+        },
+        "mac-arm64": {
+          "filename": "Symposium-Bridge-0.5.0-beta.5-mac-arm64.dmg",
+          "sha256": "b99c1cd87608bc470474b4194f1f051c247e7e5a331d0da6bf35e2fd77fe3475",
+          "download_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-mac-arm64.dmg",
+          "bundled_private_network": true,
+          "signed": true,
+          "notarized": true
+        },
+        "mac-x64": {
+          "filename": "Symposium-Bridge-0.5.0-beta.5-mac-x64.dmg",
+          "sha256": "1c7f9ec19ab6531c7a5f7f287a5bc4d5d98e9e54c1f3529d5b85edf4aec52cc3",
+          "download_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-mac-x64.dmg",
+          "bundled_private_network": true,
+          "signed": true,
+          "notarized": true
+        }
+      }
+    },
     {
       "version": "0.4.1-beta.3",
       "channel": "preview",
