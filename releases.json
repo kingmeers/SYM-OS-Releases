@@ -4,9 +4,36 @@
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
     "preview": "0.5.0-beta.5",
-    "stable": null
+    "stable": null,
+    "windows_preview": "0.5.0-beta.6"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.6",
+      "tag": "v0.5.0-beta.6",
+      "channel": "preview",
+      "published": true,
+      "product": "Symposium Bridge",
+      "release_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.6",
+      "source_commit": "36d102da89ad7cef17224a0508df9880729f3d25",
+      "platforms": {
+        "windows-x64": {
+          "status": "unsigned-preview-native-qa-passed",
+          "format": "exe",
+          "filename": "Symposium-Bridge-Setup-0.5.0-beta.6.exe",
+          "signed": false,
+          "bundled_private_network": true,
+          "download_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.6/Symposium-Bridge-Setup-0.5.0-beta.6.exe",
+          "sha256": "1c5b03cb740b9964f448076172f5f940c59f7d4041eea70008b20dda532e8408",
+          "size_bytes": 137490686
+        }
+      },
+      "notes": [
+        "Windows-only preview with bundled private networking; no separate Tailscale install/login.",
+        "Exact installer passed native Windows lifecycle/UI/docs/browser tests, standard-user networking, cross-user pipe denial, and policy read/change checks.",
+        "Unsigned: normal SmartScreen/OS prompts may appear. Mac/Linux stay on beta.5; updater feeds unchanged."
+      ]
+    },
     {
       "version": "0.5.0-beta.5",
       "channel": "preview",
