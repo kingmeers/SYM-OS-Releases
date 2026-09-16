@@ -5,9 +5,36 @@
   "latest": {
     "preview": "0.5.0-beta.5",
     "stable": null,
-    "windows_preview": "0.5.0-beta.9"
+    "windows_preview": "0.5.0-beta.10"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.10",
+      "tag": "v0.5.0-beta.10",
+      "channel": "preview",
+      "published": true,
+      "product": "Symposium Bridge",
+      "release_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.10",
+      "source_commit": "34f65b237403219f2af9b9dd03850985abedcaec",
+      "platforms": {
+        "windows-x64": {
+          "status": "unsigned-preview-native-qa-passed",
+          "format": "exe",
+          "filename": "Symposium-Bridge-Setup-0.5.0-beta.10.exe",
+          "signed": false,
+          "bundled_private_network": true,
+          "download_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.10/Symposium-Bridge-Setup-0.5.0-beta.10.exe",
+          "sha256": "233b658da5910729f68311f877f208025e91b35cf6c619dd7c7165f0aa076b1b",
+          "size_bytes": 137501879
+        }
+      },
+      "notes": [
+        "Repairs PRIVATE_DNS_INVALID for assigned numeric MagicDNS collision suffixes; preserves the exact enrolled DNS name for certificate requests.",
+        "Native source/installed and standard-user checks passed, including malformed-name refusal and beta.9 identity-retention regressions.",
+        "Certificate-command boundaries use controlled fixtures; recipient production certificate issuance/reachability is not claimed.",
+        "Unsigned Windows preview; other platform releases and automatic-update feeds unchanged."
+      ]
+    },
     {
       "version": "0.5.0-beta.9",
       "tag": "v0.5.0-beta.9",
