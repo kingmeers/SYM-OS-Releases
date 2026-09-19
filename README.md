@@ -32,19 +32,21 @@ Do not store credentials, signing keys, customer data, diagnostic reports or pri
 
 ## Current releases
 
-**[v0.5.0-beta.6 — Windows private networking included](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.6)** is the current Windows x64 preview. No separate Tailscale installation or login is required. The exact installer passed native installation, lifecycle, UI/docs, real browser actions, standard-user networking, cross-user isolation and policy-change tests. **Unsigned:** Windows may show SmartScreen or other normal OS prompts.
-
-**[v0.5.0-beta.5 — private networking included](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.5)** is the current Linux/Mac preview. Tailscale is bundled: no separate Tailscale installation or login.
+**[v0.5.0-beta.11 — v17 browser bookmarks](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.11)** is the current preview for Linux, both Mac architectures and Windows. This supplies the companion transport required by Chrome extension v0.1.17 and preserves the shipped embedded-networking fixes. No second networking installation/login is needed.
 
 | Platform | Download |
 | --- | --- |
-| Windows x64 (unsigned preview) | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.6/Symposium-Bridge-Setup-0.5.0-beta.6.exe) |
-| macOS Intel | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-mac-x64.dmg) |
-| macOS Apple Silicon | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-mac-arm64.dmg) |
-| Linux x64 AppImage | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-linux-x64.AppImage) |
-| Linux x64 Debian package | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.5/Symposium-Bridge-0.5.0-beta.5-linux-x64.deb) |
+| Windows x64 — unsigned preview | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.11/Sym-Setup-0.5.0-beta.11-windows-x64.exe) |
+| macOS Intel — signed/notarized | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.11/Sym-0.5.0-beta.11-mac-x64.dmg) |
+| macOS Apple Silicon — signed/notarized | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.11/Sym-0.5.0-beta.11-mac-arm64.dmg) |
+| Linux x64 AppImage | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.11/Sym-0.5.0-beta.11-linux-x64.AppImage) |
+| Linux x64 Debian package | [Download](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.11/Sym-0.5.0-beta.11-linux-x64.deb) |
 
-Both Mac packages are signed and notarized. Final packages passed native acceptance checks; public downloads were independently SHA-256 verified. Fully quit the old Bridge before installing. Normal macOS Open/Keychain prompts can still occur. Windows is published separately as beta.6; existing updater feeds remain unchanged.
+Final native package checks passed, including installed/mounted bookmark checks across all four platform/architecture targets. Both Mac apps are Developer ID signed, notarized and stapled; their exact final DMGs passed architecture-matched native acceptance. Windows remains an unsigned preview: normal SmartScreen/OS prompts may occur. Linux acceptance was Ubuntu/X11, not every desktop/distribution.
+
+All public installers and supporting assets were independently downloaded anonymously and SHA-256 verified. [Checksums](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.11/SHA256SUMS.txt) · [Verification report](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.11/RELEASE-VERIFICATION.md).
+
+Fully quit the existing app, including its tray/menu-bar process, before installing the matching update over it. Keep the v17 Chrome extension and existing Passes; do not reset application data. Ordinary OS/Keychain consent may still be required. Publishing these downloads does not upgrade or qualify an existing recipient machine. Unfinished native Computer Pass Control and automatic-update feeds are not promoted.
 
 See `releases.json` for machine-readable platform status and checksums. Older releases remain available for rollback.
 
