@@ -36,6 +36,7 @@ jobs:
           repository: Doghouse-Labs-inc/sym-ai-downloads-proxy
           ref: 8247f388962e6096667d8734bf41c35feeb00b47
           path: publisher
+          fetch-depth: 0
           ssh-key: ${{ secrets.PUBLISHER_DEPLOY_KEY }}
           persist-credentials: false
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
