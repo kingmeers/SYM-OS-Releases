@@ -1,0 +1,64 @@
+name: Publish verified Sym downloads
+on:
+  push:
+    branches: [main]
+    paths:
+      - releases.json
+      - release-approvals/**
+      - release-evidence/**
+      - .github/workflows/publish-downloads.yml
+  release:
+    types: [published]
+  workflow_dispatch:
+  # Reconcile missed events, including releases created using GITHUB_TOKEN.
+  # Matching approved selections are no-ops: no repeated installer transfer.
+  schedule:
+    - cron: '*/15 * * * *'
+permissions:
+  contents: read
+concurrency:
+  group: sym-downloads-preview
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: sym-publisher-preview
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event_name == 'push' && github.sha || 'main' }}
+          path: archive
+          persist-credentials: false
+      - name: Checkout reviewed private publisher using read-only deploy key
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: Doghouse-Labs-inc/sym-ai-downloads-proxy
+          ref: 8247f388962e6096667d8734bf41c35feeb00b47
+          path: publisher
+          ssh-key: ${{ secrets.PUBLISHER_DEPLOY_KEY }}
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: publisher/package-lock.json
+      - name: Verify publisher from clean dependencies
+        working-directory: publisher
+        run: npm ci --ignore-scripts && node scripts/bundle-serving.js --check && npm test
+      - name: Publish approved inventory and atomically promote preview
+        working-directory: archive
+        env:
+          GH_SOURCE_TOKEN: ${{ github.token }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_R2_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}
+          CLOUDFLARE_R2_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_ACCESS_KEY }}
+        run: node ../publisher/scripts/sync-approved.js
+      - name: Keep sanitized operation receipts
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: downloads-publication-${{ github.run_id }}
+          path: archive/receipts/
+          retention-days: 14
+          if-no-files-found: warn

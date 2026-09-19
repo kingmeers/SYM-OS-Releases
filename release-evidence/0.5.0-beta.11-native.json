@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "basis": "Release-owner review of retained exact-byte native CI receipts, not a newly executed signature test. Native fixtures do not prove recipient installation.",
+  "sourceQaCommit": "8ec9cae3d03263364741ee09b8997f625d3cde6c",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.11-mac-x64.dmg",
+      "sha256": "a282296af4cf803237a5b8d8088fd3d176ec2d43e10e2b5580e29dbd778f74c3",
+      "size": 181821062,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID TeamIdentifier=JR2SHF8H9R",
+      "command": "Exact final DMG SHA-256 pin; mounted app codesign --verify --deep --strict; stapler validate; spctl --assess --type execute; all bundled helper signatures",
+      "notarySubmission": "e2e0763c-fcfb-4c10-bf87-c764ec0b37b3",
+      "reviewedNativeRun": 35428594026,
+      "nativeJob": "verify (macos-15-intel, x64)"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.11-mac-arm64.dmg",
+      "sha256": "8eafcc4f15f2f0dbd9ad435464898b291c1c15cc7a33d43d1f64d25ed1e7d63a",
+      "size": 174275277,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID TeamIdentifier=JR2SHF8H9R",
+      "command": "Exact final DMG SHA-256 pin; mounted app codesign --verify --deep --strict; stapler validate; spctl --assess --type execute; all bundled helper signatures",
+      "notarySubmission": "dd3a99ca-ceae-40d3-8208-39775b274b4f",
+      "reviewedNativeRun": 35428594026,
+      "nativeJob": "verify (macos-15, arm64)"
+    }
+  ]
+}

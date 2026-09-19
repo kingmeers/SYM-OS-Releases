@@ -30,6 +30,14 @@ Link directly to GitHub Release assets so installer traffic does not pass throug
 
 Do not store credentials, signing keys, customer data, diagnostic reports or private source in this repository. Build automation and its billing are separate from release-download hosting.
 
+## Automatic first-party delivery
+
+Published, reviewed preview releases are delivered to **https://downloads.sym.so/** by `.github/workflows/publish-downloads.yml`. Catalog/approval pushes and release publication trigger it; manual dispatch and periodic reconciliation cover missed events (including GitHub-token-created releases).
+
+For each selected version, commit its finalized `release-approvals/<version>.json`, alias map and exact-byte native evidence under `release-evidence/` alongside the catalog update. The workflow checks out an immutable reviewed publisher, verifies source inventory and full hashes, copies only approved assets to R2, verifies first-party GET/HEAD/range/resume bytes, then atomically changes the preview pointer. Missing approval, draft releases, changed bytes and incomplete platforms fail closed. Repeat runs are no-ops. A Windows-only promotion preserves other platform selections.
+
+The workflow uses a read-only publisher deploy key and bucket-scoped R2 credentials in the main/tag-restricted `sym-publisher-preview` environment. It does not promote stable releases, enable unfinished Computer Control, change DNS, or change installed updater feeds. Original GitHub assets and historical download URLs are retained.
+
 ## Current releases
 
 **[v0.5.0-beta.11 — v17 browser bookmarks](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.11)** is the current preview for Linux, both Mac architectures and Windows. This supplies the companion transport required by Chrome extension v0.1.17 and preserves the shipped embedded-networking fixes. No second networking installation/login is needed.
