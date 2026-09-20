@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "basis": "Executed final-package qualification and retained exact-byte CI receipts. Encrypted retention uses synthetic fixtures on disposable hosts, not customer account migration.",
+  "packagedSource": "82ddd53acc8c9cd85eed8c31685c16a497231afc",
+  "buildRuns": [
+    35524395400,
+    35524397601
+  ],
+  "signedMacRun": 35526471785,
+  "installedUpdaterRuns": [
+    35529565779,
+    35528018194
+  ],
+  "updaterQualification": [
+    {
+      "target": "windows-x64.exe",
+      "from": "0.5.0-beta.12",
+      "toQaOnlyVersion": "0.5.0-beta.13-updateqa.1",
+      "originalFeed": {
+        "url": "https://downloads.sym.so/updates/preview/windows-x64.exe/",
+        "channel": "beta"
+      },
+      "feedFilename": "beta.yml",
+      "settingsRetained": true,
+      "osEncryptedSyntheticFixtureRetained": true,
+      "nativeRelaunch": true,
+      "checksumRejection": true,
+      "downgradeRejection": true,
+      "offlineReported": true,
+      "actualAuthorizationDenial": false
+    },
+    {
+      "target": "linux-x64.AppImage",
+      "from": "0.5.0-beta.12",
+      "toQaOnlyVersion": "0.5.0-beta.13-updateqa.1",
+      "originalFeed": {
+        "url": "https://downloads.sym.so/updates/preview/linux-x64.AppImage/",
+        "channel": "beta-AppImage"
+      },
+      "feedFilename": "beta-AppImage-linux.yml",
+      "settingsRetained": true,
+      "osEncryptedSyntheticFixtureRetained": true,
+      "nativeRelaunch": true,
+      "checksumRejection": true,
+      "downgradeRejection": true,
+      "offlineReported": true,
+      "actualAuthorizationDenial": false
+    },
+    {
+      "target": "linux-x64.deb",
+      "from": "0.5.0-beta.12",
+      "toQaOnlyVersion": "0.5.0-beta.13-updateqa.1",
+      "originalFeed": {
+        "url": "https://downloads.sym.so/updates/preview/linux-x64.deb/",
+        "channel": "beta-deb"
+      },
+      "feedFilename": "beta-deb-linux.yml",
+      "settingsRetained": true,
+      "osEncryptedSyntheticFixtureRetained": true,
+      "nativeRelaunch": true,
+      "checksumRejection": true,
+      "downgradeRejection": true,
+      "offlineReported": true,
+      "actualAuthorizationDenial": true
+    },
+    {
+      "target": "macos-arm64.dmg",
+      "from": "0.5.0-beta.12",
+      "toQaOnlyVersion": "0.5.0-beta.13-updateqa.1",
+      "originalFeed": {
+        "url": "https://downloads.sym.so/updates/preview/macos-arm64.dmg/",
+        "channel": "beta-arm64"
+      },
+      "feedFilename": "beta-arm64-mac.yml",
+      "settingsRetained": true,
+      "osEncryptedSyntheticFixtureRetained": true,
+      "nativeRelaunch": true,
+      "checksumRejection": true,
+      "downgradeRejection": true,
+      "offlineReported": true,
+      "actualAuthorizationDenial": false
+    },
+    {
+      "target": "macos-x64.dmg",
+      "from": "0.5.0-beta.12",
+      "toQaOnlyVersion": "0.5.0-beta.13-updateqa.1",
+      "originalFeed": {
+        "url": "https://downloads.sym.so/updates/preview/macos-x64.dmg/",
+        "channel": "beta-x64"
+      },
+      "feedFilename": "beta-x64-mac.yml",
+      "settingsRetained": true,
+      "osEncryptedSyntheticFixtureRetained": true,
+      "nativeRelaunch": true,
+      "checksumRejection": true,
+      "downgradeRejection": true,
+      "offlineReported": true,
+      "actualAuthorizationDenial": false
+    }
+  ],
+  "broadControlQualified": false,
+  "waylandQualified": false,
+  "independentSecondCursor": false,
+  "repositoryRegressionDisposition": {
+    "passed": 179,
+    "failed": 15,
+    "baselineFailuresReproduced": 15,
+    "scope": "Unshipped managed-browser prototype integration and packaging expectations; unchanged BridgeRuntime and feature configuration"
+  },
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.12-macos-arm64.dmg",
+      "sha256": "066e0dbf6f966e89ed7f9de65fee01dc880fd97874550d02d000ba243f3859c6",
+      "size": 174949242,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID TeamIdentifier=JR2SHF8H9R",
+      "command": "Final DMG: native architecture CI SHA256 pin, mounted app codesign --verify --deep --strict, stapler validate, spctl --assess. Final ZIP: ditto extraction, codesign --verify --deep --strict, stapler validate, spctl --assess. Nested computer/network helper signatures verified.",
+      "notarySubmission": "8347b1f6-d918-4c3b-b6b8-b683c366c2e4",
+      "reviewedNativeRun": 35526471785
+    },
+    {
+      "filename": "Sym-0.5.0-beta.12-macos-arm64.zip",
+      "sha256": "61f967c8cc0404f756c21e2086af489268654498e9e021be34a4e949e5c305ad",
+      "size": 162242437,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID TeamIdentifier=JR2SHF8H9R",
+      "command": "Final DMG: native architecture CI SHA256 pin, mounted app codesign --verify --deep --strict, stapler validate, spctl --assess. Final ZIP: ditto extraction, codesign --verify --deep --strict, stapler validate, spctl --assess. Nested computer/network helper signatures verified.",
+      "notarySubmission": "8347b1f6-d918-4c3b-b6b8-b683c366c2e4",
+      "reviewedNativeRun": 35526471785
+    },
+    {
+      "filename": "Sym-0.5.0-beta.12-macos-x64.dmg",
+      "sha256": "d2de2951f63f6ed1f8d25cb371fdec7c720149a3478cc9ddce7f34e9b3d38797",
+      "size": 183142833,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID TeamIdentifier=JR2SHF8H9R",
+      "command": "Final DMG: native architecture CI SHA256 pin, mounted app codesign --verify --deep --strict, stapler validate, spctl --assess. Final ZIP: ditto extraction, codesign --verify --deep --strict, stapler validate, spctl --assess. Nested computer/network helper signatures verified.",
+      "notarySubmission": "31b6a03c-da69-4e58-b70e-6c84eaf42a10",
+      "reviewedNativeRun": 35526471785
+    },
+    {
+      "filename": "Sym-0.5.0-beta.12-macos-x64.zip",
+      "sha256": "e54151687a9f7b525ff753b94913dd6a90f855017dbe76883cdb71f3fefbf875",
+      "size": 168489120,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID TeamIdentifier=JR2SHF8H9R",
+      "command": "Final DMG: native architecture CI SHA256 pin, mounted app codesign --verify --deep --strict, stapler validate, spctl --assess. Final ZIP: ditto extraction, codesign --verify --deep --strict, stapler validate, spctl --assess. Nested computer/network helper signatures verified.",
+      "notarySubmission": "31b6a03c-da69-4e58-b70e-6c84eaf42a10",
+      "reviewedNativeRun": 35526471785
+    }
+  ],
+  "packagedLinux": [
+    {
+      "kind": "AppImage",
+      "helperSha256": "57eae4fa08a3a0738a5c1e45748207f45c2f1a0181456a707c07b62f85f070c3",
+      "fixtureExit": 0,
+      "headlessAndLifecycleExit": 0,
+      "buildPrefixLibraryPath": false,
+      "broadControlQualification": false,
+      "scope": "Exact packaged helper X11 self-test, headless denial and lifecycle; not full desktop/Wayland qualification"
+    },
+    {
+      "kind": "deb",
+      "helperSha256": "57eae4fa08a3a0738a5c1e45748207f45c2f1a0181456a707c07b62f85f070c3",
+      "fixtureExit": 0,
+      "headlessAndLifecycleExit": 0,
+      "buildPrefixLibraryPath": false,
+      "broadControlQualification": false,
+      "scope": "Exact packaged helper X11 self-test, headless denial and lifecycle; not full desktop/Wayland qualification"
+    }
+  ],
+  "interactiveWindows": {
+    "basis": "Observed final helper acceptance JSON in the authorized ordinary-user Office PC console; logs retained on the test host",
+    "installerSha256": "acd566a638cd3c366ded5b12ec8c2c54c15c5e298aa4d5f46dbcb31d57939b86",
+    "exeSha256": "504b9d6ae32af1164c0ff180230e87877b0fea7691e4448c65d86bce936003ac",
+    "dllSha256": "9bbaf994e0bb2065ef04958f9efec4a1924115778c6f1a1c281df80782cba480",
+    "displayExit": 0,
+    "windowExit": 0,
+    "pixelsPersisted": false,
+    "fullDesktopQualification": false
+  }
+}
