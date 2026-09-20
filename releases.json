@@ -3,11 +3,91 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.11",
+    "preview": "0.5.0-beta.12",
     "stable": null,
-    "windows_preview": "0.5.0-beta.11"
+    "windows_preview": "0.5.0-beta.12"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.12",
+      "tag": "v0.5.0-beta.12",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.12/RELEASE-VERIFICATION.md",
+      "source_commit": "82ddd53acc8c9cd85eed8c31685c16a497231afc",
+      "platforms": {
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.12-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-Setup-0.5.0-beta.12-windows-x64.exe",
+          "sha256": "acd566a638cd3c366ded5b12ec8c2c54c15c5e298aa4d5f46dbcb31d57939b86",
+          "size_bytes": 196822585,
+          "source_commit": "82ddd53acc8c9cd85eed8c31685c16a497231afc",
+          "native_ci_run": 35524397601,
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "unsigned-preview-native-qa-passed",
+          "signed": false
+        },
+        "linux-x64": {
+          "filename": "Sym-0.5.0-beta.12-linux-x64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-0.5.0-beta.12-linux-x64.AppImage",
+          "sha256": "1e81f64126e8bed052aa2cd6848edc237f14d9fa064cc7bba8ade96563f2fd91",
+          "size_bytes": 182899628,
+          "source_commit": "82ddd53acc8c9cd85eed8c31685c16a497231afc",
+          "native_ci_run": 35524395400,
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "native-qa-passed",
+          "debian": {
+            "filename": "Sym-0.5.0-beta.12-linux-x64.deb",
+            "download_url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-0.5.0-beta.12-linux-x64.deb",
+            "sha256": "fc0425f2a59a9eaa13cf31eb02c3c617275b49280ab8f3802a4f37356d14cb09",
+            "size_bytes": 146414344,
+            "source_commit": "82ddd53acc8c9cd85eed8c31685c16a497231afc",
+            "native_ci_run": 35524395400,
+            "bundled_private_network": true,
+            "automatic_updates": true,
+            "format": "deb",
+            "status": "native-qa-passed"
+          }
+        },
+        "mac-arm64": {
+          "filename": "Sym-0.5.0-beta.12-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-0.5.0-beta.12-macos-arm64.dmg",
+          "sha256": "066e0dbf6f966e89ed7f9de65fee01dc880fd97874550d02d000ba243f3859c6",
+          "size_bytes": 174949242,
+          "source_commit": "82ddd53acc8c9cd85eed8c31685c16a497231afc",
+          "native_ci_run": 35526471785,
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "signed-notarized-native-qa-passed",
+          "signed": true,
+          "notarized": true
+        },
+        "mac-x64": {
+          "filename": "Sym-0.5.0-beta.12-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-0.5.0-beta.12-macos-x64.dmg",
+          "sha256": "d2de2951f63f6ed1f8d25cb371fdec7c720149a3478cc9ddce7f34e9b3d38797",
+          "size_bytes": 183142833,
+          "source_commit": "82ddd53acc8c9cd85eed8c31685c16a497231afc",
+          "native_ci_run": 35526471785,
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "signed-notarized-native-qa-passed",
+          "signed": true,
+          "notarized": true
+        }
+      },
+      "notes": [
+        "Sym branding and first-party in-app updates on all five packages. Real installed beta.12-to-QA-successor upgrades passed with retained OS-encrypted synthetic data, integrity rejection and Debian authorization denial/recovery. Mac apps are signed, notarized and stapled; Windows remains an unsigned preview. Display targets are Observe-only. Unqualified broad Computer Control, Wayland paths and an independent second cursor remain outside this release. Older installations may need one final manual install; no automatic migration of existing customers is claimed.",
+        "All public URLs and updater metadata are first-party. Only the separately reviewed approval commit advances preview selection; stable is unchanged."
+      ]
+    },
     {
       "version": "0.5.0-beta.11",
       "tag": "v0.5.0-beta.11",
