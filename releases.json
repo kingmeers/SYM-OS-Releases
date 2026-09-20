@@ -3,9 +3,9 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.11",
+    "preview": "0.5.0-beta.12",
     "stable": null,
-    "windows_preview": "0.5.0-beta.11"
+    "windows_preview": "0.5.0-beta.12"
   },
   "releases": [
     {

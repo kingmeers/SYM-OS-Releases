@@ -1,0 +1,524 @@
+{
+  "schemaVersion": 1,
+  "repository": "kingmeers/SYM-OS-Releases",
+  "tag": "v0.5.0-beta.12",
+  "releaseId": 392541461,
+  "revision": "5c2ad81da987fc06b395bf2710e180678a2f7afe",
+  "finalized": true,
+  "release": {
+    "schemaVersion": 1,
+    "kind": "sym.release",
+    "product": "Sym",
+    "version": "0.5.0-beta.12",
+    "eligibility": [
+      "preview"
+    ],
+    "scope": [
+      "windows-x64.exe",
+      "macos-arm64.dmg",
+      "macos-x64.dmg",
+      "linux-x64.AppImage",
+      "linux-x64.deb"
+    ],
+    "updates": [
+      {
+        "target": "windows-x64.exe",
+        "mode": "electron",
+        "feed": "beta.yml"
+      },
+      {
+        "target": "macos-x64.dmg",
+        "mode": "electron",
+        "feed": "beta-x64-mac.yml"
+      },
+      {
+        "target": "macos-arm64.dmg",
+        "mode": "electron",
+        "feed": "beta-arm64-mac.yml"
+      },
+      {
+        "target": "linux-x64.AppImage",
+        "mode": "electron",
+        "feed": "beta-AppImage-linux.yml"
+      },
+      {
+        "target": "linux-x64.deb",
+        "mode": "electron",
+        "feed": "beta-deb-linux.yml"
+      }
+    ],
+    "notes": "Sym branding and first-party in-app updates on all five packages. Real installed beta.12-to-QA-successor upgrades passed with retained OS-encrypted synthetic data, integrity rejection and Debian authorization denial/recovery. Mac apps are signed, notarized and stapled; Windows remains an unsigned preview. Display targets are Observe-only. Unqualified broad Computer Control, Wayland paths and an independent second cursor remain outside this release. Older installations may need one final manual install; no automatic migration of existing customers is claimed.",
+    "assets": [
+      {
+        "filename": "RELEASE-VERIFICATION.md",
+        "version": "0.5.0-beta.12",
+        "role": "verification",
+        "target": "shared",
+        "os": "shared",
+        "arch": "none",
+        "format": "md",
+        "size": 5190,
+        "sha256": "c4be7616614d556b9e022552b0661028d56352a711f279fd6c77ab4550af4f3e",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/RELEASE-VERIFICATION.md",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "filename": "SHA256SUMS.txt",
+        "version": "0.5.0-beta.12",
+        "role": "checksum",
+        "target": "shared",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "size": 1504,
+        "sha256": "ce8068a235ed07b6b85277018409ea935375c55b1fc46cd8ed8652fb513077ba",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/SHA256SUMS.txt",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "filename": "Sym-0.5.0-beta.12-linux-x64.AppImage",
+        "version": "0.5.0-beta.12",
+        "role": "installer",
+        "target": "linux-x64.AppImage",
+        "os": "linux",
+        "arch": "x64",
+        "format": "AppImage",
+        "size": 182899628,
+        "sha256": "1e81f64126e8bed052aa2cd6848edc237f14d9fa064cc7bba8ade96563f2fd91",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-0.5.0-beta.12-linux-x64.AppImage",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Linux x64; Ubuntu 24.04/X11 qualified for native computer operations",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "Sym-0.5.0-beta.12-linux-x64.deb",
+        "version": "0.5.0-beta.12",
+        "role": "installer",
+        "target": "linux-x64.deb",
+        "os": "linux",
+        "arch": "x64",
+        "format": "deb",
+        "size": 146414344,
+        "sha256": "fc0425f2a59a9eaa13cf31eb02c3c617275b49280ab8f3802a4f37356d14cb09",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-0.5.0-beta.12-linux-x64.deb",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Debian package; Ubuntu 24.04/X11 qualified for native computer operations",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "Sym-0.5.0-beta.12-macos-arm64.dmg",
+        "version": "0.5.0-beta.12",
+        "role": "installer",
+        "target": "macos-arm64.dmg",
+        "os": "macos",
+        "arch": "arm64",
+        "format": "dmg",
+        "size": 174949242,
+        "sha256": "066e0dbf6f966e89ed7f9de65fee01dc880fd97874550d02d000ba243f3859c6",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-0.5.0-beta.12-macos-arm64.dmg",
+        "signing": {
+          "status": "verified",
+          "notarized": true,
+          "evidenceSha256": "e15229739d8e654deccdcc6a7ca897d652fc2602df6a699b684b1a02ebe56e2b"
+        },
+        "minimumOS": "macOS 12 or later; native Observe requires macOS 14+",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "Sym-0.5.0-beta.12-macos-arm64.zip",
+        "version": "0.5.0-beta.12",
+        "role": "updater",
+        "target": "macos-arm64.dmg",
+        "os": "macos",
+        "arch": "arm64",
+        "format": "zip",
+        "size": 162242437,
+        "sha256": "61f967c8cc0404f756c21e2086af489268654498e9e021be34a4e949e5c305ad",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-0.5.0-beta.12-macos-arm64.zip",
+        "signing": {
+          "status": "verified",
+          "notarized": true,
+          "evidenceSha256": "e15229739d8e654deccdcc6a7ca897d652fc2602df6a699b684b1a02ebe56e2b"
+        },
+        "minimumOS": "macOS 12 or later; native Observe requires macOS 14+",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "Sym-0.5.0-beta.12-macos-x64.dmg",
+        "version": "0.5.0-beta.12",
+        "role": "installer",
+        "target": "macos-x64.dmg",
+        "os": "macos",
+        "arch": "x64",
+        "format": "dmg",
+        "size": 183142833,
+        "sha256": "d2de2951f63f6ed1f8d25cb371fdec7c720149a3478cc9ddce7f34e9b3d38797",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-0.5.0-beta.12-macos-x64.dmg",
+        "signing": {
+          "status": "verified",
+          "notarized": true,
+          "evidenceSha256": "e15229739d8e654deccdcc6a7ca897d652fc2602df6a699b684b1a02ebe56e2b"
+        },
+        "minimumOS": "macOS 12 or later; native Observe requires macOS 14+",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "Sym-0.5.0-beta.12-macos-x64.zip",
+        "version": "0.5.0-beta.12",
+        "role": "updater",
+        "target": "macos-x64.dmg",
+        "os": "macos",
+        "arch": "x64",
+        "format": "zip",
+        "size": 168489120,
+        "sha256": "e54151687a9f7b525ff753b94913dd6a90f855017dbe76883cdb71f3fefbf875",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-0.5.0-beta.12-macos-x64.zip",
+        "signing": {
+          "status": "verified",
+          "notarized": true,
+          "evidenceSha256": "e15229739d8e654deccdcc6a7ca897d652fc2602df6a699b684b1a02ebe56e2b"
+        },
+        "minimumOS": "macOS 12 or later; native Observe requires macOS 14+",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "Sym-Setup-0.5.0-beta.12-windows-x64.exe",
+        "version": "0.5.0-beta.12",
+        "role": "installer",
+        "target": "windows-x64.exe",
+        "os": "windows",
+        "arch": "x64",
+        "format": "exe",
+        "size": 196822585,
+        "sha256": "acd566a638cd3c366ded5b12ec8c2c54c15c5e298aa4d5f46dbcb31d57939b86",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-Setup-0.5.0-beta.12-windows-x64.exe",
+        "signing": {
+          "status": "unsigned",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Windows 10 2004 or later; x64; unsigned preview",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "Sym-Setup-0.5.0-beta.12-windows-x64.exe.blockmap",
+        "version": "0.5.0-beta.12",
+        "role": "updater",
+        "target": "windows-x64.exe",
+        "os": "windows",
+        "arch": "x64",
+        "format": "blockmap",
+        "size": 206488,
+        "sha256": "37747931f66489901697b1b4f50e0801ca2951c5a00650fa48672a164c44f79d",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/Sym-Setup-0.5.0-beta.12-windows-x64.exe.blockmap",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Windows 10 2004 or later; x64; unsigned preview",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "THIRD-PARTY-NOTICES.txt",
+        "version": "0.5.0-beta.12",
+        "role": "notice",
+        "target": "shared",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "size": 1580175,
+        "sha256": "a5056c149fc23c03faaa1b33e28f8690ddbc3cbe50e3ba2fa48b4c3e02a735a7",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/THIRD-PARTY-NOTICES.txt",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "filename": "beta-AppImage-linux.yml",
+        "version": "0.5.0-beta.12",
+        "role": "feed",
+        "target": "linux-x64.AppImage",
+        "os": "linux",
+        "arch": "x64",
+        "format": "yml",
+        "size": 498,
+        "sha256": "a9d061e43806abf4f1cc361a58eded1a7f3307cbb2a5b0657e0de8fdb7fe0580",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/beta-AppImage-linux.yml",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Linux x64; Ubuntu 24.04/X11 qualified for native computer operations",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "beta-arm64-mac.yml",
+        "version": "0.5.0-beta.12",
+        "role": "feed",
+        "target": "macos-arm64.dmg",
+        "os": "macos",
+        "arch": "arm64",
+        "format": "yml",
+        "size": 492,
+        "sha256": "52cea646d71bc2553d4ac8e1d12b34d5853bb033f276f27b2beee776df53b537",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/beta-arm64-mac.yml",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "macOS 12 or later; native Observe requires macOS 14+",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "beta-deb-linux.yml",
+        "version": "0.5.0-beta.12",
+        "role": "feed",
+        "target": "linux-x64.deb",
+        "os": "linux",
+        "arch": "x64",
+        "format": "yml",
+        "size": 488,
+        "sha256": "2c972c87551de66de20d4c878f201f60609819e745a4b4f9c24a18d7ac4b92a6",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/beta-deb-linux.yml",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Debian package; Ubuntu 24.04/X11 qualified for native computer operations",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "beta-x64-mac.yml",
+        "version": "0.5.0-beta.12",
+        "role": "feed",
+        "target": "macos-x64.dmg",
+        "os": "macos",
+        "arch": "x64",
+        "format": "yml",
+        "size": 488,
+        "sha256": "7424475f8349281673f56bfab16a4b453512913da0659366a0c6cf74afa8ec01",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/beta-x64-mac.yml",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "macOS 12 or later; native Observe requires macOS 14+",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "beta.yml",
+        "version": "0.5.0-beta.12",
+        "role": "feed",
+        "target": "windows-x64.exe",
+        "os": "windows",
+        "arch": "x64",
+        "format": "yml",
+        "size": 504,
+        "sha256": "d842a44ffa4001e541e0f595e5f93e4628050052e7bcd990850fec561249948c",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/beta.yml",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Windows 10 2004 or later; x64; unsigned preview",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "release-manifest.json",
+        "version": "0.5.0-beta.12",
+        "role": "verification",
+        "target": "shared",
+        "os": "shared",
+        "arch": "none",
+        "format": "json",
+        "size": 2919,
+        "sha256": "8a00b216431165cbe51f73b6f7dede444153063e16a32fe277d6779dbf72c9ff",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.12/release-manifest.json",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      }
+    ]
+  },
+  "approvedAssets": [
+    {
+      "name": "RELEASE-VERIFICATION.md",
+      "id": 577385612,
+      "size": 5190,
+      "sha256": "c4be7616614d556b9e022552b0661028d56352a711f279fd6c77ab4550af4f3e"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "id": 577385611,
+      "size": 1504,
+      "sha256": "ce8068a235ed07b6b85277018409ea935375c55b1fc46cd8ed8652fb513077ba"
+    },
+    {
+      "name": "Sym-0.5.0-beta.12-linux-x64.AppImage",
+      "id": 577400166,
+      "size": 182899628,
+      "sha256": "1e81f64126e8bed052aa2cd6848edc237f14d9fa064cc7bba8ade96563f2fd91"
+    },
+    {
+      "name": "Sym-0.5.0-beta.12-linux-x64.deb",
+      "id": 577400206,
+      "size": 146414344,
+      "sha256": "fc0425f2a59a9eaa13cf31eb02c3c617275b49280ab8f3802a4f37356d14cb09"
+    },
+    {
+      "name": "Sym-0.5.0-beta.12-macos-arm64.dmg",
+      "id": 577400279,
+      "size": 174949242,
+      "sha256": "066e0dbf6f966e89ed7f9de65fee01dc880fd97874550d02d000ba243f3859c6"
+    },
+    {
+      "name": "Sym-0.5.0-beta.12-macos-arm64.zip",
+      "id": 577385629,
+      "size": 162242437,
+      "sha256": "61f967c8cc0404f756c21e2086af489268654498e9e021be34a4e949e5c305ad"
+    },
+    {
+      "name": "Sym-0.5.0-beta.12-macos-x64.dmg",
+      "id": 577385626,
+      "size": 183142833,
+      "sha256": "d2de2951f63f6ed1f8d25cb371fdec7c720149a3478cc9ddce7f34e9b3d38797"
+    },
+    {
+      "name": "Sym-0.5.0-beta.12-macos-x64.zip",
+      "id": 577400358,
+      "size": 168489120,
+      "sha256": "e54151687a9f7b525ff753b94913dd6a90f855017dbe76883cdb71f3fefbf875"
+    },
+    {
+      "name": "Sym-Setup-0.5.0-beta.12-windows-x64.exe",
+      "id": 577400116,
+      "size": 196822585,
+      "sha256": "acd566a638cd3c366ded5b12ec8c2c54c15c5e298aa4d5f46dbcb31d57939b86"
+    },
+    {
+      "name": "Sym-Setup-0.5.0-beta.12-windows-x64.exe.blockmap",
+      "id": 577399013,
+      "size": 206488,
+      "sha256": "37747931f66489901697b1b4f50e0801ca2951c5a00650fa48672a164c44f79d"
+    },
+    {
+      "name": "THIRD-PARTY-NOTICES.txt",
+      "id": 577399053,
+      "size": 1580175,
+      "sha256": "a5056c149fc23c03faaa1b33e28f8690ddbc3cbe50e3ba2fa48b4c3e02a735a7"
+    },
+    {
+      "name": "beta-AppImage-linux.yml",
+      "id": 577399110,
+      "size": 498,
+      "sha256": "a9d061e43806abf4f1cc361a58eded1a7f3307cbb2a5b0657e0de8fdb7fe0580"
+    },
+    {
+      "name": "beta-arm64-mac.yml",
+      "id": 577399255,
+      "size": 492,
+      "sha256": "52cea646d71bc2553d4ac8e1d12b34d5853bb033f276f27b2beee776df53b537"
+    },
+    {
+      "name": "beta-deb-linux.yml",
+      "id": 577399346,
+      "size": 488,
+      "sha256": "2c972c87551de66de20d4c878f201f60609819e745a4b4f9c24a18d7ac4b92a6"
+    },
+    {
+      "name": "beta-x64-mac.yml",
+      "id": 577399386,
+      "size": 488,
+      "sha256": "7424475f8349281673f56bfab16a4b453512913da0659366a0c6cf74afa8ec01"
+    },
+    {
+      "name": "beta.yml",
+      "id": 577399408,
+      "size": 504,
+      "sha256": "d842a44ffa4001e541e0f595e5f93e4628050052e7bcd990850fec561249948c"
+    },
+    {
+      "name": "release-manifest.json",
+      "id": 577399442,
+      "size": 2919,
+      "sha256": "8a00b216431165cbe51f73b6f7dede444153063e16a32fe277d6779dbf72c9ff"
+    }
+  ],
+  "excludedAssets": [],
+  "nativeAcceptance": true,
+  "releaseSignoff": true,
+  "evidence": [
+    {
+      "sha256": "e15229739d8e654deccdcc6a7ca897d652fc2602df6a699b684b1a02ebe56e2b",
+      "file": "0.5.0-beta.12-native.json"
+    }
+  ]
+}
