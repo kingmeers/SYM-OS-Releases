@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "repository": "kingmeers/SYM-OS-Releases",
+  "tag": "v0.5.0-beta.13",
+  "releaseId": 393454849,
+  "revision": "b9844a7b450f56b040d18347346d9b03473bfd6c",
+  "finalized": true,
+  "release": {
+    "schemaVersion": 1,
+    "kind": "sym.release",
+    "product": "Sym",
+    "version": "0.5.0-beta.13",
+    "eligibility": [
+      "preview"
+    ],
+    "scope": [
+      "linux-x64.AppImage",
+      "linux-x64.deb"
+    ],
+    "updates": [
+      {
+        "target": "linux-x64.AppImage",
+        "mode": "electron",
+        "feed": "beta-AppImage-linux.yml"
+      },
+      {
+        "target": "linux-x64.deb",
+        "mode": "electron",
+        "feed": "beta-deb-linux.yml"
+      }
+    ],
+    "notes": "Linux Computer Pass consent now checks native capability before offering Control and reserves a working emergency-stop shortcut with safe alternatives. Observe remains available when shortcut registration is unavailable. Broad Computer Control remains unqualified and is not enabled. Real packaged X11 shortcut-conflict, emergency-stop and beta.12-to-beta.13 installed upgrade tests passed for AppImage and Debian, with encrypted synthetic state retained. Mac/Windows packages and stable selection are unchanged.",
+    "assets": [
+      {
+        "filename": "RELEASE-VERIFICATION.md",
+        "version": "0.5.0-beta.13",
+        "role": "verification",
+        "target": "shared",
+        "os": "shared",
+        "arch": "none",
+        "format": "md",
+        "size": 1833,
+        "sha256": "a2075e40f9385f9427934bf1c2f11d8db19acf55e4e2d295e4beefac279f7ac5",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.13/RELEASE-VERIFICATION.md",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "filename": "SHA256SUMS.txt",
+        "version": "0.5.0-beta.13",
+        "role": "checksum",
+        "target": "shared",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "size": 644,
+        "sha256": "0f93e0283190c0306ad53f2de0c6bfb75b519d0d4db185c727491b0d8e3c2000",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.13/SHA256SUMS.txt",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "filename": "Sym-0.5.0-beta.13-linux-x64.AppImage",
+        "version": "0.5.0-beta.13",
+        "role": "installer",
+        "target": "linux-x64.AppImage",
+        "os": "linux",
+        "arch": "x64",
+        "format": "AppImage",
+        "size": 182899739,
+        "sha256": "4063d2af3c968040c7ffd5ac42ca662fff6c76fdd7372e7b4ae4ad5d7465f26d",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.13/Sym-0.5.0-beta.13-linux-x64.AppImage",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Linux x64; Ubuntu 24.04/X11 packaged qualification",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "Sym-0.5.0-beta.13-linux-x64.deb",
+        "version": "0.5.0-beta.13",
+        "role": "installer",
+        "target": "linux-x64.deb",
+        "os": "linux",
+        "arch": "x64",
+        "format": "deb",
+        "size": 146415264,
+        "sha256": "aec858a99f7bf6ce166c79ee551d2f41a3959d41af8c10ba823571fa432be981",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.13/Sym-0.5.0-beta.13-linux-x64.deb",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Linux x64; Ubuntu 24.04/X11 packaged qualification",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "THIRD-PARTY-NOTICES.txt",
+        "version": "0.5.0-beta.13",
+        "role": "notice",
+        "target": "shared",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "size": 1365416,
+        "sha256": "5ad4a01bf5f86cf86ac17c894cc6e3aa73023a4f2ae5261fbdf1c1c2a1feceb8",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.13/THIRD-PARTY-NOTICES.txt",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "filename": "beta-AppImage-linux.yml",
+        "version": "0.5.0-beta.13",
+        "role": "feed",
+        "target": "linux-x64.AppImage",
+        "os": "linux",
+        "arch": "x64",
+        "format": "yml",
+        "size": 498,
+        "sha256": "ebec742e86c07b8f7f64a8f58c3e7d0287caba6a7a6db21551281fc68adb2150",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.13/beta-AppImage-linux.yml",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Linux x64; Ubuntu 24.04/X11 packaged qualification",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "beta-deb-linux.yml",
+        "version": "0.5.0-beta.13",
+        "role": "feed",
+        "target": "linux-x64.deb",
+        "os": "linux",
+        "arch": "x64",
+        "format": "yml",
+        "size": 488,
+        "sha256": "3b8ff8cfdcfd039cb1dd397375fdfaf66475c29672c4a29ba62ec70573a999a7",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.13/beta-deb-linux.yml",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Linux x64; Ubuntu 24.04/X11 packaged qualification",
+        "apiCompatibility": [
+          "browser-contract-17"
+        ]
+      },
+      {
+        "filename": "release-manifest.json",
+        "version": "0.5.0-beta.13",
+        "role": "verification",
+        "target": "shared",
+        "os": "shared",
+        "arch": "none",
+        "format": "json",
+        "size": 1621,
+        "sha256": "f3e168b1a6444e06ec3353bd72a1a91870bc39c89fdd451ac4fd4e3e4e8074fa",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.13/release-manifest.json",
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      }
+    ]
+  },
+  "approvedAssets": [
+    {
+      "name": "RELEASE-VERIFICATION.md",
+      "id": 580538034,
+      "size": 1833,
+      "sha256": "a2075e40f9385f9427934bf1c2f11d8db19acf55e4e2d295e4beefac279f7ac5"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "id": 580538032,
+      "size": 644,
+      "sha256": "0f93e0283190c0306ad53f2de0c6bfb75b519d0d4db185c727491b0d8e3c2000"
+    },
+    {
+      "name": "Sym-0.5.0-beta.13-linux-x64.AppImage",
+      "id": 580538031,
+      "size": 182899739,
+      "sha256": "4063d2af3c968040c7ffd5ac42ca662fff6c76fdd7372e7b4ae4ad5d7465f26d"
+    },
+    {
+      "name": "Sym-0.5.0-beta.13-linux-x64.deb",
+      "id": 580538033,
+      "size": 146415264,
+      "sha256": "aec858a99f7bf6ce166c79ee551d2f41a3959d41af8c10ba823571fa432be981"
+    },
+    {
+      "name": "THIRD-PARTY-NOTICES.txt",
+      "id": 580538035,
+      "size": 1365416,
+      "sha256": "5ad4a01bf5f86cf86ac17c894cc6e3aa73023a4f2ae5261fbdf1c1c2a1feceb8"
+    },
+    {
+      "name": "beta-AppImage-linux.yml",
+      "id": 580538054,
+      "size": 498,
+      "sha256": "ebec742e86c07b8f7f64a8f58c3e7d0287caba6a7a6db21551281fc68adb2150"
+    },
+    {
+      "name": "beta-deb-linux.yml",
+      "id": 580538061,
+      "size": 488,
+      "sha256": "3b8ff8cfdcfd039cb1dd397375fdfaf66475c29672c4a29ba62ec70573a999a7"
+    },
+    {
+      "name": "release-manifest.json",
+      "id": 580538074,
+      "size": 1621,
+      "sha256": "f3e168b1a6444e06ec3353bd72a1a91870bc39c89fdd451ac4fd4e3e4e8074fa"
+    }
+  ],
+  "excludedAssets": [],
+  "nativeAcceptance": true,
+  "releaseSignoff": true,
+  "evidence": [
+    {
+      "sha256": "39263ebad38bb3e461e454f3e3cba64b507b9b5f45c8739e245e2e9b9b9ca6ae",
+      "file": "0.5.0-beta.13-linux.json"
+    }
+  ]
+}
