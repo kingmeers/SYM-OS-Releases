@@ -9,6 +9,42 @@
   },
   "releases": [
     {
+      "version": "0.5.0-beta.13",
+      "tag": "v0.5.0-beta.13",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.13/RELEASE-VERIFICATION.md",
+      "source_commit": "8cfc409470212a6b0a49f6b6a7ab6b10eea5f7fc",
+      "platforms": {
+        "linux-x64": {
+          "filename": "Sym-0.5.0-beta.13-linux-x64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.13/Sym-0.5.0-beta.13-linux-x64.AppImage",
+          "sha256": "4063d2af3c968040c7ffd5ac42ca662fff6c76fdd7372e7b4ae4ad5d7465f26d",
+          "size_bytes": 182899739,
+          "source_commit": "8cfc409470212a6b0a49f6b6a7ab6b10eea5f7fc",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "native-qa-passed",
+          "debian": {
+            "filename": "Sym-0.5.0-beta.13-linux-x64.deb",
+            "download_url": "https://downloads.sym.so/releases/0.5.0-beta.13/Sym-0.5.0-beta.13-linux-x64.deb",
+            "sha256": "aec858a99f7bf6ce166c79ee551d2f41a3959d41af8c10ba823571fa432be981",
+            "size_bytes": 146415264,
+            "source_commit": "8cfc409470212a6b0a49f6b6a7ab6b10eea5f7fc",
+            "bundled_private_network": true,
+            "automatic_updates": true,
+            "format": "deb",
+            "status": "native-qa-passed"
+          }
+        }
+      },
+      "notes": [
+        "Linux Computer Pass consent now checks native capability before offering Control and reserves a working emergency-stop shortcut with safe alternatives. Observe remains available when shortcut registration is unavailable. Broad Computer Control remains unqualified and is not enabled. Real packaged X11 shortcut-conflict, emergency-stop and beta.12-to-beta.13 installed upgrade tests passed for AppImage and Debian, with encrypted synthetic state retained. Mac/Windows packages and stable selection are unchanged."
+      ]
+    },
+    {
       "version": "0.5.0-beta.12",
       "tag": "v0.5.0-beta.12",
       "channel": "preview",

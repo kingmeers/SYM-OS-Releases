@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "packagedSource": "8cfc409470212a6b0a49f6b6a7ab6b10eea5f7fc",
+  "buildRun": 35680679502,
+  "installedUpgradeRun": 35683856495,
+  "shortcutQualification": [
+    {
+      "version": "0.5.0-beta.13",
+      "packaged": true,
+      "nativePreflight": {
+        "controlAvailable": false
+      },
+      "conflict": {
+        "mode": "one",
+        "buttons": [
+          "Not now",
+          "Observe",
+          "Control"
+        ],
+        "scope": "full",
+        "realShortcutStop": true
+      },
+      "unavailable": {
+        "mode": "all",
+        "buttons": [
+          "Not now",
+          "Observe"
+        ],
+        "scope": "read",
+        "realShortcutStop": false
+      },
+      "unqualified": {
+        "mode": "one",
+        "buttons": [
+          "Not now",
+          "Observe"
+        ],
+        "scope": "read",
+        "realShortcutStop": false
+      },
+      "liveAccount": false,
+      "physicalDeviceQualification": false
+    },
+    {
+      "version": "0.5.0-beta.13",
+      "packaged": true,
+      "nativePreflight": {
+        "controlAvailable": false
+      },
+      "conflict": {
+        "mode": "one",
+        "buttons": [
+          "Not now",
+          "Observe",
+          "Control"
+        ],
+        "scope": "full",
+        "realShortcutStop": true
+      },
+      "unavailable": {
+        "mode": "all",
+        "buttons": [
+          "Not now",
+          "Observe"
+        ],
+        "scope": "read",
+        "realShortcutStop": false
+      },
+      "unqualified": {
+        "mode": "one",
+        "buttons": [
+          "Not now",
+          "Observe"
+        ],
+        "scope": "read",
+        "realShortcutStop": false
+      },
+      "liveAccount": false,
+      "physicalDeviceQualification": false
+    }
+  ],
+  "updaterQualification": [
+    {
+      "from": "0.5.0-beta.12",
+      "to": "0.5.0-beta.13",
+      "kind": "AppImage",
+      "originalFeed": {
+        "url": "https://downloads.sym.so/updates/preview/linux-x64.AppImage/",
+        "channel": "beta-AppImage"
+      },
+      "feedFilename": "beta-AppImage-linux.yml",
+      "installedCandidate": {
+        "version": "0.5.0-beta.12",
+        "userData": "/home/runner/.config/Symposium Bridge",
+        "executable": "/tmp/appimage_extracted_ffd0060693992cb4be4c32fef6463b68/sym-bridge",
+        "installedPath": "/home/runner/work/sym-bridge/sym-bridge/dist-gui/Sym-0.5.0-beta.12-linux-x64.AppImage",
+        "pid": 3516,
+        "kind": "AppImage"
+      },
+      "successor": {
+        "version": "0.5.0-beta.13",
+        "userData": "/home/runner/.config/Symposium Bridge",
+        "encryptedFixtureRetained": true,
+        "settingsRetained": true,
+        "nativeStartup": true,
+        "passed": true,
+        "observedAutomaticRelaunchPid": 3662
+      },
+      "noUpdate": true,
+      "downgradeDenied": true,
+      "offlineReported": true,
+      "realChecksumFailure": true,
+      "downloadSha512": "fwPI40hoJXue+DzHJTyrx+J2OIa79ZOhY7WGubBckAuSQwyQY0jt3e8mf8qYUD2IZf7M3zmBj/Kjbrpq6yBnog==",
+      "actualInstallAndRelaunch": true,
+      "actualAuthorizationDenial": false,
+      "debAuthorization": null
+    },
+    {
+      "from": "0.5.0-beta.12",
+      "to": "0.5.0-beta.13",
+      "kind": "deb",
+      "originalFeed": {
+        "url": "https://downloads.sym.so/updates/preview/linux-x64.deb/",
+        "channel": "beta-deb"
+      },
+      "feedFilename": "beta-deb-linux.yml",
+      "installedCandidate": {
+        "version": "0.5.0-beta.12",
+        "userData": "/home/runner/.config/Symposium Bridge",
+        "executable": "/opt/Sym/sym-bridge",
+        "installedPath": "/opt/Sym/sym-bridge",
+        "pid": 3569,
+        "kind": "deb"
+      },
+      "successor": {
+        "version": "0.5.0-beta.13",
+        "userData": "/home/runner/.config/Symposium Bridge",
+        "encryptedFixtureRetained": true,
+        "settingsRetained": true,
+        "nativeStartup": true,
+        "passed": true,
+        "observedAutomaticRelaunchPid": 3862
+      },
+      "noUpdate": true,
+      "downgradeDenied": true,
+      "offlineReported": true,
+      "realChecksumFailure": true,
+      "downloadSha512": "6qwsRWxb7lKTrQhbMxw3bKbmw3+eB3Ni1TXjIW6i0AtT2lsHLfcEsjshww3z8bEIOSvcOHbkR1Y8iUJYwUoYVQ==",
+      "actualInstallAndRelaunch": true,
+      "actualAuthorizationDenial": true,
+      "debAuthorization": "ephemeral-admin-exact-command-policy"
+    }
+  ],
+  "packagedLinux": [
+    {
+      "kind": "AppImage",
+      "helperSha256": "57eae4fa08a3a0738a5c1e45748207f45c2f1a0181456a707c07b62f85f070c3",
+      "fixtureExit": 0,
+      "headlessAndLifecycleExit": 0,
+      "buildPrefixLibraryPath": false,
+      "broadControlQualification": false,
+      "scope": "Exact packaged helper X11 self-test, headless denial and lifecycle; not full desktop/Wayland qualification"
+    },
+    {
+      "kind": "deb",
+      "helperSha256": "57eae4fa08a3a0738a5c1e45748207f45c2f1a0181456a707c07b62f85f070c3",
+      "fixtureExit": 0,
+      "headlessAndLifecycleExit": 0,
+      "buildPrefixLibraryPath": false,
+      "broadControlQualification": false,
+      "scope": "Exact packaged helper X11 self-test, headless denial and lifecycle; not full desktop/Wayland qualification"
+    }
+  ],
+  "broadControlQualified": false,
+  "waylandQualified": false,
+  "scope": "Linux X11 packaged fixtures and disposable installed upgrade; not recipient-account or physical-device Control qualification"
+}
