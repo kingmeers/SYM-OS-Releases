@@ -3,11 +3,80 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.13",
+    "preview": "0.5.0-beta.14",
     "stable": null,
-    "windows_preview": "0.5.0-beta.12"
+    "windows_preview": "0.5.0-beta.14"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.14",
+      "tag": "v0.5.0-beta.14",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.14/RELEASE-VERIFICATION.md",
+      "source_commit": "820f08e3cdca2791305ad14b8565169072d85cd7",
+      "platforms": {
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.14-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.14/Sym-0.5.0-beta.14-macos-arm64.dmg",
+          "sha256": "833261012d0aa063bb93ecea006ade9a29a588c243482c8d2d8ce98d25ad5ed8",
+          "size_bytes": 174961612,
+          "source_commit": "af375645106865f5cbf6c5eabb4afcc665316fce",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.14-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.14/Sym-0.5.0-beta.14-macos-x64.dmg",
+          "sha256": "59c10c8429e7d74dc4b964ecb7629fd982f3e16e23807c9f0a4e7a470d9912dc",
+          "size_bytes": 182777332,
+          "source_commit": "af375645106865f5cbf6c5eabb4afcc665316fce",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.14-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.14/Sym-Setup-0.5.0-beta.14-windows-x64.exe",
+          "sha256": "74b82513a68d8dba4879583fc5e3e47878575a71b2ce25178f277ae8d491528c",
+          "size_bytes": 196835047,
+          "source_commit": "c734198c2a81ef7177f7b9c3b9a8a729f9259979",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64": {
+          "filename": "Sym-0.5.0-beta.14-linux-x64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.14/Sym-0.5.0-beta.14-linux-x64.AppImage",
+          "sha256": "309cce5d57dba56db29cd0766858de85656bbbf57294165a780c3aa5a14f1f87",
+          "size_bytes": 179057813,
+          "source_commit": "820f08e3cdca2791305ad14b8565169072d85cd7",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations",
+          "debian": {
+            "filename": "Sym-0.5.0-beta.14-linux-x64.deb",
+            "download_url": "https://downloads.sym.so/releases/0.5.0-beta.14/Sym-0.5.0-beta.14-linux-x64.deb",
+            "sha256": "f1f9ad386c3b14835f3719899c527d9c3d03df48ea9af714d94de23af8fbb786",
+            "size_bytes": 143652324,
+            "source_commit": "820f08e3cdca2791305ad14b8565169072d85cd7",
+            "bundled_private_network": true,
+            "automatic_updates": true,
+            "format": "deb",
+            "status": "preview-qualified-with-live-limitations"
+          }
+        }
+      },
+      "notes": [
+        "Screenshot-first optional Computer Pass preview. Linux capture lifecycle repaired and tested through actual AppImage/Debian upgrades, real compositor input and 768 repeated captures. Mac packages are signed, notarized and stapled. Windows is unsigned. Windows recipient-account/physical Stop and Linux production portal chooser acceptance remain unverified; CI fixture consent is not human consent. Computer Pass remains opt-in with local OS permission. No stable promotion or fleet activation."
+      ]
+    },
     {
       "version": "0.5.0-beta.13",
       "tag": "v0.5.0-beta.13",
