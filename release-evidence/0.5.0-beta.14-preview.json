@@ -41,5 +41,43 @@
   "windowsRecipientAccountAndPhysicalStopAccepted": false,
   "linuxProductionPortalChooserAccepted": false,
   "fleetActivationAuthorized": false,
-  "stablePromotionAuthorized": false
+  "stablePromotionAuthorized": false,
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.14-macos-arm64.dmg",
+      "sha256": "833261012d0aa063bb93ecea006ade9a29a588c243482c8d2d8ce98d25ad5ed8",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Mount exact DMG read-only or ditto -x -k exact ZIP; codesign --verify --deep --strict; codesign -dv --verbose=4 (team match); xcrun stapler validate; spctl --assess --type execute --verbose=2",
+      "gatekeeperAccepted": true
+    },
+    {
+      "filename": "Sym-0.5.0-beta.14-macos-arm64.zip",
+      "sha256": "f66fc24e01e8ed7aa02092490ab1b62bbe472a41edb5a59f70bdc5f029837593",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Mount exact DMG read-only or ditto -x -k exact ZIP; codesign --verify --deep --strict; codesign -dv --verbose=4 (team match); xcrun stapler validate; spctl --assess --type execute --verbose=2",
+      "gatekeeperAccepted": true
+    },
+    {
+      "filename": "Sym-0.5.0-beta.14-macos-x64.dmg",
+      "sha256": "59c10c8429e7d74dc4b964ecb7629fd982f3e16e23807c9f0a4e7a470d9912dc",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Mount exact DMG read-only or ditto -x -k exact ZIP; codesign --verify --deep --strict; codesign -dv --verbose=4 (team match); xcrun stapler validate; spctl --assess --type execute --verbose=2",
+      "gatekeeperAccepted": true
+    },
+    {
+      "filename": "Sym-0.5.0-beta.14-macos-x64.zip",
+      "sha256": "f958f3c261f16fa1b01713efa33109f932bb3dc5a67367171e0c0ef99a61f7ad",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Mount exact DMG read-only or ditto -x -k exact ZIP; codesign --verify --deep --strict; codesign -dv --verbose=4 (team match); xcrun stapler validate; spctl --assess --type execute --verbose=2",
+      "gatekeeperAccepted": true
+    }
+  ]
 }

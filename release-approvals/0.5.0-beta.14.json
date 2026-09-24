@@ -63,7 +63,7 @@
         "signing": {
           "status": "verified",
           "notarized": true,
-          "evidenceSha256": "9dbea0161d0f467c8087db1aa4af776d9eed66e2450bbf987a55f0233c343811"
+          "evidenceSha256": "a5d940211848d72bf6dc97571f4bdf1d3f1ab3d3871306d808779d8dcd2b8f53"
         },
         "minimumOS": "macOS 12 or later; architecture-specific package",
         "apiCompatibility": [
@@ -85,7 +85,7 @@
         "signing": {
           "status": "verified",
           "notarized": true,
-          "evidenceSha256": "9dbea0161d0f467c8087db1aa4af776d9eed66e2450bbf987a55f0233c343811"
+          "evidenceSha256": "a5d940211848d72bf6dc97571f4bdf1d3f1ab3d3871306d808779d8dcd2b8f53"
         },
         "minimumOS": "macOS 12 or later; architecture-specific package",
         "apiCompatibility": [
@@ -107,7 +107,7 @@
         "signing": {
           "status": "verified",
           "notarized": true,
-          "evidenceSha256": "9dbea0161d0f467c8087db1aa4af776d9eed66e2450bbf987a55f0233c343811"
+          "evidenceSha256": "a5d940211848d72bf6dc97571f4bdf1d3f1ab3d3871306d808779d8dcd2b8f53"
         },
         "minimumOS": "macOS 12 or later; architecture-specific package",
         "apiCompatibility": [
@@ -129,7 +129,7 @@
         "signing": {
           "status": "verified",
           "notarized": true,
-          "evidenceSha256": "9dbea0161d0f467c8087db1aa4af776d9eed66e2450bbf987a55f0233c343811"
+          "evidenceSha256": "a5d940211848d72bf6dc97571f4bdf1d3f1ab3d3871306d808779d8dcd2b8f53"
         },
         "minimumOS": "macOS 12 or later; architecture-specific package",
         "apiCompatibility": [
@@ -530,7 +530,7 @@
   "releaseSignoff": true,
   "evidence": [
     {
-      "sha256": "9dbea0161d0f467c8087db1aa4af776d9eed66e2450bbf987a55f0233c343811",
+      "sha256": "a5d940211848d72bf6dc97571f4bdf1d3f1ab3d3871306d808779d8dcd2b8f53",
       "file": "0.5.0-beta.14-preview.json"
     }
   ]
