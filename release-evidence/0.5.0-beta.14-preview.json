@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.14",
+  "qualificationScope": "Bounded opt-in preview qualification; not full physical-desktop certification. Release owner requested unattended testing and beta publication without new sign-ins.",
+  "sources": {
+    "macos-arm64.dmg": "af375645106865f5cbf6c5eabb4afcc665316fce",
+    "macos-x64.dmg": "af375645106865f5cbf6c5eabb4afcc665316fce",
+    "windows-x64.exe": "c734198c2a81ef7177f7b9c3b9a8a729f9259979",
+    "linux-x64.deb": "820f08e3cdca2791305ad14b8565169072d85cd7",
+    "linux-x64.AppImage": "820f08e3cdca2791305ad14b8565169072d85cd7"
+  },
+  "macFinalSignatureVerification": [
+    {
+      "arch": "arm64",
+      "zipDeepSignatureVerified": true,
+      "zipStapledTicketVerified": true,
+      "zipGatekeeperAccepted": true,
+      "dmgDeepSignatureVerified": true,
+      "dmgStapledTicketVerified": true,
+      "dmgGatekeeperAccepted": true
+    },
+    {
+      "arch": "x64",
+      "zipDeepSignatureVerified": true,
+      "zipStapledTicketVerified": true,
+      "zipGatekeeperAccepted": true,
+      "dmgDeepSignatureVerified": true,
+      "dmgStapledTicketVerified": true,
+      "dmgGatekeeperAccepted": true
+    }
+  ],
+  "windowsAuthenticodeSigned": false,
+  "installedUpgradeKinds": [
+    "windows",
+    "AppImage",
+    "deb"
+  ],
+  "linuxInstalledWaylandSessions": 12,
+  "linuxRepeatedCaptures": 768,
+  "allWaylandSessionExitsZero": true,
+  "windowsRecipientAccountAndPhysicalStopAccepted": false,
+  "linuxProductionPortalChooserAccepted": false,
+  "fleetActivationAuthorized": false,
+  "stablePromotionAuthorized": false
+}
