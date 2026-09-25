@@ -3,11 +3,69 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.15",
+    "preview": "0.5.0-beta.16",
     "stable": null,
-    "windows_preview": "0.5.0-beta.15"
+    "windows_preview": "0.5.0-beta.16"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.16",
+      "tag": "v0.5.0-beta.16",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.16/RELEASE-VERIFICATION.md",
+      "source_commit": "3310386dd36bfd763ce017043643b00b359e376a",
+      "platforms": {
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.16-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.16/Sym-0.5.0-beta.16-macos-x64.dmg",
+          "sha256": "6174d0c8b3096c884f240313af508de4d93ff429c41ab9c0a38c336df5a621c1",
+          "size_bytes": 182792795,
+          "source_commit": "3310386dd36bfd763ce017043643b00b359e376a",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.16-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.16/Sym-0.5.0-beta.16-macos-arm64.dmg",
+          "sha256": "4f53c810c440f6527a132df76f90df09f608bd2fbc6d174d7a23f8abfa864ff9",
+          "size_bytes": 174970052,
+          "source_commit": "3310386dd36bfd763ce017043643b00b359e376a",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.16-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.16/Sym-Setup-0.5.0-beta.16-windows-x64.exe",
+          "sha256": "2fcfe86798a3d0365a79894e168609751aeb871e2aa1bd06b80e96593463ab1f",
+          "size_bytes": 196835602,
+          "source_commit": "3310386dd36bfd763ce017043643b00b359e376a",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64": {
+          "filename": "Sym-0.5.0-beta.16-linux-x64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.16/Sym-0.5.0-beta.16-linux-x64.AppImage",
+          "sha256": "25ca81fe43528cfe396e0e738cdc786c4dab17aabbb265225c69397c529c24e3",
+          "size_bytes": 183158187,
+          "source_commit": "3310386dd36bfd763ce017043643b00b359e376a",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": [
+        "Linux X11 Computer Pass: bind missing logind Display using kernel X-server peer credentials and exact logind session, preserving active/lock/user checks. Includes beta15 truthful permission refresh on all platforms. Live Linux screenshot, clicking, typing, shortcut, drag, scroll and native Stop passed. Mac/Windows native implementations unchanged from live-tested beta15. Windows unsigned. Preview only, no stable/fleet promotion."
+      ]
+    },
     {
       "version": "0.5.0-beta.15",
       "tag": "v0.5.0-beta.15",
