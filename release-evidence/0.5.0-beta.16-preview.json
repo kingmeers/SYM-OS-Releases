@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.16",
+  "qualificationScope": "Owner-authorized cross-platform preview, not a claim of perfect universal desktop/account support.",
+  "source": "3310386dd36bfd763ce017043643b00b359e376a",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.16-macos-x64.dmg",
+      "sha256": "6174d0c8b3096c884f240313af508de4d93ff429c41ab9c0a38c336df5a621c1",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Exact DMG/ZIP app: codesign --verify --deep --strict; team check; stapler validate; spctl --assess; bundle version and renderer byte comparison",
+      "gatekeeperAccepted": true,
+      "rendererBytesMatch": true
+    },
+    {
+      "filename": "Sym-0.5.0-beta.16-macos-x64.zip",
+      "sha256": "f034af2a22b6ce4fdf16fbf91aad0310a88d78817b175c022a3459d646a01be2",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Exact DMG/ZIP app: codesign --verify --deep --strict; team check; stapler validate; spctl --assess; bundle version and renderer byte comparison",
+      "gatekeeperAccepted": true,
+      "rendererBytesMatch": true
+    },
+    {
+      "filename": "Sym-0.5.0-beta.16-macos-arm64.dmg",
+      "sha256": "4f53c810c440f6527a132df76f90df09f608bd2fbc6d174d7a23f8abfa864ff9",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Exact DMG/ZIP app: codesign --verify --deep --strict; team check; stapler validate; spctl --assess; bundle version and renderer byte comparison",
+      "gatekeeperAccepted": true,
+      "rendererBytesMatch": true
+    },
+    {
+      "filename": "Sym-0.5.0-beta.16-macos-arm64.zip",
+      "sha256": "a5be48f96fee0d644cd9a13b9b1d92b44e13c39da09a3a541e44b200b125e472",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Exact DMG/ZIP app: codesign --verify --deep --strict; team check; stapler validate; spctl --assess; bundle version and renderer byte comparison",
+      "gatekeeperAccepted": true,
+      "rendererBytesMatch": true
+    }
+  ],
+  "linuxLiveNativeChecks": [
+    "real-session-ready",
+    "PNG",
+    "focused-type",
+    "coordinate-click",
+    "shortcut",
+    "drag",
+    "scroll",
+    "native-Stop"
+  ],
+  "linuxLiveHelperSha256": "65cd5d2acc09835e85da2625b771f2447eb6dfd185559ba6a1daed801d42811b",
+  "linuxPackagedDebHelperMatchesLive": true,
+  "linuxActualDesktop": "Cinnamon X11 Chrome Remote Desktop",
+  "linuxWaylandCI": "Real disposable Mutter compositor, fixture consent; not live GNOME/KDE user acceptance",
+  "macWindowsNativeSourceUnchangedFromLiveTestedBeta15": true,
+  "exactPackagedMacLinuxCI": "https://github.com/kingmeers/sym-bridge/actions/runs/36162283078",
+  "exactPackagedWindowsCI": "https://github.com/kingmeers/sym-bridge/actions/runs/36162287741",
+  "linuxNativeRegressionCI": "https://github.com/kingmeers/sym-bridge/actions/runs/36156370859",
+  "windowsAuthenticodeSigned": false,
+  "hostedAccountAccepted": false,
+  "physicalHumanStopAccepted": false,
+  "stablePromotionAuthorized": false,
+  "fleetActivationAuthorized": false
+}
