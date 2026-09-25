@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.15",
+  "qualificationScope": "Owner-authorized bounded Mac/Windows preview; not hosted-account, physical-user or Linux certification.",
+  "source": "5fe086443ebf24944f8afbb06bf1f3d401713841",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.15-macos-x64.dmg",
+      "sha256": "fe1162c3a6ecdd7362e736337eaf2ff73089a79d4679e015f19724a5421f163f",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Exact DMG/ZIP app: codesign --verify --deep --strict; team check; stapler validate; spctl --assess; bundle version and renderer byte comparison",
+      "gatekeeperAccepted": true,
+      "rendererBytesMatch": true
+    },
+    {
+      "filename": "Sym-0.5.0-beta.15-macos-x64.zip",
+      "sha256": "46df6c63c2a7f06be2187bcab58cfb2f668a61a1983a9f9d78d30a74c13bd922",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Exact DMG/ZIP app: codesign --verify --deep --strict; team check; stapler validate; spctl --assess; bundle version and renderer byte comparison",
+      "gatekeeperAccepted": true,
+      "rendererBytesMatch": true
+    },
+    {
+      "filename": "Sym-0.5.0-beta.15-macos-arm64.dmg",
+      "sha256": "314668dcc8ecc7eb728db4db272a10c38da65777894e8ae5e9e24933134871b8",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Exact DMG/ZIP app: codesign --verify --deep --strict; team check; stapler validate; spctl --assess; bundle version and renderer byte comparison",
+      "gatekeeperAccepted": true,
+      "rendererBytesMatch": true
+    },
+    {
+      "filename": "Sym-0.5.0-beta.15-macos-arm64.zip",
+      "sha256": "3510e6e0e9a25d96eb8dcf750dc703576b9887c758ce8ab6ff1b43c0779b7cc6",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "Exact DMG/ZIP app: codesign --verify --deep --strict; team check; stapler validate; spctl --assess; bundle version and renderer byte comparison",
+      "gatekeeperAccepted": true,
+      "rendererBytesMatch": true
+    }
+  ],
+  "nativeSourceUnchangedFromLiveTestedBeta14": true,
+  "macIntelLiveInstalledNativeFixturePassed": true,
+  "windowsOfficePCLiveInstalledNativeFixturePassed": true,
+  "liveNativeTestVersion": "0.5.0-beta.14",
+  "exactBeta15PackagedMacBothArchitecturesCI": "https://github.com/kingmeers/sym-bridge/actions/runs/36120246135",
+  "exactBeta15PackagedWindowsCI": "https://github.com/kingmeers/sym-bridge/actions/runs/36120249004",
+  "permissionRendererRegressionTests": 5,
+  "windowsAuthenticodeSigned": false,
+  "hostedAccountAccepted": false,
+  "physicalHumanStopAccepted": false,
+  "linuxTested": false,
+  "stablePromotionAuthorized": false,
+  "fleetActivationAuthorized": false,
+  "macIntelBeta15InstalledNativeFixturePassed": true,
+  "macIntelBeta15InstalledPermissionUIPassed": true,
+  "macIntelBeta15NativeCaptureVisuallyInspected": true,
+  "macFirstBeta15Run": "Initial run overlapped GUI startup and failed Unicode readback; retained failure. Settled rerun passed all 15 checks. Focus competition is a hypothesis, not independently proven."
+}
