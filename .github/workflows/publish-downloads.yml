@@ -22,7 +22,9 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # Publishing and promotion each verify public installer bytes. Mixed-platform
+    # preview selections can exceed 45 minutes; retain every integrity check.
+    timeout-minutes: 120
     environment: sym-publisher-preview
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
