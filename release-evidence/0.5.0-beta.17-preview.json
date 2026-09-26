@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.17",
+  "qualificationScope": "Linux updater preview; source regressions and exact package CI. Installed in-app upgrade acceptance tracked separately after publication.",
+  "source": "6967d5b88bbf0517c126a84a5a12333d313da670",
+  "artifacts": [],
+  "exactPackagedCI": "https://github.com/kingmeers/sym-bridge/actions/runs/36217069935",
+  "authorizationPolicyChanged": false,
+  "installedInAppAcceptanceClaimed": false,
+  "stablePromotionAuthorized": false,
+  "fleetActivationAuthorized": false
+}

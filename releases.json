@@ -3,11 +3,36 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.16",
+    "preview": "0.5.0-beta.17",
     "stable": null,
     "windows_preview": "0.5.0-beta.16"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.17",
+      "tag": "v0.5.0-beta.17",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.17/RELEASE-VERIFICATION.md",
+      "source_commit": "6967d5b88bbf0517c126a84a5a12333d313da670",
+      "platforms": {
+        "linux-x64": {
+          "filename": "Sym-0.5.0-beta.17-linux-x64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.17/Sym-0.5.0-beta.17-linux-x64.AppImage",
+          "sha256": "758bf7121d1e4ee850f80be4437ffa2d152c3e305d56d0a7f75878d8a1f631b3",
+          "size_bytes": 183158166,
+          "source_commit": "6967d5b88bbf0517c126a84a5a12333d313da670",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": [
+        "Linux updater: use an existing exact-command sudo authorization noninteractively, otherwise preserve the native polkit dialog. Distinguish cancellation, authorization failure, timeout and package errors; never collect passwords or repair unrelated packages. Mac/Windows downloads unchanged. Preview only."
+      ]
+    },
     {
       "version": "0.5.0-beta.16",
       "tag": "v0.5.0-beta.16",
