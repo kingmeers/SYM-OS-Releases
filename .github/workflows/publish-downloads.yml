@@ -10,6 +10,15 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+    inputs:
+      recover_version:
+        description: 'Explicit preview recovery only: already-approved selected version'
+        required: false
+        type: string
+      recover_expected_sha256:
+        description: 'Frozen current preview channel SHA256; never refreshed automatically'
+        required: false
+        type: string
   # Reconcile missed events, including releases created using GITHUB_TOKEN.
   # Matching approved selections are no-ops: no repeated installer transfer.
   schedule:
@@ -56,7 +65,40 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_R2_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}
           CLOUDFLARE_R2_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_ACCESS_KEY }}
-        run: node ../publisher/scripts/sync-approved.js
+          RECOVERY_VERSION: ${{ inputs.recover_version }}
+          RECOVERY_EXPECTED: ${{ inputs.recover_expected_sha256 }}
+        run: |
+          if [ -n "$RECOVERY_VERSION$RECOVERY_EXPECTED" ]; then
+            mkdir -p receipts
+            node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          import fs from 'node:fs/promises';
+          import { main } from '../publisher/scripts/publish.js';
+          import { Store, credentials } from '../publisher/scripts/store.js';
+          const version = process.env.RECOVERY_VERSION;
+          const expected = process.env.RECOVERY_EXPECTED;
+          assert(/^[0-9]+\.[0-9]+\.[0-9]+(?:-[A-Za-z0-9.-]+)?$/.test(version || ''), 'Explicit valid recovery version required');
+          assert(/^[a-f0-9]{64}$/.test(expected || ''), 'Explicit frozen channel SHA256 required');
+          const catalog = JSON.parse(await fs.readFile('releases.json', 'utf8'));
+          const approval = JSON.parse(await fs.readFile(`release-approvals/${version}.json`, 'utf8'));
+          assert(catalog.latest.preview === version && catalog.latest.windows_preview === version, 'Recovery must match the reviewed current preview selections');
+          assert(approval.finalized === true && approval.nativeAcceptance === true && approval.release.version === version, 'Recovery requires existing finalized native acceptance');
+          const store = new Store(credentials());
+          const current = await store.json('channels/preview.json');
+          assert(current?.sha256 === expected, 'Current channel differs from frozen recovery expectation');
+          const prior = await store.json(`control/operations/preview/${expected}.json`);
+          const verified = await store.json(`control/verified-operations/preview/${expected}.json`);
+          const alreadyVerified = verified?.value?.committed === true && verified.value.verified === true && verified.value.nextSha256 === expected;
+          await fs.writeFile('receipts/recovery-inspection.json', JSON.stringify({ expected, currentSha256: current.sha256, priorOperation: prior?.value, alreadyVerified }, null, 2));
+          // Existing publisher performs full verification and exact-ETag CAS.
+          // It does not refresh expected state, overwrite assets, or auto-rollback.
+          if (!alreadyVerified) {
+            assert(prior?.value?.committed === true && prior.value.nextSha256 === expected, 'Missing matching committed-operation receipt');
+            await main(['promote', '--version', version, '--channel', 'preview', '--expected', expected, '--aliases', `release-approvals/${version}.aliases.json`, '--receipt', 'receipts/explicit-preview-recovery.json']);
+          }
+          NODE
+          fi
+          node ../publisher/scripts/sync-approved.js
       - name: Keep sanitized operation receipts
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
