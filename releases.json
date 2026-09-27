@@ -9,6 +9,64 @@
   },
   "releases": [
     {
+      "version": "0.5.0-beta.19",
+      "tag": "v0.5.0-beta.19",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.19/RELEASE-VERIFICATION.md",
+      "source_commit": "3d98049f466071c6d803a230870877754086b5f3",
+      "platforms": {
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.19-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.19/Sym-0.5.0-beta.19-macos-x64.dmg",
+          "sha256": "3744ab3e8d34c248c014254c802a8ccbf624944135daa30a5d9f6e54cf538783",
+          "size_bytes": 182791968,
+          "source_commit": "3d98049f466071c6d803a230870877754086b5f3",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.19-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.19/Sym-0.5.0-beta.19-macos-arm64.dmg",
+          "sha256": "accf4bcf6517d83c751c5d88f95ca51856e6b5f1acf8cae0160eca20c45ac9dc",
+          "size_bytes": 174971191,
+          "source_commit": "3d98049f466071c6d803a230870877754086b5f3",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.19-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.19/Sym-Setup-0.5.0-beta.19-windows-x64.exe",
+          "sha256": "a3d1c1440005dc590c48ffab6fb676583b418eb7ba808254e308f2bfb0d51b87",
+          "size_bytes": 196837219,
+          "source_commit": "3d98049f466071c6d803a230870877754086b5f3",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64": {
+          "filename": "Sym-0.5.0-beta.19-linux-x64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.19/Sym-0.5.0-beta.19-linux-x64.AppImage",
+          "sha256": "1235260cfe8816175de06c4947a7be6f980bf62f561ad8eff652999d5b5fc266",
+          "size_bytes": 183162248,
+          "source_commit": "3d98049f466071c6d803a230870877754086b5f3",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": [
+        "Computer Pass model-compatible bounded capture and target lifetime on Mac, Windows and Linux, retaining authority, focus, geometry and Stop checks. Real production Talk model typing and independent Mac fixture readback passed. Installed Windows beta19 native fixture tests passed. Regular Sym chat attachment works but execution qualification remains pending and is not claimed by this native preview. Windows unsigned. Preview only; no stable or fleet promotion."
+      ]
+    },
+    {
       "version": "0.5.0-beta.17",
       "tag": "v0.5.0-beta.17",
       "channel": "preview",
