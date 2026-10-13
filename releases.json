@@ -3,11 +3,69 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.19",
+    "preview": "0.5.0-beta.20",
     "stable": null,
-    "windows_preview": "0.5.0-beta.19"
+    "windows_preview": "0.5.0-beta.20"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.20",
+      "tag": "v0.5.0-beta.20",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.20/RELEASE-VERIFICATION.md",
+      "source_commit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+      "platforms": {
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.20-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.20/Sym-0.5.0-beta.20-macos-x64.dmg",
+          "sha256": "978dc4b26c3b772f5914901daf910458b5dad55b7214f93ea01153db78a55945",
+          "size_bytes": 178575452,
+          "source_commit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.20-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.20/Sym-0.5.0-beta.20-macos-arm64.dmg",
+          "sha256": "90f1122a452fd3e8c214154bb9ffffee439dd357b734196f72e0ede1214ed228",
+          "size_bytes": 170956576,
+          "source_commit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.20-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.20/Sym-Setup-0.5.0-beta.20-windows-x64.exe",
+          "sha256": "2e1741e89708c40eabb417fead97f1e881ce9147f50dcf1e4add08607bb8337c",
+          "size_bytes": 110592965,
+          "source_commit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64": {
+          "filename": "Sym-0.5.0-beta.20-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.20/Sym-0.5.0-beta.20-linux-x86_64.AppImage",
+          "sha256": "170fb1969e9acf3d183cac1dc17895370186d3448bd98a7eff4cfe968967ead1",
+          "size_bytes": 136713828,
+          "source_commit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": [
+        "Five-minute bounded Browser Pass inventory caching and companion cloud polling reduce Firestore reads while keeping execution and authorization live. Remote app management is enabled for signed-in installations; legacy Computer Pass UI/service resources are removed. Chrome Store extension 0.1.29 remains compatible. Both macOS architectures are Developer ID signed, notarized and stapled. Windows remains an unsigned preview. Preview only; no stable or fleet promotion."
+      ]
+    },
     {
       "version": "0.5.0-beta.19",
       "tag": "v0.5.0-beta.19",
