@@ -3,11 +3,69 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.20",
+    "preview": "0.5.0-beta.21",
     "stable": null,
-    "windows_preview": "0.5.0-beta.20"
+    "windows_preview": "0.5.0-beta.21"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.21",
+      "tag": "v0.5.0-beta.21",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.21/RELEASE-VERIFICATION.md",
+      "source_commit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+      "platforms": {
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.21-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.21/Sym-0.5.0-beta.21-macos-x64.dmg",
+          "sha256": "cf66908789b716c876c2820732fcd414bf68b241460c334f661f823ac5e409d6",
+          "size_bytes": 183827426,
+          "source_commit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.21-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.21/Sym-0.5.0-beta.21-macos-arm64.dmg",
+          "sha256": "67566ee2570f22fd2629f0a4c1c561ad44e6f61dab09fc65326179ca5ca9272b",
+          "size_bytes": 182858263,
+          "source_commit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.21-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.21/Sym-Setup-0.5.0-beta.21-windows-x64.exe",
+          "sha256": "23d2f285a9ff0db1b6ef78a8312faca12ffd59d2ec62ee5dad864883897638e7",
+          "size_bytes": 137717030,
+          "source_commit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64": {
+          "filename": "Sym-0.5.0-beta.21-linux-x64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.21/Sym-0.5.0-beta.21-linux-x64.AppImage",
+          "sha256": "c9a288a3ce9062e581428780e300362367ef34167eb262710f3db06938bb01cb",
+          "size_bytes": 175982184,
+          "source_commit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": [
+        "Corrects missing bundled private-network helpers on clean release runners. Both helpers, licenses and provenance are packaged and checked. Preserves existing caching, default management and hidden Computer Pass changes. macOS is signed, notarized and stapled; Windows remains unsigned preview. Native CI covers packaged startup and helper lifecycle; live-account enrollment and user-machine acceptance remain unperformed. Preview only; no stable or fleet promotion."
+      ]
+    },
     {
       "version": "0.5.0-beta.20",
       "tag": "v0.5.0-beta.20",

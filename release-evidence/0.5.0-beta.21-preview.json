@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.21",
+  "source": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+  "qualificationScope": "Owner-authorized corrective preview: exact-head native CI and final signed artifact verification. Not stable, fleet or live-account enrollment acceptance.",
+  "crossPlatformCI": "https://github.com/kingmeers/sym-bridge/actions/runs/38422776359",
+  "windowsAuthenticodeSigned": false,
+  "stablePromotionAuthorized": false,
+  "fleetActivationAuthorized": false,
+  "liveAccountTest": false,
+  "privateNetworkEnrolled": false,
+  "storeIntegrationVersionObserved": "0.1.21",
+  "currentStoreVersionClaimInRetainedManifest": "0.1.29; not the version actually observed in this CI proof",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.21-macos-x64.dmg",
+      "sha256": "cf66908789b716c876c2820732fcd414bf68b241460c334f661f823ac5e409d6",
+      "size": 183827426,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "notarizationSubmission": "2cedac55-dbfa-464a-b33d-6214e8a2b78a",
+      "command": "codesign --verify <DMG>; xcrun stapler validate <DMG>; spctl --assess --type open --context context:primary-signature <DMG>; hdiutil attach -readonly <DMG>; codesign --verify --deep --strict <APP>; codesign -dv --verbose=4 <APP> (TeamIdentifier=JR2SHF8H9R); xcrun stapler validate <APP>; spctl --assess --type execute <APP>; each helper codesign --verify --strict -R Apple/team requirement",
+      "sourceCommit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+      "nativeRuntimeTestAfterSigning": false
+    },
+    {
+      "filename": "Sym-0.5.0-beta.21-macos-x64.zip",
+      "sha256": "3c6e9c8b8c988eb5ecdbfc17f8674bad5010918a9b60176f3d6d9a24c99efa42",
+      "size": 168575387,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "notarizationSubmission": "036890c4-5c47-4bf0-9cb3-8df7d43ffdd2",
+      "command": "ditto -x -k <ZIP> <TEMP>; codesign --verify --deep --strict <APP>; codesign -dv --verbose=4 <APP> (TeamIdentifier=JR2SHF8H9R); xcrun stapler validate <APP>; spctl --assess --type execute <APP>; each helper codesign --verify --strict -R Apple/team requirement",
+      "sourceCommit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+      "nativeRuntimeTestAfterSigning": false
+    },
+    {
+      "filename": "Sym-0.5.0-beta.21-macos-arm64.dmg",
+      "sha256": "67566ee2570f22fd2629f0a4c1c561ad44e6f61dab09fc65326179ca5ca9272b",
+      "size": 182858263,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "notarizationSubmission": "b20d1f73-c176-4488-a2e6-4df163639a73",
+      "command": "codesign --verify <DMG>; xcrun stapler validate <DMG>; spctl --assess --type open --context context:primary-signature <DMG>; hdiutil attach -readonly <DMG>; codesign --verify --deep --strict <APP>; codesign -dv --verbose=4 <APP> (TeamIdentifier=JR2SHF8H9R); xcrun stapler validate <APP>; spctl --assess --type execute <APP>; each helper codesign --verify --strict -R Apple/team requirement",
+      "sourceCommit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+      "nativeRuntimeTestAfterSigning": false
+    },
+    {
+      "filename": "Sym-0.5.0-beta.21-macos-arm64.zip",
+      "sha256": "9722f0e9d5509a66646b36cdb177e719010af854a4ad973869dedec89b66ae40",
+      "size": 162331908,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "notarizationSubmission": "be93ebc5-500d-4c35-b8ef-c4089c9871f4",
+      "command": "ditto -x -k <ZIP> <TEMP>; codesign --verify --deep --strict <APP>; codesign -dv --verbose=4 <APP> (TeamIdentifier=JR2SHF8H9R); xcrun stapler validate <APP>; spctl --assess --type execute <APP>; each helper codesign --verify --strict -R Apple/team requirement",
+      "sourceCommit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+      "nativeRuntimeTestAfterSigning": false
+    },
+    {
+      "filename": "Sym-Setup-0.5.0-beta.21-windows-x64.exe",
+      "sha256": "23d2f285a9ff0db1b6ef78a8312faca12ffd59d2ec62ee5dad864883897638e7",
+      "size": 137717030,
+      "ciAccepted": true,
+      "sourceCommit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+      "signatureVerified": false,
+      "notarizationVerified": false
+    },
+    {
+      "filename": "Sym-0.5.0-beta.21-linux-x64.AppImage",
+      "sha256": "c9a288a3ce9062e581428780e300362367ef34167eb262710f3db06938bb01cb",
+      "size": 175982184,
+      "ciAccepted": true,
+      "sourceCommit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+      "signatureVerified": false,
+      "notarizationVerified": false
+    },
+    {
+      "filename": "Sym-0.5.0-beta.21-linux-x64.deb",
+      "sha256": "9142cdb322de4c6f6852f7b2a53ca545e84ef87be802dca099a41e8fc0da80af",
+      "size": 140825612,
+      "ciAccepted": true,
+      "sourceCommit": "90608ff617ae95732f16db2d85528e7e8fe7179a",
+      "signatureVerified": false,
+      "notarizationVerified": false
+    }
+  ],
+  "limitations": [
+    "CI screen-state tests use fixtures; native startup, listener, packaged helpers and Linux Store interactions were actually exercised.",
+    "Network proof explicitly records enrolled=false; Sam's Linux account setup completion is not independently verified.",
+    "Final signed macOS DMG/ZIP checks are static Gatekeeper, signature and stapling checks; cross-platform native lifecycle tests occurred on CI packages before local signing.",
+    "Windows remains unsigned preview. Stable and fleet are excluded."
+  ]
+}
