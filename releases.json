@@ -51,8 +51,8 @@
           "status": "preview-qualified-with-live-limitations"
         },
         "linux-x64": {
-          "filename": "Sym-0.5.0-beta.20-linux-x86_64.AppImage",
-          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.20/Sym-0.5.0-beta.20-linux-x86_64.AppImage",
+          "filename": "Sym-0.5.0-beta.20-linux-x64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.20/Sym-0.5.0-beta.20-linux-x64.AppImage",
           "sha256": "170fb1969e9acf3d183cac1dc17895370186d3448bd98a7eff4cfe968967ead1",
           "size_bytes": 136713828,
           "source_commit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
