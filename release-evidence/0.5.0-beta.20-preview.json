@@ -30,7 +30,9 @@
       "signer": "Apple Developer ID team JR2SHF8H9R",
       "staplerValidated": true,
       "gatekeeperAccepted": true,
-      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1"
+      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+      "command": "xcrun stapler validate <DMG> && codesign --verify --verbose=4 <DMG> && spctl -a -vv -t open --context context:primary-signature <DMG>",
+      "size": 178575452
     },
     {
       "filename": "Sym-0.5.0-beta.20-macos-x64.zip",
@@ -41,7 +43,9 @@
       "signer": "Apple Developer ID team JR2SHF8H9R",
       "staplerValidated": true,
       "gatekeeperAccepted": true,
-      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1"
+      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+      "command": "ditto -x -k <ZIP> <TEMP> && codesign --verify --deep --strict --verbose=4 <TEMP>/Sym.app && xcrun stapler validate <TEMP>/Sym.app && spctl -a -vv -t install <TEMP>/Sym.app",
+      "size": 164174961
     },
     {
       "filename": "Sym-0.5.0-beta.20-macos-arm64.dmg",
@@ -52,7 +56,9 @@
       "signer": "Apple Developer ID team JR2SHF8H9R",
       "staplerValidated": true,
       "gatekeeperAccepted": true,
-      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1"
+      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+      "command": "xcrun stapler validate <DMG> && codesign --verify --verbose=4 <DMG> && spctl -a -vv -t open --context context:primary-signature <DMG>",
+      "size": 170956576
     },
     {
       "filename": "Sym-0.5.0-beta.20-macos-arm64.zip",
@@ -63,7 +69,9 @@
       "signer": "Apple Developer ID team JR2SHF8H9R",
       "staplerValidated": true,
       "gatekeeperAccepted": true,
-      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1"
+      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+      "command": "ditto -x -k <ZIP> <TEMP> && codesign --verify --deep --strict --verbose=4 <TEMP>/Sym.app && xcrun stapler validate <TEMP>/Sym.app && spctl -a -vv -t install <TEMP>/Sym.app",
+      "size": 157931465
     },
     {
       "filename": "Sym-Setup-0.5.0-beta.20-windows-x64.exe",
@@ -71,21 +79,25 @@
       "signatureVerified": false,
       "notarizationVerified": false,
       "ciAccepted": true,
-      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1"
+      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+      "size": 110592965
     },
     {
-      "filename": "Sym-0.5.0-beta.20-linux-x86_64.AppImage",
+      "filename": "Sym-0.5.0-beta.20-linux-x64.AppImage",
       "sha256": "170fb1969e9acf3d183cac1dc17895370186d3448bd98a7eff4cfe968967ead1",
       "ciAccepted": true,
       "storeExtensionIntegrationAccepted": true,
-      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1"
+      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+      "size": 136713828
     },
     {
-      "filename": "Sym-0.5.0-beta.20-linux-amd64.deb",
+      "filename": "Sym-0.5.0-beta.20-linux-x64.deb",
       "sha256": "47ee2bf3f8c6e68f429def086818640dc06512989852e0e77f09ac5744796413",
       "ciAccepted": true,
       "installedPackageAccepted": true,
-      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1"
+      "sourceCommit": "4c4aed33c660f0ce5573cfa109b44964fddfc3a1",
+      "size": 105491780
     }
-  ]
+  ],
+  "notes": "Exact final beta.20 bytes. Canonical Linux public names normalize builder-native amd64/x86_64 labels without changing bytes. macOS verification commands bind signed, notarized, stapled DMGs and the signed/stapled apps inside updater ZIPs."
 }
