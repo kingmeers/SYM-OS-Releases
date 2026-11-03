@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.28",
+  "source": "1701e9d3133c06bcfe0433120110f377b025838a",
+  "qualificationScope": "Owner-authorized preview release. Packaged startup checks on Windows/Linux/Intel Mac, exact signed Mac containers and both-architecture native CI. This is not full fleet or every-platform installed-upgrade acceptance.",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.28-macos-x64.dmg",
+      "sha256": "5bba115466316fe906b315e91fa710cb1f245e99d9675c81ade6bf9e5a338582",
+      "size": 161843885,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign --verify --deep --strict; helper team requirements; stapler validate; spctl assess; final DMG/ZIP extraction verification",
+      "notarizationSubmission": "deb7820e-8f0d-4de2-be21-bce9b2837cbd"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.28-macos-x64.zip",
+      "sha256": "548240b30e795c6818f65c01d647346e15f354bda4111f3ddeb024debafe9141",
+      "size": 164790972,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign --verify --deep --strict; helper team requirements; stapler validate; spctl assess; final DMG/ZIP extraction verification",
+      "notarizationSubmission": "d9ba26f8-97f6-4259-ace0-d85396a0859d"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.28-macos-arm64.dmg",
+      "sha256": "60baed02732aa048f5959ee0648006abccf78c299269b1490815cc50db48ce06",
+      "size": 155788831,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign --verify --deep --strict; helper team requirements; stapler validate; spctl assess; final DMG/ZIP extraction verification",
+      "notarizationSubmission": "275d8550-709c-49b7-b396-ceeb9206acc8"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.28-macos-arm64.zip",
+      "sha256": "dea38cf8c0cc2c013cf449323ae59a78b3f34212dc2cc0846e50137d2fd56984",
+      "size": 158540308,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign --verify --deep --strict; helper team requirements; stapler validate; spctl assess; final DMG/ZIP extraction verification",
+      "notarizationSubmission": "46e72fa0-0969-42be-b184-88d70faf05e3"
+    }
+  ],
+  "regressionTestsPassed": 74,
+  "sourceChecks": "https://github.com/kingmeers/sym-bridge/pull/52/checks",
+  "linuxAutomaticUpgrade": {
+    "automaticInstall": true,
+    "installButtonInvocations": 0,
+    "encryptedStateRetained": true,
+    "settingsRetained": true,
+    "qaSuccessorNotPublished": true
+  },
+  "debianFreshInstallStartupPassed": true,
+  "windowsFinalInstallerPayloadMatchesTestedRuntime": true,
+  "sourceMerge": "4daf408bd0bca5228f2d374472869ecca3b470ec",
+  "windowsAuthenticodeSigned": false,
+  "stablePromotionAuthorized": false,
+  "limitations": [
+    "Windows NSIS remains unsigned preview.",
+    "Final ARM64 package has static signature/notarization/container verification; native runtime CI passed on ARM64, but this Intel Mac cannot run the ARM64 installer.",
+    "New beta.28 automatic installed-upgrade acceptance exercised Linux AppImage; Windows/macOS installed upgrade cycles and Debian administrator authorization are not newly qualified in this run.",
+    "Live customer support and Outlook acceptance was on beta.27; beta.28 live customer acceptance remains pending."
+  ]
+}
