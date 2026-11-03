@@ -9,6 +9,63 @@
   },
   "releases": [
     {
+      "version": "0.5.0-beta.30",
+      "tag": "v0.5.0-beta.30",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.30",
+      "source_commit": "813a90863cd647b2bfab889b57468e6003979acb",
+      "distribution": "manual-download-preview",
+      "notes": "Codex and Claude local agent SDK/helper and connection flow; canonical task session transport; Windows first-start credential durability. Signed/notarized Intel Mac, unsigned Windows preview. No ARM build, automatic inbox injection or default cloud MCP discovery. Existing recommended versions and updater feeds unchanged.",
+      "platforms": {
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.30-macos-x64.dmg",
+          "download_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.30/Sym-0.5.0-beta.30-macos-x64.dmg",
+          "sha256": "0383e6f29e54153928c1c78799ef3efba46a7dc139d9117610ac2c3e72675cf4",
+          "size_bytes": 311268282,
+          "source_commit": "813a90863cd647b2bfab889b57468e6003979acb",
+          "bundled_private_network": true,
+          "automatic_updates": false,
+          "format": "dmg",
+          "status": "manual-preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.30-windows-x64.exe",
+          "download_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.30/Sym-Setup-0.5.0-beta.30-windows-x64.exe",
+          "sha256": "cd7a32ad944665a5569e9ded35e336cd64f210251c16d5dcede5dd60bea4d560",
+          "size_bytes": 338335561,
+          "source_commit": "813a90863cd647b2bfab889b57468e6003979acb",
+          "bundled_private_network": true,
+          "automatic_updates": false,
+          "format": "exe",
+          "status": "manual-preview-qualified-with-live-limitations"
+        },
+        "linux-x64": {
+          "filename": "Sym-0.5.0-beta.30-linux-x64.AppImage",
+          "download_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.30/Sym-0.5.0-beta.30-linux-x64.AppImage",
+          "sha256": "6aadf7e0e34d151083b8e824c756851d1b9cbefd8ab44257d1f14778ac9f6737",
+          "size_bytes": 336001529,
+          "source_commit": "813a90863cd647b2bfab889b57468e6003979acb",
+          "bundled_private_network": true,
+          "automatic_updates": false,
+          "format": "AppImage",
+          "status": "manual-preview-qualified-with-live-limitations",
+          "debian": {
+            "filename": "Sym-0.5.0-beta.30-linux-x64.deb",
+            "download_url": "https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.30/Sym-0.5.0-beta.30-linux-x64.deb",
+            "sha256": "592987bbca4ab87e4e5f59e76ae464ce25c9e877ab32016312491c526cdfa8a6",
+            "size_bytes": 270213268,
+            "source_commit": "813a90863cd647b2bfab889b57468e6003979acb",
+            "bundled_private_network": true,
+            "automatic_updates": false,
+            "format": "deb",
+            "status": "manual-preview-qualified-with-live-limitations"
+          }
+        }
+      }
+    },
+    {
       "version": "0.5.0-beta.28",
       "tag": "v0.5.0-beta.28",
       "channel": "preview",

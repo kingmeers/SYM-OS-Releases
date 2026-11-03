@@ -38,9 +38,15 @@ For each selected version, commit its finalized `release-approvals/<version>.jso
 
 The workflow uses a read-only publisher deploy key and bucket-scoped R2 credentials in the main/tag-restricted `sym-publisher-preview` environment. It does not promote stable releases, enable unfinished Computer Control, change DNS, or change installed updater feeds. Original GitHub assets and historical download URLs are retained.
 
-## Current releases
+## Preview releases
 
-**[v0.5.0-beta.11 — v17 browser bookmarks](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.11)** is the current preview for Linux, both Mac architectures and Windows. This supplies the companion transport required by Chrome extension v0.1.17 and preserves the shipped embedded-networking fixes. No second networking installation/login is needed.
+**[v0.5.0-beta.30 — local Codex and Claude agents](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.30)** is available as a manual-download preview for Linux x64, Intel Mac and Windows x64. Native provider connections and installer lifecycle checks passed on these targets; the Intel Mac packages are signed/notarized, and Windows remains unsigned. The backend/gateway are deployed and an installed Windows helper read a real canonical task through production. Claude UI polish is next. No beta.30 Apple Silicon build, automatic inbox injection or default cloud MCP discovery. [Verification](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.30/RELEASE-VERIFICATION.md) · [Checksums](https://github.com/kingmeers/SYM-OS-Releases/releases/download/v0.5.0-beta.30/SHA256SUMS.txt).
+
+Existing recommended preview selections remain beta.28. This manual release does not advance first-party channel pointers or installed updater feeds.
+
+### Historical v0.5.0-beta.11 release
+
+**[v0.5.0-beta.11 — v17 browser bookmarks](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.11)** was released for Linux, both Mac architectures and Windows. This supplies the companion transport required by Chrome extension v0.1.17 and preserves the shipped embedded-networking fixes. No second networking installation/login is needed.
 
 | Platform | Download |
 | --- | --- |
