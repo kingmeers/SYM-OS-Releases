@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.32",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.32-macos-x64.dmg",
+      "sha256": "437f330072a3ca7bb1084f64349718372a77fd94b4b3d997884f2f8052590f86",
+      "size": 311394071,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "915cb539-a489-467d-a649-b75616f62c5e"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.32-macos-x64.zip",
+      "sha256": "69d737f046a8d732b44fcc04234c946159e0c0fe63b25f08f60f11c87ea8799c",
+      "size": 314597348,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "ef65464e-11f8-4ef3-b405-6244523e0f73"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.32-macos-arm64.dmg",
+      "sha256": "72ed2655d39139b1f07ef3542bde61177c57a520c60497ad1814db4beb4f12db",
+      "size": 304296171,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "9614c171-a6e3-4360-b73c-1c6331365be4"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.32-macos-arm64.zip",
+      "sha256": "64c748904fa690678080d15bd4e5824270ad89584a951f0ccb751e3a65581a49",
+      "size": 307257751,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "8c23b5d8-d805-4148-93c4-fb5ce2758484"
+    }
+  ],
+  "qualificationScope": "Owner-authorized preview; existing native login acceptance plus ARM exact signed package acceptance. No claim of every customer automatically upgraded.",
+  "armNativeRun": "https://github.com/kingmeers/sym-bridge/actions/runs/41745883098",
+  "armSignedNativeRun": "https://github.com/kingmeers/sym-bridge/actions/runs/41747947147"
+}
