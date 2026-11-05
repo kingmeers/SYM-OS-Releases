@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.33",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.33-macos-x64.dmg",
+      "sha256": "0e3e0431cdf756067b8c46c4b1c6582bb7c75a518159332975c499439d420a9f",
+      "size": 311407002,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "fe180ebd-a66b-4a4f-a6c2-a5c818224d05"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.33-macos-x64.zip",
+      "sha256": "b40be1c7dac7c51c1d97d8b6e260b3d7036c720cecf84eb560ae3c60fe54dae7",
+      "size": 314597487,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "14cd4951-c646-4df7-a3bf-b16433c8b494"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.33-macos-arm64.dmg",
+      "sha256": "b1840668d895e0357720c083a8f70681f2c2b5bc7ff5274c4d4e4eed4800897b",
+      "size": 305327684,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "206df818-6c18-40be-97bc-174eb0a57e0a"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.33-macos-arm64.zip",
+      "sha256": "bd9c3e3d394220be0ba8990892c50113cbba8cea599a376b2e41f65684b52188",
+      "size": 308369460,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "9e739a0f-3399-416d-a6e3-a67ecb064e97"
+    }
+  ],
+  "qualificationScope": "Owner-authorized preview; native package plugin UI acceptance. No fresh provider login or universal automatic-upgrade claim.",
+  "nativeProof": {
+    "version": "0.5.0-beta.33",
+    "runtimeSource": "07c8c2805025e2b8469cb4e3ccf46236199b9eac",
+    "policyWorkflow": "https://github.com/kingmeers/sym-bridge/actions/runs/42035488154",
+    "linuxAcceptanceWorkflow": "https://github.com/kingmeers/sym-bridge/actions/runs/42038730030",
+    "linuxBuildSource": "9758448adf3aecaee76962ac3d13db93ea625cf5",
+    "platforms": {
+      "windows-x64": {
+        "pluginUI": {
+          "version": "0.5.0-beta.33",
+          "finalPlugins": [
+            {
+              "id": "codex",
+              "enabled": true,
+              "status": "connect_required"
+            },
+            {
+              "id": "claude",
+              "enabled": true,
+              "status": "checking"
+            }
+          ],
+          "defaultOn": true,
+          "confirmedTurnOn": [
+            "codex",
+            "claude"
+          ],
+          "providerLoginPerformed": false,
+          "isolatedSymProfile": true,
+          "initial": [
+            {
+              "id": "codex",
+              "enabled": true,
+              "status": "connect_required",
+              "installed": true,
+              "authenticated": true
+            },
+            {
+              "id": "claude",
+              "enabled": true,
+              "status": "connect_required",
+              "installed": true,
+              "authenticated": true
+            }
+          ]
+        }
+      },
+      "macos-x64": {
+        "pluginUI": {
+          "version": "0.5.0-beta.33",
+          "finalPlugins": [
+            {
+              "id": "codex",
+              "enabled": true,
+              "status": "connect_required"
+            },
+            {
+              "id": "claude",
+              "enabled": true,
+              "status": "checking"
+            }
+          ],
+          "defaultOn": true,
+          "confirmedTurnOn": [
+            "codex",
+            "claude"
+          ],
+          "providerLoginPerformed": false,
+          "isolatedSymProfile": true,
+          "initial": [
+            {
+              "id": "codex",
+              "enabled": true,
+              "status": "connect_required",
+              "installed": true,
+              "authenticated": true
+            },
+            {
+              "id": "claude",
+              "enabled": true,
+              "status": "connect_required",
+              "installed": true,
+              "authenticated": true
+            }
+          ]
+        }
+      },
+      "macos-arm64": {
+        "pluginUI": {
+          "version": "0.5.0-beta.33",
+          "finalPlugins": [
+            {
+              "id": "codex",
+              "enabled": true,
+              "status": "ready"
+            },
+            {
+              "id": "claude",
+              "enabled": true,
+              "status": "checking"
+            }
+          ],
+          "defaultOn": true,
+          "confirmedTurnOn": [
+            "codex",
+            "claude"
+          ],
+          "providerLoginPerformed": false,
+          "isolatedSymProfile": true,
+          "initial": [
+            {
+              "id": "codex",
+              "enabled": true,
+              "status": "ready",
+              "installed": true,
+              "authenticated": true
+            },
+            {
+              "id": "claude",
+              "enabled": true,
+              "status": "ready",
+              "installed": true,
+              "authenticated": true
+            }
+          ]
+        },
+        "providerReadyAfterToggle": [
+          {
+            "id": "codex",
+            "status": "ready",
+            "enabled": true,
+            "authenticated": true,
+            "installed": true
+          },
+          {
+            "id": "claude",
+            "status": "ready",
+            "enabled": true,
+            "authenticated": true,
+            "installed": true
+          }
+        ],
+        "enabledPersistedAcrossRestart": true
+      },
+      "linux-x64": {
+        "pluginUI": {
+          "version": "0.5.0-beta.33",
+          "finalPlugins": [
+            {
+              "id": "codex",
+              "enabled": true,
+              "status": "connect_required"
+            },
+            {
+              "id": "claude",
+              "enabled": true,
+              "status": "checking"
+            }
+          ],
+          "defaultOn": true,
+          "confirmedTurnOn": [
+            "codex",
+            "claude"
+          ],
+          "providerLoginPerformed": false,
+          "isolatedSymProfile": true,
+          "initial": [
+            {
+              "id": "codex",
+              "enabled": true,
+              "status": "connect_required",
+              "installed": true,
+              "authenticated": true
+            },
+            {
+              "id": "claude",
+              "enabled": true,
+              "status": "connect_required",
+              "installed": true,
+              "authenticated": true
+            }
+          ]
+        },
+        "AppImage": {
+          "nativeStartup": true,
+          "nativeListener": true,
+          "installedDocs": true,
+          "fixtureScreenStates": 50,
+          "dockIdentity": {
+            "wmClass": "WM_CLASS(STRING) = \"symposium-bridge\", \"symposium-bridge\"",
+            "icon": true,
+            "launcher": true
+          },
+          "fixtureStates": true,
+          "liveAccountTest": false
+        },
+        "Debian": {
+          "nativeStartup": true,
+          "nativeListener": true,
+          "installedDocs": true,
+          "fixtureScreenStates": 50,
+          "dockIdentity": {
+            "wmClass": "WM_CLASS(STRING) = \"symposium-bridge\", \"symposium-bridge\"",
+            "icon": true,
+            "launcher": true
+          },
+          "fixtureStates": true,
+          "liveAccountTest": false
+        },
+        "computer-shortcut-AppImage": {
+          "version": "0.5.0-beta.33",
+          "packaged": true,
+          "nativePreflight": {
+            "controlAvailable": false
+          },
+          "conflict": {
+            "mode": "one",
+            "buttons": [
+              "Not now",
+              "Observe",
+              "Control"
+            ],
+            "scope": "full",
+            "realShortcutStop": true,
+            "portalStopFallback": false
+          },
+          "unavailable": {
+            "mode": "all",
+            "buttons": [
+              "Not now",
+              "Observe"
+            ],
+            "scope": "read",
+            "realShortcutStop": false,
+            "portalStopFallback": false
+          },
+          "unqualified": {
+            "mode": "one",
+            "buttons": [
+              "Not now",
+              "Observe"
+            ],
+            "scope": "read",
+            "realShortcutStop": false,
+            "portalStopFallback": false
+          },
+          "portalFallback": {
+            "mode": "all",
+            "buttons": [
+              "Not now",
+              "Observe",
+              "Control"
+            ],
+            "scope": "full",
+            "realShortcutStop": false,
+            "portalStopFallback": true
+          },
+          "liveAccount": false,
+          "physicalDeviceQualification": false
+        },
+        "computer-shortcut-debian": {
+          "version": "0.5.0-beta.33",
+          "packaged": true,
+          "nativePreflight": {
+            "controlAvailable": false
+          },
+          "conflict": {
+            "mode": "one",
+            "buttons": [
+              "Not now",
+              "Observe",
+              "Control"
+            ],
+            "scope": "full",
+            "realShortcutStop": true,
+            "portalStopFallback": false
+          },
+          "unavailable": {
+            "mode": "all",
+            "buttons": [
+              "Not now",
+              "Observe"
+            ],
+            "scope": "read",
+            "realShortcutStop": false,
+            "portalStopFallback": false
+          },
+          "unqualified": {
+            "mode": "one",
+            "buttons": [
+              "Not now",
+              "Observe"
+            ],
+            "scope": "read",
+            "realShortcutStop": false,
+            "portalStopFallback": false
+          },
+          "portalFallback": {
+            "mode": "all",
+            "buttons": [
+              "Not now",
+              "Observe",
+              "Control"
+            ],
+            "scope": "full",
+            "realShortcutStop": false,
+            "portalStopFallback": true
+          },
+          "liveAccount": false,
+          "physicalDeviceQualification": false
+        },
+        "officialChromeStoreAcceptance": true,
+        "bookmarkAcceptanceChecks": 42
+      }
+    },
+    "limitations": [
+      "Windows unsigned preview",
+      "No fresh provider browser sign-in or model requests in this patch qualification",
+      "No new end-to-end automatic upgrade-cycle qualification on Windows or Mac",
+      "Linux native acceptance covers Ubuntu 24.04/X11; not every distribution or Wayland desktop",
+      "Computer control remains subject to its existing qualification gates",
+      "Installed-client adoption is not asserted"
+    ]
+  }
+}
