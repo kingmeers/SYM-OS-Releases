@@ -40,11 +40,11 @@ The workflow uses a read-only publisher deploy key and bucket-scoped R2 credenti
 
 ## Preview releases
 
-**[v0.5.0-beta.32](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.32)** is the selected preview for Linux x64, Windows x64, Intel Mac and Apple Silicon Mac. It adds Codex/Claude Plugins connection flows, the local agent SDK and backend-enabled Sym Collaboration routing, plus the flat Sym logo. Both Mac packages are signed and notarized. Windows remains an unsigned preview.
+**[v0.5.0-beta.33](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.33)** is the selected preview for Linux x64, Windows x64, Intel Mac and Apple Silicon Mac. It fixes confirmed plugin enablement being overwritten by a stale renderer snapshot, and detects Codex bundled inside ChatGPT.app on macOS. Both Mac packages are signed and notarized. Windows remains an unsigned preview.
 
 The approved catalog promotes the first-party download page, current installer aliases and exact-byte updater feeds together. Publication receipts verify full downloads, HEAD, range/resume and hashes before committing the preview selection. This does not claim every installed client has already upgraded.
 
-Provider browser sign-in was verified on Linux, Windows and Intel Mac. ARM qualification covers native packaged startup, Plugins rendering, embedded networking/crash recovery and signed-container trust; it does not claim a real user provider sign-in on the hosted runner. Inbox messaging is pull-based, without automatic session injection. See the [verification notes](https://downloads.sym.so/latest/verification.md) and [checksums](https://downloads.sym.so/latest/checksums.txt).
+The release retains beta.32's Codex/Claude connection flows, agent SDK, Sym Collaboration routing and flat Sym logo. Native plugin checks use isolated Sym profiles and existing provider authentication; no fresh provider browser sign-in was performed for this patch. Existing automatic-update behavior is unchanged; the full native upgrade cycle is not newly qualified on every OS. Inbox messaging is pull-based, without automatic session injection. See the [verification notes](https://downloads.sym.so/latest/verification.md) and [checksums](https://downloads.sym.so/latest/checksums.txt).
 
 Earlier manual beta.30 and all historical release files remain available.
 

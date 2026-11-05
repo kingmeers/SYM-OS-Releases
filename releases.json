@@ -3,11 +3,77 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.32",
+    "preview": "0.5.0-beta.33",
     "stable": null,
-    "windows_preview": "0.5.0-beta.32"
+    "windows_preview": "0.5.0-beta.33"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.33",
+      "tag": "v0.5.0-beta.33",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.33/RELEASE-VERIFICATION.md",
+      "source_commit": "07c8c2805025e2b8469cb4e3ccf46236199b9eac",
+      "platforms": {
+        "linux-x64": {
+          "filename": "Sym-0.5.0-beta.33-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.33/Sym-0.5.0-beta.33-linux-x86_64.AppImage",
+          "sha256": "6003969b195c2e882f182fd72659960fe9b4f2c06b02dc7cd81b5c398fc15686",
+          "size_bytes": 486464811,
+          "source_commit": "9758448adf3aecaee76962ac3d13db93ea625cf5",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations",
+          "debian": {
+            "filename": "Sym-0.5.0-beta.33-linux-amd64.deb",
+            "download_url": "https://downloads.sym.so/releases/0.5.0-beta.33/Sym-0.5.0-beta.33-linux-amd64.deb",
+            "sha256": "50737df842fe58e9f8f4aa6583c3bbe3c13c0b4ed3584b7056d216a9c9d2e899",
+            "size_bytes": 391145612,
+            "source_commit": "9758448adf3aecaee76962ac3d13db93ea625cf5",
+            "bundled_private_network": true,
+            "automatic_updates": true,
+            "format": "deb",
+            "status": "preview-qualified-with-live-limitations"
+          }
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.33-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.33/Sym-Setup-0.5.0-beta.33-windows-x64.exe",
+          "sha256": "f0968edf3ec000c0393b0b11fed68f684018bff687fdd7cfa96df3147ee2cf8b",
+          "size_bytes": 338377252,
+          "source_commit": "07c8c2805025e2b8469cb4e3ccf46236199b9eac",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.33-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.33/Sym-0.5.0-beta.33-macos-x64.dmg",
+          "sha256": "0e3e0431cdf756067b8c46c4b1c6582bb7c75a518159332975c499439d420a9f",
+          "size_bytes": 311407002,
+          "source_commit": "07c8c2805025e2b8469cb4e3ccf46236199b9eac",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.33-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.33/Sym-0.5.0-beta.33-macos-arm64.dmg",
+          "sha256": "b1840668d895e0357720c083a8f70681f2c2b5bc7ff5274c4d4e4eed4800897b",
+          "size_bytes": 305327684,
+          "source_commit": "07c8c2805025e2b8469cb4e3ccf46236199b9eac",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      }
+    },
     {
       "version": "0.5.0-beta.32",
       "tag": "v0.5.0-beta.32",
