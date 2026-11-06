@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.34",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.34-macos-x64.dmg",
+      "sha256": "983faaa88b6ec7e164855d8709a3e412c0655b4188388319364414bbf67ea714",
+      "size": 311401655,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "9c2b1ad0-8642-4af6-9316-2e2b764a4864"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.34-macos-x64.zip",
+      "sha256": "fc1a5643cd3a81d14454dd795b4f7d8fc886df62cdd37b2e28f59c3ea2b13470",
+      "size": 314605530,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "eec6da13-c99c-4d47-bdee-678ab7a35088"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.34-macos-arm64.dmg",
+      "sha256": "092b205bd1f97dc174ac141aef6ee0b6e813305fd45ba787d8aa8124b8401031",
+      "size": 305345567,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "bd0c223c-8f27-425e-b8f3-62f5854b5857"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.34-macos-arm64.zip",
+      "sha256": "a36bcda3615ca5d7913253f322c8f7b85028f1757fd3a4b2d421bd0678c06691",
+      "size": 308377451,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; DMG/ZIP container verification",
+      "notarizationSubmission": "66c340ae-435b-47d7-8434-6ff06be3eb85"
+    }
+  ],
+  "qualificationScope": "Native packaged task operations with isolated fixtures; exact platform and artifact checks in the accompanying evidence.",
+  "nativeProof": {
+    "darwin-x64": {
+      "version": "0.5.0-beta.34",
+      "platform": "darwin",
+      "arch": "x64",
+      "verified": [
+        "fresh preview",
+        "human edit conflict",
+        "rename readback",
+        "receipt before image",
+        "permission denial",
+        "250/251 boundary"
+      ],
+      "fixture": true,
+      "dmgSha256": "983faaa88b6ec7e164855d8709a3e412c0655b4188388319364414bbf67ea714",
+      "scope": "Executed exact signed, notarized and stapled DMG mounted read-only on Intel Mac with fixture providers."
+    },
+    "darwin-arm64": {
+      "version": "0.5.0-beta.34",
+      "platform": "darwin",
+      "arch": "arm64",
+      "verified": [
+        "fresh preview",
+        "human edit conflict",
+        "rename readback",
+        "receipt before image",
+        "permission denial",
+        "250/251 boundary"
+      ],
+      "fixture": true,
+      "dmgSha256": "092b205bd1f97dc174ac141aef6ee0b6e813305fd45ba787d8aa8124b8401031",
+      "scope": "Executed the exact signed, notarized and stapled DMG mounted read-only on Apple Silicon, with fixture providers."
+    },
+    "linux-x64": {
+      "version": "0.5.0-beta.34",
+      "platform": "linux",
+      "arch": "x64",
+      "verified": [
+        "fresh preview",
+        "human edit conflict",
+        "rename readback",
+        "receipt before image",
+        "permission denial",
+        "250/251 boundary"
+      ],
+      "fixture": true
+    },
+    "win32-x64": {
+      "version": "0.5.0-beta.34",
+      "platform": "win32",
+      "arch": "x64",
+      "verified": [
+        "fresh preview",
+        "human edit conflict",
+        "rename readback",
+        "receipt before image",
+        "permission denial",
+        "250/251 boundary"
+      ],
+      "fixture": true,
+      "installerPayloadSha256": "6d5fbdacad777d0b324875176f14fda8c43f9d27cee2ff0b240619a51ac70305",
+      "scope": "Extracted NSIS payload matches runtime tested on Windows; no in-place upgrade or signing claim."
+    }
+  }
+}

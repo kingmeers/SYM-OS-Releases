@@ -40,13 +40,11 @@ The workflow uses a read-only publisher deploy key and bucket-scoped R2 credenti
 
 ## Preview releases
 
-**[v0.5.0-beta.33](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.33)** is the selected preview for Linux x64, Windows x64, Intel Mac and Apple Silicon Mac. It fixes confirmed plugin enablement being overwritten by a stale renderer snapshot, and detects Codex bundled inside ChatGPT.app on macOS. Both Mac packages are signed and notarized. Windows remains an unsigned preview.
+[v0.5.0-beta.34](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.34) adds task-linked handoffs and guarded chat-title updates through the Sym Collaboration API. The preview includes Linux x64 (AppImage and Debian), Windows x64 (unsigned), and signed, notarized installers for Intel and Apple Silicon Macs.
 
-The approved catalog promotes the first-party download page, current installer aliases and exact-byte updater feeds together. Publication receipts verify full downloads, HEAD, range/resume and hashes before committing the preview selection. This does not claim every installed client has already upgraded.
+The packaged app was exercised on each platform with synthetic sessions. Checks covered handoff permission, the 250-character limit, and preserving a title someone edited after preview. See the [verification notes](https://downloads.sym.so/releases/0.5.0-beta.34/RELEASE-VERIFICATION.md) and [package checksums](https://downloads.sym.so/releases/0.5.0-beta.34/SHA256SUMS-FIRST-PARTY.txt).
 
-The release retains beta.32's Codex/Claude connection flows, agent SDK, Sym Collaboration routing and flat Sym logo. Native plugin checks use isolated Sym profiles and existing provider authentication; no fresh provider browser sign-in was performed for this patch. Existing automatic-update behavior is unchanged; the full native upgrade cycle is not newly qualified on every OS. Inbox messaging is pull-based, without automatic session injection. See the [verification notes](https://downloads.sym.so/latest/verification.md) and [checksums](https://downloads.sym.so/latest/checksums.txt).
-
-Earlier manual beta.30 and all historical release files remain available.
+The [previous beta.33 release](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.33) addressed plugin enablement and detection of Codex bundled with ChatGPT on macOS.
 
 ### Historical v0.5.0-beta.11 release
 
