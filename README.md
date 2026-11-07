@@ -40,7 +40,9 @@ The workflow uses a read-only publisher deploy key and bucket-scoped R2 credenti
 
 ## Preview releases
 
-[v0.5.0-beta.34](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.34) adds task-linked handoffs and guarded chat-title updates through the Sym Collaboration API. The preview includes Linux x64 (AppImage and Debian), Windows x64 (unsigned), and signed, notarized installers for Intel and Apple Silicon Macs.
+Linux x64 preview: [beta.35](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.35). Windows and both Mac architectures remain on beta.34.
+
+[v0.5.0-beta.34](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.34) adds task-linked handoffs and guarded chat-title updates through the Sym Collaboration API. That release included Linux x64 (AppImage and Debian), Windows x64 (unsigned), and signed, notarized installers for Intel and Apple Silicon Macs.
 
 The packaged app was exercised on each platform with synthetic sessions. Checks covered handoff permission, the 250-character limit, and preserving a title someone edited after preview. See the [verification notes](https://downloads.sym.so/releases/0.5.0-beta.34/RELEASE-VERIFICATION.md) and [package checksums](https://downloads.sym.so/releases/0.5.0-beta.34/SHA256SUMS-FIRST-PARTY.txt).
 

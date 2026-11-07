@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "repository": "kingmeers/SYM-OS-Releases",
+  "tag": "v0.5.0-beta.35",
+  "releaseId": 437241663,
+  "revision": "475fef99f23331bce2b3bea686498d1bcab4e314",
+  "finalized": true,
+  "release": {
+    "schemaVersion": 1,
+    "kind": "sym.release",
+    "product": "Sym",
+    "version": "0.5.0-beta.35",
+    "eligibility": [
+      "preview"
+    ],
+    "scope": [
+      "linux-x64.deb",
+      "linux-x64.AppImage"
+    ],
+    "updates": [
+      {
+        "target": "linux-x64.deb",
+        "mode": "electron",
+        "feed": "beta-deb-linux.yml"
+      },
+      {
+        "target": "linux-x64.AppImage",
+        "mode": "electron",
+        "feed": "beta-AppImage-linux.yml"
+      }
+    ],
+    "notes": "The Linux beta.35 preview adds a manual recovery action when the Debian updater cannot obtain system authorization. It checks the cached installer checksum before opening it and reports an unacknowledged launch without replaying it. No operating-system permission policy is changed. Windows and macOS remain on beta.34.",
+    "assets": [
+      {
+        "version": "0.5.0-beta.35",
+        "target": "linux-x64.AppImage",
+        "role": "feed",
+        "os": "linux",
+        "arch": "x64",
+        "format": "yml",
+        "filename": "beta-AppImage-linux.yml",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.35/beta-AppImage-linux.yml",
+        "sha256": "eeb41ad403b9cdde21d16f88b2c28e993628b3b974d1549f14b02225d2b3e65e",
+        "size": 504,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Native linux x64 preview",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.35",
+        "target": "linux-x64.deb",
+        "role": "feed",
+        "os": "linux",
+        "arch": "x64",
+        "format": "yml",
+        "filename": "beta-deb-linux.yml",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.35/beta-deb-linux.yml",
+        "sha256": "7b18af5d02e10a68b0f11060d2c186859627f0c757ec120a345f1837954aeb25",
+        "size": 492,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Native linux x64 preview",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.35",
+        "target": "shared",
+        "role": "verification",
+        "os": "shared",
+        "arch": "none",
+        "format": "json",
+        "filename": "native-verification.json",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.35/native-verification.json",
+        "sha256": "272e95f229f3f5bbf3c81cbeefb9610362971a363b2e0bf49d9408aafbe61c74",
+        "size": 1192,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.35",
+        "target": "shared",
+        "role": "verification",
+        "os": "shared",
+        "arch": "none",
+        "format": "json",
+        "filename": "release-manifest.json",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.35/release-manifest.json",
+        "sha256": "dd2dfbaaee25d3736f6fc40fa0b3780cbc025d8777f414cd0f0aa0a7d627e401",
+        "size": 535,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.35",
+        "target": "shared",
+        "role": "verification",
+        "os": "shared",
+        "arch": "none",
+        "format": "md",
+        "filename": "RELEASE-VERIFICATION.md",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.35/RELEASE-VERIFICATION.md",
+        "sha256": "3adecda50f0637ffe5ce519a1c1d2bc030e1455f9c3967b802c474cd7640514b",
+        "size": 815,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.35",
+        "target": "shared",
+        "role": "checksum",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "filename": "SHA256SUMS-FIRST-PARTY.txt",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.35/SHA256SUMS-FIRST-PARTY.txt",
+        "sha256": "4cd0fd68c3a5ced2e5436e151aa2392a7e6e2b97b78eb30d85b69aa7e1283192",
+        "size": 206,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.35",
+        "target": "linux-x64.deb",
+        "role": "installer",
+        "os": "linux",
+        "arch": "x64",
+        "format": "deb",
+        "filename": "Sym-0.5.0-beta.35-linux-amd64.deb",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.35/Sym-0.5.0-beta.35-linux-amd64.deb",
+        "sha256": "2a9068ff71d33ce1ab00292bacbfc56bf247087e80abed9dc060ec007dcd4477",
+        "size": 391209848,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Native linux x64 preview",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.35",
+        "target": "linux-x64.AppImage",
+        "role": "installer",
+        "os": "linux",
+        "arch": "x64",
+        "format": "AppImage",
+        "filename": "Sym-0.5.0-beta.35-linux-x86_64.AppImage",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.35/Sym-0.5.0-beta.35-linux-x86_64.AppImage",
+        "sha256": "e0a84c7b4e11b01b48f4849d37cd3a77d8f7e407371aa30a55e6fe3daf284ac4",
+        "size": 486546651,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Native linux x64 preview",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.35",
+        "target": "shared",
+        "role": "notice",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "filename": "THIRD-PARTY-NOTICES.txt",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.35/THIRD-PARTY-NOTICES.txt",
+        "sha256": "b0a3ddbed6b56a8abd6919ae848f1c39d640b41a05ecfab409cc031caa154098",
+        "size": 1663828,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      }
+    ]
+  },
+  "approvedAssets": [
+    {
+      "name": "beta-AppImage-linux.yml",
+      "id": 719215204,
+      "size": 504,
+      "sha256": "eeb41ad403b9cdde21d16f88b2c28e993628b3b974d1549f14b02225d2b3e65e"
+    },
+    {
+      "name": "beta-deb-linux.yml",
+      "id": 719215206,
+      "size": 492,
+      "sha256": "7b18af5d02e10a68b0f11060d2c186859627f0c757ec120a345f1837954aeb25"
+    },
+    {
+      "name": "native-verification.json",
+      "id": 719215247,
+      "size": 1192,
+      "sha256": "272e95f229f3f5bbf3c81cbeefb9610362971a363b2e0bf49d9408aafbe61c74"
+    },
+    {
+      "name": "release-manifest.json",
+      "id": 719215256,
+      "size": 535,
+      "sha256": "dd2dfbaaee25d3736f6fc40fa0b3780cbc025d8777f414cd0f0aa0a7d627e401"
+    },
+    {
+      "name": "RELEASE-VERIFICATION.md",
+      "id": 719215164,
+      "size": 815,
+      "sha256": "3adecda50f0637ffe5ce519a1c1d2bc030e1455f9c3967b802c474cd7640514b"
+    },
+    {
+      "name": "SHA256SUMS-FIRST-PARTY.txt",
+      "id": 719215167,
+      "size": 206,
+      "sha256": "4cd0fd68c3a5ced2e5436e151aa2392a7e6e2b97b78eb30d85b69aa7e1283192"
+    },
+    {
+      "name": "Sym-0.5.0-beta.35-linux-amd64.deb",
+      "id": 719215165,
+      "size": 391209848,
+      "sha256": "2a9068ff71d33ce1ab00292bacbfc56bf247087e80abed9dc060ec007dcd4477"
+    },
+    {
+      "name": "Sym-0.5.0-beta.35-linux-x86_64.AppImage",
+      "id": 719215166,
+      "size": 486546651,
+      "sha256": "e0a84c7b4e11b01b48f4849d37cd3a77d8f7e407371aa30a55e6fe3daf284ac4"
+    },
+    {
+      "name": "THIRD-PARTY-NOTICES.txt",
+      "id": 719215163,
+      "size": 1663828,
+      "sha256": "b0a3ddbed6b56a8abd6919ae848f1c39d640b41a05ecfab409cc031caa154098"
+    }
+  ],
+  "excludedAssets": [],
+  "nativeAcceptance": true,
+  "releaseSignoff": true,
+  "evidence": [
+    {
+      "file": "0.5.0-beta.35-preview.json",
+      "sha256": "5cf2f86ef46498e838c09879092b9e7ebc38a93bd04a265ae793c786306fa6d1"
+    }
+  ]
+}
