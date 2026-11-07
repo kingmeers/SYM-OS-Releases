@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.35",
+  "artifacts": [],
+  "qualificationScope": "Linux-only native packaged and installed automatic-upgrade acceptance. No macOS or Windows changes.",
+  "nativeProof": {
+    "source": "54c2f5274f0461cc2a70568108c063698109639c",
+    "build": "42319198264",
+    "upgradeTest": "42323000444",
+    "platform": "Linux x64",
+    "artifacts": {
+      "deb": {
+        "artifact": "Sym-0.5.0-beta.35-linux-amd64.deb",
+        "sha256": "2a9068ff71d33ce1ab00292bacbfc56bf247087e80abed9dc060ec007dcd4477",
+        "sha512": "55xB1faNRhk91LwVVBrRPW7T54gUWnJZ3kGo8IGRbCcjSYnPu8Sbw121XSONqZurus7aQIdB18FMJ9ewWKi5/Q==",
+        "sourceVersion": "0.5.0-beta.34",
+        "installedVersion": "0.5.0-beta.35",
+        "automaticRelaunch": true,
+        "encryptedFixtureRetained": true,
+        "settingsRetained": true,
+        "scope": "disposable Linux host, fixture data"
+      },
+      "AppImage": {
+        "artifact": "Sym-0.5.0-beta.35-linux-x86_64.AppImage",
+        "sha256": "e0a84c7b4e11b01b48f4849d37cd3a77d8f7e407371aa30a55e6fe3daf284ac4",
+        "sha512": "bNEtcUxH+3P74FHTDvQH8G0ctVPAfIhai1OAOiytab7cznWPzR3T9gOT2ReLSWzVgi2p/SOtJjfKb6i2umJu1A==",
+        "sourceVersion": "0.5.0-beta.34",
+        "installedVersion": "0.5.0-beta.35",
+        "automaticRelaunch": true,
+        "encryptedFixtureRetained": true,
+        "settingsRetained": true,
+        "scope": "disposable Linux host, fixture data"
+      }
+    }
+  }
+}

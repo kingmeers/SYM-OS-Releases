@@ -3,11 +3,44 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.34",
+    "preview": "0.5.0-beta.35",
     "stable": null,
     "windows_preview": "0.5.0-beta.34"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.35",
+      "tag": "v0.5.0-beta.35",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.35/RELEASE-VERIFICATION.md",
+      "source_commit": "54c2f5274f0461cc2a70568108c063698109639c",
+      "platforms": {
+        "linux-x64": {
+          "filename": "Sym-0.5.0-beta.35-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.35/Sym-0.5.0-beta.35-linux-x86_64.AppImage",
+          "sha256": "e0a84c7b4e11b01b48f4849d37cd3a77d8f7e407371aa30a55e6fe3daf284ac4",
+          "size_bytes": 486546651,
+          "source_commit": "54c2f5274f0461cc2a70568108c063698109639c",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "linux-preview-native-and-installed-upgrade-verified",
+          "debian": {
+            "filename": "Sym-0.5.0-beta.35-linux-amd64.deb",
+            "download_url": "https://downloads.sym.so/releases/0.5.0-beta.35/Sym-0.5.0-beta.35-linux-amd64.deb",
+            "sha256": "2a9068ff71d33ce1ab00292bacbfc56bf247087e80abed9dc060ec007dcd4477",
+            "size_bytes": 391209848,
+            "source_commit": "54c2f5274f0461cc2a70568108c063698109639c",
+            "bundled_private_network": true,
+            "automatic_updates": true,
+            "format": "deb",
+            "status": "linux-preview-native-and-installed-upgrade-verified"
+          }
+        }
+      }
+    },
     {
       "version": "0.5.0-beta.34",
       "tag": "v0.5.0-beta.34",
