@@ -40,7 +40,9 @@ The workflow uses a read-only publisher deploy key and bucket-scoped R2 credenti
 
 ## Preview releases
 
-Linux x64 preview: [beta.35](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.35). Windows and both Mac architectures remain on beta.34.
+Current preview: [beta.36](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.36) for Windows x64, Linux x64, Intel Mac and Apple Silicon Mac. It adds the accepted Sym Plugins redesign and classic Outlook draft management, guarded individual sending and durable send receipts. Sending defaults off, with a configurable 10-minute minimum draft age by default.
+
+Windows packaged runtime, Linux AppImage/installed Debian and Intel Mac mounted-DMG checks passed. Both Mac builds are signed and notarized; Apple Silicon was cross-built on Intel and was **not native-tested**. Windows remains an unsigned preview. See [beta.36 verification](https://downloads.sym.so/releases/0.5.0-beta.36/RELEASE-VERIFICATION.md) and [checksums](https://downloads.sym.so/releases/0.5.0-beta.36/SHA256SUMS-FIRST-PARTY.txt). The separate backend Outlook release is not included in this Companion publication.
 
 [v0.5.0-beta.34](https://github.com/kingmeers/SYM-OS-Releases/releases/tag/v0.5.0-beta.34) adds task-linked handoffs and guarded chat-title updates through the Sym Collaboration API. That release included Linux x64 (AppImage and Debian), Windows x64 (unsigned), and signed, notarized installers for Intel and Apple Silicon Macs.
 

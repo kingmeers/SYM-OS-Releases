@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.36",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.36-macos-x64.dmg",
+      "sha256": "fd96565abf13c89ef610e874e06f9e29c3252438597c67cc9d2aaf6f1b6247eb",
+      "size": 311841318,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; hdiutil verify",
+      "notarizationSubmission": "66a9dea2-3380-4091-bb1e-7fa5a5bc591b"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.36-macos-x64.zip",
+      "sha256": "f9bfe5ff90ebf55536b902cdfec0d3d7f931481077180a4ea24380e3b355b27c",
+      "size": 315020659,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; hdiutil verify",
+      "notarizationSubmission": "34f76218-8e08-4c38-a375-a2f0132b69eb"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.36-macos-arm64.dmg",
+      "sha256": "2e25ace490ea1d7ece5746f682becd46a9164d5065fa41836195ee650f1b5345",
+      "size": 305760219,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; hdiutil verify",
+      "notarizationSubmission": "c2f5bd4d-9461-43fa-af8b-b2d31aff8031"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.36-macos-arm64.zip",
+      "sha256": "24cf17f456909f5bf968936ba5300895e398df396a9e28218d2d1ef5eb30417f",
+      "size": 308796269,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; hdiutil verify",
+      "notarizationSubmission": "cecae951-c75f-4e34-bfe6-86326b18811b"
+    }
+  ],
+  "qualificationScope": "Owner-authorized preview. Native Windows packaged runtime, Linux AppImage/installed Debian and Intel mounted signed DMG. ARM cross-built; no ARM native runtime acceptance.",
+  "nativeProof": {
+    "source": "1c6de8fe82704697526b658330a386d7e98b6d29",
+    "merge": "13e5cd4858ea80f92a21c361c2b17fada730f251",
+    "localLogicTests": 163,
+    "prChecks": 5,
+    "linuxWorkflow": "https://github.com/kingmeers/sym-bridge/actions/runs/43045303135",
+    "windowsOutlook": {
+      "tests": [
+        "packaged renderer IPC saves30sec policy with sending off"
+      ],
+      "realSends": 0,
+      "native": {
+        "packaged": true,
+        "version": "0.5.0-beta.36",
+        "secureStorage": true,
+        "archiveRoundTrip": true,
+        "detect": "ready",
+        "draftCreateUpdateStaleDeleteDelete": true,
+        "sendingEnabled": false
+      },
+      "archiveAfterRestart": "outcome_unknown",
+      "settingsAfterRestart": true,
+      "ok": true
+    },
+    "windowsUIScreens": 50,
+    "macIntel": {
+      "ok": true,
+      "platform": "macos-x64",
+      "source": "1c6de8fe82704697526b658330a386d7e98b6d29",
+      "mountedSignedDmg": true,
+      "armNativeTested": false
+    },
+    "armNativeTested": false,
+    "realEmailsSent": 0,
+    "limitations": [
+      "Windows unsigned preview; fresh NSIS upgrade cycle not repeated",
+      "No new end-to-end Mac auto-upgrade cycle",
+      "Linux Ubuntu24.04/X11; not every distro/Wayland desktop",
+      "Fixture account/UI states; no fresh provider sign-in",
+      "Backend Outlook PR650 not deployed by this Companion release"
+    ],
+    "linux-x64": {
+      "nativeStartup": true,
+      "screens": 50,
+      "installedDocs": true
+    },
+    "linux-x64-debian": {
+      "nativeStartup": true,
+      "screens": 50,
+      "installedDocs": true
+    }
+  }
+}
