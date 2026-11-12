@@ -73,7 +73,9 @@ jobs:
             node --input-type=module <<'NODE'
           import assert from 'node:assert/strict';
           import fs from 'node:fs/promises';
-          import { main } from '../publisher/scripts/publish.js';
+          import { promote, defaultVerifyPointer } from '../publisher/scripts/publisher.js';
+          import { publicVerify } from '../publisher/scripts/network.js';
+          import { recoverPreview } from './scripts/recover-preview.mjs';
           import { Store, credentials } from '../publisher/scripts/store.js';
           const version = process.env.RECOVERY_VERSION;
           const expected = process.env.RECOVERY_EXPECTED;
@@ -94,7 +96,7 @@ jobs:
           // It does not refresh expected state, overwrite assets, or auto-rollback.
           if (!alreadyVerified) {
             assert(prior?.value?.committed === true && prior.value.nextSha256 === expected, 'Missing matching committed-operation receipt');
-            await main(['promote', '--version', version, '--channel', 'preview', '--expected', expected, '--aliases', `release-approvals/${version}.aliases.json`, '--receipt', 'receipts/explicit-preview-recovery.json']);
+            await recoverPreview({ store, version, expected, aliases: JSON.parse(await fs.readFile(`release-approvals/${version}.aliases.json`, 'utf8')), promote, publicVerify, verifyPointer: defaultVerifyPointer });
           }
           NODE
           fi
