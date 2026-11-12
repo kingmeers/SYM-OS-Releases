@@ -1,0 +1,161 @@
+{
+  "version": "1.0.0",
+  "tag": "plugins-1.0.0",
+  "keyId": "sym-plugins-v1",
+  "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAOmHs9yNYxs5j4i1+Uw1xYGmSMnBGCYoK+PKzsfAdsxs=\n-----END PUBLIC KEY-----\n",
+  "items": [
+    {
+      "asset": "agents-darwin-arm64.json",
+      "qualification": {
+        "verified": true,
+        "sha256": "4223a546c8d2da15f2914215232cfbdd7575f7354da09129c62a66f68367aeef",
+        "platform": "darwin",
+        "arch": "arm64",
+        "hostApi": 1,
+        "checks": [
+          "agent package loads with host SDK dependency and disabled providers",
+          "signature, platform, installed file hashes and committed pointer verified"
+        ],
+        "verified_at": "2026-11-12T09:49:25.440Z",
+        "node": "v26.13.0"
+      },
+      "expectedGeneration": 0
+    },
+    {
+      "asset": "agents-darwin-x64.json",
+      "qualification": {
+        "verified": true,
+        "sha256": "0e7f7b8ef1e0cd0d6df8972ac7721909cebe938ec2eee6ef38d72fc28dcce802",
+        "platform": "darwin",
+        "arch": "x64",
+        "hostApi": 1,
+        "checks": [
+          "agent package loads with host SDK dependency and disabled providers",
+          "signature, platform, installed file hashes and committed pointer verified"
+        ],
+        "verified_at": "2026-11-12T09:48:07.254Z",
+        "node": "v22.23.2"
+      },
+      "expectedGeneration": 0
+    },
+    {
+      "asset": "agents-linux-x64.json",
+      "qualification": {
+        "verified": true,
+        "sha256": "9b8454eef7ffa0c01fec9cb413853e38ea97b108be6d5a8169e7c5ecf8754cc8",
+        "platform": "linux",
+        "arch": "x64",
+        "hostApi": 1,
+        "checks": [
+          "agent package loads with host SDK dependency and disabled providers",
+          "signature, platform, installed file hashes and committed pointer verified"
+        ],
+        "verified_at": "2026-11-12T09:47:19.112Z",
+        "node": "v22.23.1"
+      },
+      "expectedGeneration": 0
+    },
+    {
+      "asset": "agents-win32-x64.json",
+      "qualification": {
+        "verified": true,
+        "sha256": "e3bcedf203266816b16712cf2854add766a7181fa6a6448479c48503881cbab9",
+        "platform": "win32",
+        "arch": "x64",
+        "hostApi": 1,
+        "checks": [
+          "agent package loads with host SDK dependency and disabled providers",
+          "signature, platform, installed file hashes and committed pointer verified"
+        ],
+        "verified_at": "2026-11-12T09:48:21.569Z",
+        "node": "v24.15.0"
+      },
+      "expectedGeneration": 0
+    },
+    {
+      "asset": "cli-darwin-arm64.json",
+      "qualification": {
+        "verified": true,
+        "sha256": "634d37de00bee1f12535f1b311f45fe48ae7d081c1f7539e99899f606fe01ba1",
+        "platform": "darwin",
+        "arch": "arm64",
+        "hostApi": 1,
+        "checks": [
+          "disabled CLI denies loopback requests",
+          "signature, platform, installed file hashes and committed pointer verified"
+        ],
+        "verified_at": "2026-11-12T09:49:25.335Z",
+        "node": "v26.13.0"
+      },
+      "expectedGeneration": 0
+    },
+    {
+      "asset": "cli-darwin-x64.json",
+      "qualification": {
+        "verified": true,
+        "sha256": "ca5da2ffe969b47f5f46eca56d52b2937ed519264b1f7cf05db4cb82b7c40593",
+        "platform": "darwin",
+        "arch": "x64",
+        "hostApi": 1,
+        "checks": [
+          "disabled CLI denies loopback requests",
+          "signature, platform, installed file hashes and committed pointer verified"
+        ],
+        "verified_at": "2026-11-12T09:48:07.143Z",
+        "node": "v22.23.2"
+      },
+      "expectedGeneration": 0
+    },
+    {
+      "asset": "cli-linux-x64.json",
+      "qualification": {
+        "verified": true,
+        "sha256": "085a5ddf915af4f28acdb8e8a9d026b88d467f006e29425780b8fa324d36c9bb",
+        "platform": "linux",
+        "arch": "x64",
+        "hostApi": 1,
+        "checks": [
+          "disabled CLI denies loopback requests",
+          "signature, platform, installed file hashes and committed pointer verified"
+        ],
+        "verified_at": "2026-11-12T09:47:19.045Z",
+        "node": "v22.23.1"
+      },
+      "expectedGeneration": 0
+    },
+    {
+      "asset": "cli-win32-x64.json",
+      "qualification": {
+        "verified": true,
+        "sha256": "c1e8966c7bc98ddbf3c8617475b237c0a201e545a07cb94e1976e6404f58005b",
+        "platform": "win32",
+        "arch": "x64",
+        "hostApi": 1,
+        "checks": [
+          "disabled CLI denies loopback requests",
+          "signature, platform, installed file hashes and committed pointer verified"
+        ],
+        "verified_at": "2026-11-12T09:48:21.406Z",
+        "node": "v24.15.0"
+      },
+      "expectedGeneration": 0
+    },
+    {
+      "asset": "outlook-desktop-win32-x64.json",
+      "qualification": {
+        "verified": true,
+        "sha256": "eaa08bbd453514fa6f35f2261c1f17acf6be65d75eeab6d3766c102d9e1a4d36",
+        "platform": "win32",
+        "arch": "x64",
+        "hostApi": 1,
+        "checks": [
+          "disabled Outlook preserves policy without mailbox access",
+          "signature, platform, installed file hashes and committed pointer verified"
+        ],
+        "verified_at": "2026-11-12T09:48:25.251Z",
+        "node": "v24.15.0"
+      },
+      "expectedGeneration": 0
+    }
+  ]
+}

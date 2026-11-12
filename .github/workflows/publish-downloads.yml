@@ -11,6 +11,10 @@ on:
     types: [published]
   workflow_dispatch:
     inputs:
+      plugin_version:
+        description: "Publish the exact committed plugin approval (for example 1.0.0)"
+        required: false
+        type: string
       recover_version:
         description: 'Explicit preview recovery only: already-approved selected version'
         required: false
@@ -65,9 +69,18 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_R2_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}
           CLOUDFLARE_R2_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_ACCESS_KEY }}
+          PLUGIN_VERSION: ${{ inputs.plugin_version }}
           RECOVERY_VERSION: ${{ inputs.recover_version }}
           RECOVERY_EXPECTED: ${{ inputs.recover_expected_sha256 }}
         run: |
+          if [ -n "$PLUGIN_VERSION" ]; then
+            test -z "$RECOVERY_VERSION$RECOVERY_EXPECTED"
+            node -e 'if(!/^\d+\.\d+\.\d+$/.test(process.env.PLUGIN_VERSION))process.exit(1)'
+            mkdir -p plugin-artifacts
+            GH_TOKEN="$GH_SOURCE_TOKEN" gh release download "plugins-$PLUGIN_VERSION" --repo kingmeers/SYM-OS-Releases --dir plugin-artifacts --pattern '*.json'
+            node scripts/publish-plugins.mjs "$PLUGIN_VERSION" plugin-artifacts publish
+            exit 0
+          fi
           if [ -n "$RECOVERY_VERSION$RECOVERY_EXPECTED" ]; then
             mkdir -p receipts
             node --input-type=module <<'NODE'
