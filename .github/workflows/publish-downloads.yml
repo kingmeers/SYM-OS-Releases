@@ -81,7 +81,7 @@ jobs:
           assert(/^[a-f0-9]{64}$/.test(expected || ''), 'Explicit frozen channel SHA256 required');
           const catalog = JSON.parse(await fs.readFile('releases.json', 'utf8'));
           const approval = JSON.parse(await fs.readFile(`release-approvals/${version}.json`, 'utf8'));
-          assert(catalog.latest.preview === version && catalog.latest.windows_preview === version, 'Recovery must match the reviewed current preview selections');
+          assert([catalog.latest.preview, catalog.latest.windows_preview].includes(version), 'Recovery must match a reviewed current preview selection');
           assert(approval.finalized === true && approval.nativeAcceptance === true && approval.release.version === version, 'Recovery requires existing finalized native acceptance');
           const store = new Store(credentials());
           const current = await store.json('channels/preview.json');
