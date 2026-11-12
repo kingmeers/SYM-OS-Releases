@@ -5,9 +5,32 @@
   "latest": {
     "preview": "0.5.0-beta.39",
     "stable": null,
-    "windows_preview": "0.5.0-beta.39"
+    "windows_preview": "0.5.0-beta.40"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.40",
+      "tag": "v0.5.0-beta.40",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.40/RELEASE-VERIFICATION.md",
+      "source_commit": "b030019c6a539898213c5ef78637fe54d01fe722",
+      "platforms": {
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.40-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.40/Sym-Setup-0.5.0-beta.40-windows-x64.exe",
+          "sha256": "75e94911d4d369fe66e7c1f118d21f6676f5c38ff12c234ba8399b74a9b11e77",
+          "size_bytes": 343070407,
+          "source_commit": "b030019c6a539898213c5ef78637fe54d01fe722",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Windows only: attach known local files to Outlook drafts without base64 in agent calls. Opt-in local-file permission and current draft version required. Native Windows, packaged app and8MiB exact-byte draft attachment checks passed. Unsigned preview; installation/automatic upgrade and customer acceptance separate. Mac/Linux unchanged."
+    },
     {
       "version": "0.5.0-beta.39",
       "tag": "v0.5.0-beta.39",
