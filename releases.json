@@ -3,11 +3,34 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.37",
+    "preview": "0.5.0-beta.38",
     "stable": null,
     "windows_preview": "0.5.0-beta.37"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.38",
+      "tag": "v0.5.0-beta.38",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.38/RELEASE-VERIFICATION.md",
+      "source_commit": "a5fc170b29899d3f9b299ab909ad74011744dfc5",
+      "platforms": {
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.38-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.38/Sym-0.5.0-beta.38-macos-arm64.dmg",
+          "sha256": "c401a0b647e71cbd3797f8b2dfbe8273166ee66eed47ad67e05c84f1f360a5e1",
+          "size_bytes": 305694568,
+          "source_commit": "a5fc170b29899d3f9b299ab909ad74011744dfc5",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-native-qualified-signed-notarized"
+        }
+      },
+      "notes": "Apple Silicon Companion beta.38: native ARM64 build and qualification, cloud-managed app settings and merged compatibility/status fixes. Developer ID signed, Apple notarized and stapled. Intel Mac stays beta.36; Linux and Windows stay beta.37. Preview; no installed-app replacement, fresh provider sign-in, real Outlook send or automatic-upgrade-cycle acceptance."
+    },
     {
       "version": "0.5.0-beta.37",
       "tag": "v0.5.0-beta.37",

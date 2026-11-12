@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.38",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.38-macos-arm64.dmg",
+      "sha256": "c401a0b647e71cbd3797f8b2dfbe8273166ee66eed47ad67e05c84f1f360a5e1",
+      "size": 305694568,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; hdiutil verify; native ARM64 mounted DMG tests",
+      "notarizationSubmission": "04a4b3d7-fa3a-46f9-b717-7c878d04b992"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.38-macos-arm64.zip",
+      "sha256": "685a5d1145bd2fb18677975788565f5687b0be2beaab98ec05a78c46a0bb3164",
+      "size": 310731242,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; hdiutil verify; native ARM64 mounted DMG tests",
+      "notarizationSubmission": "3fd1027c-c642-422a-9c30-8c9beedf6ce6"
+    }
+  ],
+  "qualificationScope": "Native Apple Silicon build and final mounted signed DMG acceptance. ARM64 only; other platform versions retained.",
+  "nativeProof": {
+    "source": "a5fc170b29899d3f9b299ab909ad74011744dfc5",
+    "merge": "13e778615727324f8348dac52037f86c55ac5dc0",
+    "nativePolicyTests": 105,
+    "localReleaseContractTests": 56,
+    "prChecks": 3,
+    "pr": "https://github.com/kingmeers/sym-bridge/pull/85",
+    "nativeAppleSilicon": {
+      "ok": true,
+      "source": "a5fc170b29899d3f9b299ab909ad74011744dfc5",
+      "version": "0.5.0-beta.38",
+      "platform": "darwin-arm64",
+      "dmgSha256": "c401a0b647e71cbd3797f8b2dfbe8273166ee66eed47ad67e05c84f1f360a5e1",
+      "mountedSignedDmg": true,
+      "nativeBuild": true,
+      "allFourExecutablesArm64": true,
+      "developerIDTeam": "JR2SHF8H9R",
+      "signedAndStapled": true,
+      "gatekeeperAccepted": true,
+      "packagedNetworkLifecycle": true,
+      "browserSetup": true,
+      "secureStorage": true,
+      "fixtureScreens": 50,
+      "updaterZipAppIdentical": true,
+      "realEmailsSent": 0,
+      "installedUserApp": false,
+      "limitations": [
+        "Fixture account; no provider sign-in",
+        "No installed app replacement or automatic-upgrade cycle",
+        "No desktop capture/input acceptance"
+      ]
+    },
+    "limitations": [
+      "Fixture account; no provider sign-in",
+      "No installed app replacement or automatic-upgrade cycle",
+      "No desktop capture/input acceptance"
+    ]
+  }
+}
