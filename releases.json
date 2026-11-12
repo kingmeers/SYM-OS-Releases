@@ -3,11 +3,78 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.38",
+    "preview": "0.5.0-beta.39",
     "stable": null,
-    "windows_preview": "0.5.0-beta.37"
+    "windows_preview": "0.5.0-beta.39"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.39",
+      "tag": "v0.5.0-beta.39",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.39/RELEASE-VERIFICATION.md",
+      "source_commit": "e3c56736fbef7eb7ea38be718f28a100db32a6d5",
+      "platforms": {
+        "linux-x64": {
+          "debian": {
+            "filename": "Sym-0.5.0-beta.39-linux-amd64.deb",
+            "download_url": "https://downloads.sym.so/releases/0.5.0-beta.39/Sym-0.5.0-beta.39-linux-amd64.deb",
+            "sha256": "a150b265a98529ef91a7f1f3c8dc790fef55d315b942fb30b45859c6719e7b0f",
+            "size_bytes": 392402776,
+            "source_commit": "e3c56736fbef7eb7ea38be718f28a100db32a6d5",
+            "bundled_private_network": true,
+            "automatic_updates": true,
+            "format": "deb",
+            "status": "preview-qualified-with-live-limitations"
+          },
+          "filename": "Sym-0.5.0-beta.39-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.39/Sym-0.5.0-beta.39-linux-x86_64.AppImage",
+          "sha256": "0950306069dce7036031a560db4250dad7d6052077d97a4e46d685760ad6bb17",
+          "size_bytes": 487826164,
+          "source_commit": "e3c56736fbef7eb7ea38be718f28a100db32a6d5",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.39-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.39/Sym-0.5.0-beta.39-macos-arm64.dmg",
+          "sha256": "27ec434c5330dfff969de8ea9dcc73e9f538203cfe08df69eb2b16e30979f0e7",
+          "size_bytes": 301351432,
+          "source_commit": "e3c56736fbef7eb7ea38be718f28a100db32a6d5",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-signed-notarized"
+        },
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.39-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.39/Sym-0.5.0-beta.39-macos-x64.dmg",
+          "sha256": "70cc2679132c0138013ad92df3203fc9af89be1315e96d92905ca61d819be518",
+          "size_bytes": 312750821,
+          "source_commit": "e3c56736fbef7eb7ea38be718f28a100db32a6d5",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-signed-notarized"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.39-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.39/Sym-Setup-0.5.0-beta.39-windows-x64.exe",
+          "sha256": "8ab3ff60d23fc09635079317995d791dcab349d67d9cb96e072312d5dc720bf8",
+          "size_bytes": 339591673,
+          "source_commit": "e3c56736fbef7eb7ea38be718f28a100db32a6d5",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Independent signed CLI, Outlook and agent plugin updates, browser recovery and Outlook Unicode fixes. Native Windows/Linux/Intel/Apple Silicon qualification passed. Windows unsigned; Macs signed and notarized. Preview; live email and automatic-upgrade acceptance not claimed."
+    },
     {
       "version": "0.5.0-beta.38",
       "tag": "v0.5.0-beta.38",
