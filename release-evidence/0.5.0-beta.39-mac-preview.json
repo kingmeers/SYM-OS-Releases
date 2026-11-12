@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.39",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.39-macos-x64.dmg",
+      "sha256": "70cc2679132c0138013ad92df3203fc9af89be1315e96d92905ca61d819be518",
+      "size": 312750821,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; hdiutil verify; native mounted DMG acceptance",
+      "notarizationSubmission": "0ac6715a-5781-4966-8d56-bc41aec55a14"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.39-macos-x64.zip",
+      "sha256": "c52063b592a1d535d7e15c8a441eee6e0aa7994062183dfb17e529ca234fdb7e",
+      "size": 315910605,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; hdiutil verify; native mounted DMG acceptance",
+      "notarizationSubmission": "6803f2d9-b2a2-4396-aeb7-ea0ee7416270"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.39-macos-arm64.dmg",
+      "sha256": "27ec434c5330dfff969de8ea9dcc73e9f538203cfe08df69eb2b16e30979f0e7",
+      "size": 301351432,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; hdiutil verify; native mounted DMG acceptance",
+      "notarizationSubmission": "a9ba7b12-c56a-4522-87c1-7008f2bb4dcf"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.39-macos-arm64.zip",
+      "sha256": "ebc351b3612caeb33bc34ad1fddea22baded3ed7b4b0cb58f37d38eedcef0285",
+      "size": 304210595,
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Apple Developer ID team JR2SHF8H9R",
+      "command": "codesign deep/strict; stapler validate; spctl assess; hdiutil verify; native mounted DMG acceptance",
+      "notarizationSubmission": "9bc7bdb1-9ffc-4338-b810-16feea1ad63d"
+    }
+  ],
+  "qualificationScope": "Native Intel macOS 14.5 and Apple Silicon macOS 27.2 final signed mounted DMG qualification. Held for coordinated 15.5; no publication or installed-app upgrade.",
+  "nativeProof": {
+    "source": "e3c56736fbef7eb7ea38be718f28a100db32a6d5",
+    "reviewedEquivalentCommit": "cb210e6bacdb4717fce8b5dd1b33eff9ee8512f0",
+    "equivalence": "Only test/plugin-updates.test.cjs differs; packaged runtime source identical",
+    "requiredChecks": [
+      {
+        "conclusion": "SUCCESS",
+        "name": "policy (ubuntu-latest)",
+        "status": "COMPLETED"
+      },
+      {
+        "conclusion": "SUCCESS",
+        "name": "build (x64)",
+        "status": "COMPLETED"
+      },
+      {
+        "conclusion": "SUCCESS",
+        "name": "policy (windows-latest)",
+        "status": "COMPLETED"
+      },
+      {
+        "conclusion": "SUCCESS",
+        "name": "build (arm64)",
+        "status": "COMPLETED"
+      },
+      {
+        "conclusion": "SUCCESS",
+        "name": "policy (macos-15-intel)",
+        "status": "COMPLETED"
+      }
+    ],
+    "architectures": {
+      "x64": {
+        "finalInstaller": {
+          "ok": true,
+          "source": "e3c56736fbef7eb7ea38be718f28a100db32a6d5",
+          "version": "0.5.0-beta.39",
+          "platform": "darwin-x64",
+          "dmgSha256": "70cc2679132c0138013ad92df3203fc9af89be1315e96d92905ca61d819be518",
+          "mountedSignedDmg": true,
+          "nativeBuild": true,
+          "allFourExecutablesNativeArchitecture": true,
+          "developerIDTeam": "JR2SHF8H9R",
+          "signedAndStapled": true,
+          "gatekeeperAccepted": true,
+          "packagedNetworkLifecycle": true,
+          "browserSetup": true,
+          "secureStorage": true,
+          "fixtureScreens": 50,
+          "updaterZipAppIdentical": true,
+          "pluginHostAndRegistrySourceParity": true,
+          "packagedSignedCliAndAgentsQualified": true,
+          "realEmailsSent": 0,
+          "installedUserApp": false,
+          "limitations": [
+            "Fixture account; no provider sign-in",
+            "No installed app replacement or automatic-upgrade cycle",
+            "No desktop capture/input acceptance"
+          ]
+        },
+        "signedPluginPackages": {
+          "cli": {
+            "verified": true,
+            "sha256": "ca5da2ffe969b47f5f46eca56d52b2937ed519264b1f7cf05db4cb82b7c40593",
+            "platform": "darwin",
+            "arch": "x64",
+            "hostApi": 1,
+            "checks": [
+              "disabled CLI denies loopback requests",
+              "signature, platform, installed file hashes and committed pointer verified"
+            ],
+            "verified_at": "2026-11-12T11:03:47.912Z",
+            "node": "v24.18.1"
+          },
+          "agents": {
+            "verified": true,
+            "sha256": "0e7f7b8ef1e0cd0d6df8972ac7721909cebe938ec2eee6ef38d72fc28dcce802",
+            "platform": "darwin",
+            "arch": "x64",
+            "hostApi": 1,
+            "checks": [
+              "agent package loads with host SDK dependency and disabled providers",
+              "signature, platform, installed file hashes and committed pointer verified"
+            ],
+            "verified_at": "2026-11-12T11:03:48.224Z",
+            "node": "v24.18.1"
+          }
+        },
+        "nativePolicyAndPluginTests": 79,
+        "appNotarization": {
+          "id": "6803f2d9-b2a2-4396-aeb7-ea0ee7416270",
+          "status": "Accepted"
+        },
+        "dmgNotarization": {
+          "id": "0ac6715a-5781-4966-8d56-bc41aec55a14",
+          "status": "Accepted"
+        }
+      },
+      "arm64": {
+        "finalInstaller": {
+          "ok": true,
+          "source": "e3c56736fbef7eb7ea38be718f28a100db32a6d5",
+          "version": "0.5.0-beta.39",
+          "platform": "darwin-arm64",
+          "dmgSha256": "27ec434c5330dfff969de8ea9dcc73e9f538203cfe08df69eb2b16e30979f0e7",
+          "mountedSignedDmg": true,
+          "nativeBuild": true,
+          "allFourExecutablesNativeArchitecture": true,
+          "developerIDTeam": "JR2SHF8H9R",
+          "signedAndStapled": true,
+          "gatekeeperAccepted": true,
+          "packagedNetworkLifecycle": true,
+          "browserSetup": true,
+          "secureStorage": true,
+          "fixtureScreens": 50,
+          "updaterZipAppIdentical": true,
+          "pluginHostAndRegistrySourceParity": true,
+          "packagedSignedCliAndAgentsQualified": true,
+          "realEmailsSent": 0,
+          "installedUserApp": false,
+          "limitations": [
+            "Fixture account; no provider sign-in",
+            "No installed app replacement or automatic-upgrade cycle",
+            "No desktop capture/input acceptance"
+          ]
+        },
+        "signedPluginPackages": {
+          "cli": {
+            "verified": true,
+            "sha256": "634d37de00bee1f12535f1b311f45fe48ae7d081c1f7539e99899f606fe01ba1",
+            "platform": "darwin",
+            "arch": "arm64",
+            "hostApi": 1,
+            "checks": [
+              "disabled CLI denies loopback requests",
+              "signature, platform, installed file hashes and committed pointer verified"
+            ],
+            "verified_at": "2026-11-12T11:05:57.511Z",
+            "node": "v24.18.1"
+          },
+          "agents": {
+            "verified": true,
+            "sha256": "4223a546c8d2da15f2914215232cfbdd7575f7354da09129c62a66f68367aeef",
+            "platform": "darwin",
+            "arch": "arm64",
+            "hostApi": 1,
+            "checks": [
+              "agent package loads with host SDK dependency and disabled providers",
+              "signature, platform, installed file hashes and committed pointer verified"
+            ],
+            "verified_at": "2026-11-12T11:05:57.616Z",
+            "node": "v24.18.1"
+          }
+        },
+        "nativePolicyAndPluginTests": 79,
+        "appNotarization": {
+          "id": "9bc7bdb1-9ffc-4338-b810-16feea1ad63d",
+          "status": "Accepted"
+        },
+        "dmgNotarization": {
+          "id": "a9ba7b12-c56a-4522-87c1-7008f2bb4dcf",
+          "status": "Accepted"
+        }
+      }
+    }
+  }
+}
