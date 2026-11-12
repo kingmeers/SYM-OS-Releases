@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.37",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.37-linux-amd64.deb",
+      "sha256": "8014d843799ae0376018ad4c3ecedba8380d093f66b1b405304b3e7f4a4e19f7",
+      "size": 388608248,
+      "signatureVerified": false,
+      "notarizationVerified": false,
+      "command": "Exact packaged payload: native startup, secure storage, local listener/docs and50fixture UI screens; no install/upgrade claim"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.37-linux-x86_64.AppImage",
+      "sha256": "eb22fa14b4f4f586e72678347df93fe46584bd0681b60c6375bc7cf0a79c5db2",
+      "size": 482663907,
+      "signatureVerified": false,
+      "notarizationVerified": false,
+      "command": "Exact packaged payload: native startup, secure storage, local listener/docs and50fixture UI screens; no install/upgrade claim"
+    },
+    {
+      "filename": "Sym-Setup-0.5.0-beta.37-windows-x64.exe",
+      "sha256": "d966f2331541df442ad275e9ba483ce57b63fe8406d92972484bb9114ab7e8da",
+      "size": 339213512,
+      "signatureVerified": false,
+      "notarizationVerified": false,
+      "command": "Exact packaged payload: native startup, secure storage, local listener/docs and50fixture UI screens; no install/upgrade claim"
+    },
+    {
+      "filename": "Sym-Setup-0.5.0-beta.37-windows-x64.exe.blockmap",
+      "sha256": "c9d814d4eb121dfd3e55e08eb2e8cd811fa1245f7d1303a315f2d7a8f0692228",
+      "size": 354652,
+      "signatureVerified": false,
+      "notarizationVerified": false,
+      "command": "Exact packaged payload: native startup, secure storage, local listener/docs and50fixture UI screens; no install/upgrade claim"
+    }
+  ],
+  "qualificationScope": "Owner-authorized preview: Linux AppImage, extracted Debian payload and Windows packaged executable. No Mac assets in this publication.",
+  "nativeProof": {
+    "source": "411ba20bbea93884e38ad28458f616c85bb2b1ce",
+    "merge": "a42bcd1692ea9c1f787f3044c7159e7182ae348b",
+    "localLogicTests": 98,
+    "prChecks": 5,
+    "linuxUIScreens": 50,
+    "linuxDebianPayloadUIScreens": 50,
+    "windowsUIScreens": 50,
+    "windowsNativeMailboxBoundary": true,
+    "realEmailsSent": 0,
+    "liveApprovalSendTested": false,
+    "limitations": [
+      "Windows unsigned preview",
+      "No fresh installer/upgrade cycle; Debian extracted payload tested",
+      "Fixture accounts/UI; no fresh provider sign-in",
+      "Ubuntu24.04/X11 only",
+      "Mac publication deferred"
+    ]
+  }
+}
