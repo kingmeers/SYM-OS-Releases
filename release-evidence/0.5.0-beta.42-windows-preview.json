@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.42",
+  "sourceCommit": "58b9dd38b46ada0b5a3d7bf821b21924e488edcd",
+  "platform": "windows-x64",
+  "installerSha256": "5848ec14c10495a816824128898a4e1ec476cc905eb3e4d5bddc5ca72780c086",
+  "signature": "NotSigned",
+  "nativeTests": {
+    "passed": 63,
+    "failed": 0,
+    "skipped": 0
+  },
+  "localTests": {
+    "passed": 28,
+    "failed": 0,
+    "skipped": 1
+  },
+  "packagedSource": {
+    "passed": true,
+    "version": "0.5.0-beta.42",
+    "hashes": {
+      "outlook-runtime.js": "4dab134a5c32dc25aa45107c304ab1dd11dd6641b955f855064b4063e6f24d82",
+      "outlook-local-files.js": "7b4f54c27e58d586c8c7fd677bec150bcca2aecc275ca15888acf19474c1e2a9",
+      "outlook-contract.js": "f8f583313422755adc6979e7b526096683ba58d116fd75ddb7486a69f89485af",
+      "plugin-updates.js": "8e0e6ed80e7e594c0c23d9716dd77f394438aff4733ff89ea05d93e2b25a7352",
+      "plugin-host.js": "7d16b0082aa8c5a8c36c9bcd42d8322a1dc6bffa490c83e32ec1af25016b9c18",
+      "plugin-release-registry.json": "b97205566fdf65d6641f44a71c9cbadc4f4eee4271194b05ef258c9682071fa0",
+      "support-status.js": "cda664fc0b45841b80c57cd43ae7e90c2977ff76aa0710b473a57d5ca95bd47a",
+      "renderer/plugins.js": "a161b4df99aafb9efa3d11ef5c39adbd15aa7a8a81a966a98b7ee89975ff73cf"
+    },
+    "nativeHelperSha256": "01f13e3682449d608176f1c18729de4de44184e225d7268f1856e2746ef90bde",
+    "nativeSourceSha256": "f555bd3ea29888716cbb70f24a67e23be7b227329f57f39a89ec786b3d419138"
+  },
+  "permissionAcceptance": {
+    "realSends": 0,
+    "tests": [
+      "rendered On click persisted through real setPlugin IPC; draft/send stayed off",
+      "On and Off survive complete packaged app restarts"
+    ],
+    "version": "0.5.0-beta.42",
+    "ok": true
+  },
+  "unchangedHelperPreviousQualification": "v0.5.0-beta.41 six plain/HTML local/inline/chunk filename/MIME/bytes cases",
+  "limitations": [
+    "Unsigned preview; customer installation and automatic update acceptance separate.",
+    "Windows only; Mac/Linux unchanged.",
+    "No mailbox actions or sends; isolated settings profile only.",
+    "Build source commit precedes workflow/test-only follow-ups; packaged sources match final reviewed tree by hash."
+  ]
+}

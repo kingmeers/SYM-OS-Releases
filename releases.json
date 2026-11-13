@@ -9,6 +9,29 @@
   },
   "releases": [
     {
+      "version": "0.5.0-beta.42",
+      "tag": "v0.5.0-beta.42",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.42/RELEASE-VERIFICATION.md",
+      "source_commit": "58b9dd38b46ada0b5a3d7bf821b21924e488edcd",
+      "platforms": {
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.42-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.42/Sym-Setup-0.5.0-beta.42-windows-x64.exe",
+          "sha256": "5848ec14c10495a816824128898a4e1ec476cc905eb3e4d5bddc5ca72780c086",
+          "size_bytes": 343070110,
+          "source_commit": "58b9dd38b46ada0b5a3d7bf821b21924e488edcd",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Windows only: fix disabled local-file attachment permission controls. Actual packaged On/Off clicks persisted through full restarts using real settings IPC; draft/send remained off. Native helper unchanged from qualified beta41. Customer installation and updater promotion are separate. No Mac/Linux changes or mailbox actions."
+    },
+    {
       "version": "0.5.0-beta.41",
       "tag": "v0.5.0-beta.41",
       "channel": "preview",
