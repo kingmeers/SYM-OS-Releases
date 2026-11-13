@@ -19,6 +19,10 @@ on:
         description: 'Frozen current preview SHA256 for read-only diagnostic'
         required: false
         type: string
+      publish_only_version:
+        description: "Publish reviewed immutable assets only; do not change channel or updater feed"
+        required: false
+        type: string
       plugin_version:
         description: "Publish the exact committed plugin approval (for example 1.0.0)"
         required: false
@@ -76,7 +80,7 @@ jobs:
         env:
           DIAGNOSTIC_ALIAS: ${{ inputs.diagnose_alias }}
           DIAGNOSTIC_EXPECTED: ${{ inputs.diagnose_expected_sha256 }}
-          DIAGNOSTIC_CONFLICT: ${{ inputs.plugin_version || inputs.recover_version || inputs.recover_expected_sha256 }}
+          DIAGNOSTIC_CONFLICT: ${{ inputs.publish_only_version || inputs.plugin_version || inputs.recover_version || inputs.recover_expected_sha256 }}
         run: node scripts/diagnose-public-alias.mjs
       - name: Publish approved inventory and atomically promote preview
         if: ${{ !inputs.diagnose_alias && !inputs.diagnose_expected_sha256 }}
@@ -86,10 +90,16 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_R2_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}
           CLOUDFLARE_R2_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_ACCESS_KEY }}
+          PUBLISH_ONLY_VERSION: ${{ inputs.publish_only_version }}
+          PUBLISH_ONLY_CONFLICT: ${{ inputs.plugin_version || inputs.recover_version || inputs.recover_expected_sha256 || inputs.diagnose_alias || inputs.diagnose_expected_sha256 }}
           PLUGIN_VERSION: ${{ inputs.plugin_version }}
           RECOVERY_VERSION: ${{ inputs.recover_version }}
           RECOVERY_EXPECTED: ${{ inputs.recover_expected_sha256 }}
         run: |
+          if [ -n "$PUBLISH_ONLY_VERSION" ]; then
+            node scripts/publish-only.mjs
+            exit 0
+          fi
           if [ -n "$PLUGIN_VERSION" ]; then
             test -z "$RECOVERY_VERSION$RECOVERY_EXPECTED"
             node -e 'if(!/^\d+\.\d+\.\d+$/.test(process.env.PLUGIN_VERSION))process.exit(1)'
