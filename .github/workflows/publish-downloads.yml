@@ -61,7 +61,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           repository: Doghouse-Labs-inc/sym-ai-downloads-proxy
-          ref: 0a872bb47eef7bc1a02bfa7380a6972338238058
+          ref: c007b3a924c2650b0895a62bf772fa1317b74144
           path: publisher
           fetch-depth: 0
           ssh-key: ${{ secrets.PUBLISHER_DEPLOY_KEY }}
