@@ -11,6 +11,14 @@ on:
     types: [published]
   workflow_dispatch:
     inputs:
+      diagnose_alias:
+        description: 'Read-only incident diagnostic: macos-x64.dmg only'
+        required: false
+        type: string
+      diagnose_expected_sha256:
+        description: 'Frozen current preview SHA256 for read-only diagnostic'
+        required: false
+        type: string
       plugin_version:
         description: "Publish the exact committed plugin approval (for example 1.0.0)"
         required: false
@@ -62,7 +70,16 @@ jobs:
       - name: Verify publisher from clean dependencies
         working-directory: publisher
         run: npm ci --ignore-scripts && node scripts/bundle-serving.js --check && npm test
+      - name: Diagnose one frozen public alias (read only)
+        if: ${{ inputs.diagnose_alias || inputs.diagnose_expected_sha256 }}
+        working-directory: archive
+        env:
+          DIAGNOSTIC_ALIAS: ${{ inputs.diagnose_alias }}
+          DIAGNOSTIC_EXPECTED: ${{ inputs.diagnose_expected_sha256 }}
+          DIAGNOSTIC_CONFLICT: ${{ inputs.plugin_version || inputs.recover_version || inputs.recover_expected_sha256 }}
+        run: node scripts/diagnose-public-alias.mjs
       - name: Publish approved inventory and atomically promote preview
+        if: ${{ !inputs.diagnose_alias && !inputs.diagnose_expected_sha256 }}
         working-directory: archive
         env:
           GH_SOURCE_TOKEN: ${{ github.token }}
