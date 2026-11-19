@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.44",
+  "sourceCommit": "82ce2a8804bca0b68b5fee40717720cac748d074",
+  "platform": "windows-x64",
+  "installerSha256": "ff3d6ed3114427f180f2411403f4c9ac26a9ca52e8185fa02523268993eb8b09",
+  "nativeAcceptance": {
+    "tests": [
+      "packaged renderer IPC saves30sec policy with sending off"
+    ],
+    "realSends": 0,
+    "native": {
+      "packaged": true,
+      "version": "0.5.0-beta.44",
+      "secureStorage": true,
+      "archiveRoundTrip": true,
+      "attachments": [
+        {
+          "name": "fixture-caf\u00e9.pdf",
+          "size": 68608,
+          "mime": "application/pdf",
+          "exactBytes": true,
+          "sizeBytesVerified": true,
+          "sha256Verified": true
+        },
+        {
+          "name": "plain.zip",
+          "size": 239827,
+          "mime": "application/zip",
+          "exactBytes": true,
+          "sizeBytesVerified": true,
+          "sha256Verified": true
+        },
+        {
+          "name": "large.jpg",
+          "size": 6291456,
+          "mime": "image/jpeg",
+          "exactBytes": true,
+          "sizeBytesVerified": true,
+          "sha256Verified": true
+        }
+      ],
+      "unicode": true,
+      "detect": "ready",
+      "draftCreateUpdateStaleDeleteDelete": true,
+      "sendingEnabled": false
+    },
+    "archiveAfterRestart": "outcome_unknown",
+    "settingsAfterRestart": true,
+    "ok": true
+  },
+  "permissionAcceptance": {
+    "realSends": 0,
+    "tests": [
+      "rendered On click persisted through real setPlugin IPC; draft/send stayed off",
+      "On and Off survive complete packaged app restarts"
+    ],
+    "version": "0.5.0-beta.44",
+    "ok": true
+  },
+  "upgradeAcceptance": {
+    "cases": [
+      {
+        "from": "0.5.0-beta.43",
+        "to": "0.5.0-beta.44",
+        "accountRetained": true,
+        "deviceRetained": true,
+        "passesRetained": true,
+        "permissionsRetained": true,
+        "unknownReceiptRetained": true
+      }
+    ],
+    "realSends": 0,
+    "realAccountCalls": 0,
+    "osInstallerExecuted": false,
+    "ok": true
+  },
+  "installerPayload": {
+    "version": "0.5.0-beta.44",
+    "sourceCommit": "82ce2a8804bca0b68b5fee40717720cac748d074",
+    "installer": "Sym-Setup-0.5.0-beta.44-windows-x64.exe",
+    "size": 343074208,
+    "sha256": "ff3d6ed3114427f180f2411403f4c9ac26a9ca52e8185fa02523268993eb8b09",
+    "exactPackagedFileCount": 4513,
+    "allFilesMatchTestedWindowsPackage": true,
+    "osInstallerExecuted": false,
+    "signature": "NotSigned",
+    "windowsSourceHashMatchesTransfer": true
+  },
+  "nodeDriver": "22.23.4",
+  "os": "Windows 10 build19045",
+  "electron": "43.4.1",
+  "signature": "NotSigned",
+  "qaDriver": {
+    "sha256": "792f03dc5e80ebc2189425a4beb5d6f4d3edc4a62a409c47b92801e911412dc6",
+    "differencesFromSource": [
+      "Asserts exact extracted download sizeBytes, sha256 and sizeSource against each fixture.",
+      "Restart readiness waits up to60s instead of15s and immediately rejects startup errors, based on observed24.281s and25.841s clean fresh-process startup. Package bytes unchanged."
+    ],
+    "initialFailureRetained": "attempt1/packaged-outlook-result.json",
+    "restartDiagnostic": "restart-diagnostic.json"
+  },
+  "limitations": [
+    "Unsigned preview. OS installer not executed; installed app and customer installation/acceptance untouched.",
+    "Native test uses recipient-free synthetic drafts which were deleted; zero sends.",
+    "Upgrade uses synthetic credentials and loopback account endpoint; fake-account connection errors are not real provider/account acceptance.",
+    "Original customer attachment byte identity remains unverified; this package exposes exact extracted-byte length/hash for comparison.",
+    "Native download limit10MiB; local attachment/chunked upload25MiB is separate."
+  ],
+  "qualifiedCiSource": "a9ce9bd4fc735aafa13c4e0db0d0d5459c6f4c7c",
+  "sourceEquivalence": "82ce2a8 to a9ce9bd changes only test/reserved-recovery.real.cjs and .github/workflows/automatic-updates.yml; packaged runtime files unchanged."
+}
