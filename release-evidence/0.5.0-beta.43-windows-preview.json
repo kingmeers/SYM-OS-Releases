@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.43",
+  "sourceCommit": "b266406edff5e6e73fbabf9f10080e0d3fff8d1a",
+  "platform": "windows-x64",
+  "installerSha256": "8d87e53a735c27843c4617571bf7dfffa6a9db41ac0018202d113587d651d01d",
+  "nativeAcceptance": {
+    "tests": [
+      "packaged renderer IPC saves30sec policy with sending off"
+    ],
+    "realSends": 0,
+    "native": {
+      "packaged": true,
+      "version": "0.5.0-beta.43",
+      "secureStorage": true,
+      "archiveRoundTrip": true,
+      "attachments": [
+        {
+          "name": "fixture-caf\u00e9.pdf",
+          "size": 68608,
+          "mime": "application/pdf",
+          "exactBytes": true
+        },
+        {
+          "name": "plain.zip",
+          "size": 239827,
+          "mime": "application/zip",
+          "exactBytes": true
+        },
+        {
+          "name": "large.jpg",
+          "size": 6291456,
+          "mime": "image/jpeg",
+          "exactBytes": true
+        }
+      ],
+      "unicode": true,
+      "detect": "ready",
+      "draftCreateUpdateStaleDeleteDelete": true,
+      "sendingEnabled": false
+    },
+    "archiveAfterRestart": "outcome_unknown",
+    "settingsAfterRestart": true,
+    "ok": true
+  },
+  "permissionAcceptance": {
+    "realSends": 0,
+    "tests": [
+      "rendered On click persisted through real setPlugin IPC; draft/send stayed off",
+      "On and Off survive complete packaged app restarts"
+    ],
+    "version": "0.5.0-beta.43",
+    "ok": true
+  },
+  "installerPayload": {
+    "installer": "Sym-Setup-0.5.0-beta.43-windows-x64.exe",
+    "size": 343073684,
+    "sha256": "8d87e53a735c27843c4617571bf7dfffa6a9db41ac0018202d113587d651d01d",
+    "exactPackagedFileCount": 4513,
+    "allFilesMatchTestedWindowsPackage": true
+  },
+  "nodeDriver": "22.23.4",
+  "os": "Windows 10 build19045",
+  "electron": "43.4.1",
+  "localTests": {
+    "passed": 161,
+    "failed": 0,
+    "skipped": 1
+  },
+  "limitations": [
+    "Unsigned preview; Windows OS installation and customer machine acceptance remain separate.",
+    "Final installer was extracted; all4513 files matched the Windows-tested package exactly. Active user installation was not replaced.",
+    "Mac/Linux installers unchanged. No real email sends."
+  ],
+  "signature": "NotSigned"
+}
