@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "repository": "kingmeers/SYM-OS-Releases",
+  "tag": "v0.5.0-beta.44",
+  "releaseId": 451078736,
+  "revision": "54955245e3d90c05b9b6ddd01e1ccaf702be5927",
+  "finalized": true,
+  "release": {
+    "schemaVersion": 1,
+    "kind": "sym.release",
+    "product": "Sym",
+    "version": "0.5.0-beta.44",
+    "eligibility": [
+      "preview"
+    ],
+    "scope": [
+      "windows-x64.exe"
+    ],
+    "updates": [
+      {
+        "target": "windows-x64.exe",
+        "mode": "electron",
+        "feed": "beta.yml"
+      }
+    ],
+    "notes": "Windows Outlook downloads now expose exact extracted size and SHA-256; listed Outlook storage size is labelled separately. Packaged synthetic PDF/ZIP/6MiB, permissions and beta43-to44 persistence checks passed. Unsigned preview. Mac/Linux selections unchanged.",
+    "assets": [
+      {
+        "version": "0.5.0-beta.44",
+        "target": "shared",
+        "role": "verification",
+        "os": "shared",
+        "arch": "none",
+        "format": "md",
+        "filename": "RELEASE-VERIFICATION.md",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.44/RELEASE-VERIFICATION.md",
+        "sha256": "1febe13767e471b65b9aadb01806003729f1f6c2606e643c692f98e3f8500931",
+        "size": 1176,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.44",
+        "target": "shared",
+        "role": "checksum",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "filename": "SHA256SUMS-FIRST-PARTY.txt",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.44/SHA256SUMS-FIRST-PARTY.txt",
+        "sha256": "0a16fe4ce112c855378b10ee1acc67c52d2ced16d1481e887c0f038f2ede8a7d",
+        "size": 655,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.44",
+        "target": "windows-x64.exe",
+        "role": "installer",
+        "os": "windows",
+        "arch": "x64",
+        "format": "exe",
+        "filename": "Sym-Setup-0.5.0-beta.44-windows-x64.exe",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.44/Sym-Setup-0.5.0-beta.44-windows-x64.exe",
+        "sha256": "ff3d6ed3114427f180f2411403f4c9ac26a9ca52e8185fa02523268993eb8b09",
+        "size": 343074208,
+        "signing": {
+          "status": "unsigned",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Windows10 x64 preview; see qualification limits",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.44",
+        "target": "windows-x64.exe",
+        "role": "updater",
+        "os": "windows",
+        "arch": "x64",
+        "format": "blockmap",
+        "filename": "Sym-Setup-0.5.0-beta.44-windows-x64.exe.blockmap",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.44/Sym-Setup-0.5.0-beta.44-windows-x64.exe.blockmap",
+        "sha256": "155c77cfede9ae786b9e0231c3652228db30583b169b8539a75526ce5a8265f3",
+        "size": 356465,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Windows10 x64 preview; see qualification limits",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.44",
+        "target": "shared",
+        "role": "notice",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "filename": "THIRD-PARTY-NOTICES.txt",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.44/THIRD-PARTY-NOTICES.txt",
+        "sha256": "86009b73f83785a6f4dab26008949fd92bacb973a4299f132c7e4bdafe53c22f",
+        "size": 1193570,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.44",
+        "target": "windows-x64.exe",
+        "role": "feed",
+        "os": "windows",
+        "arch": "x64",
+        "format": "yml",
+        "filename": "beta.yml",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.44/beta.yml",
+        "sha256": "6bd33298b95ea48feb22d7062e31b492b14ef77331aa9c628de6422c3473564d",
+        "size": 477,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Windows10 x64 preview; see qualification limits",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.44",
+        "target": "shared",
+        "role": "verification",
+        "os": "shared",
+        "arch": "none",
+        "format": "json",
+        "filename": "native-verification.json",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.44/native-verification.json",
+        "sha256": "a81626dff179310ba14e466e26c6be380a09239acd031b7f2222dab189f33859",
+        "size": 4058,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.44",
+        "target": "shared",
+        "role": "verification",
+        "os": "shared",
+        "arch": "none",
+        "format": "json",
+        "filename": "release-manifest.json",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.44/release-manifest.json",
+        "sha256": "78a25ddb47a346627b9640a9ba9bcaffa797a9ba65f4c163c6cd2f1a06e9a3e2",
+        "size": 389,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      }
+    ]
+  },
+  "approvedAssets": [
+    {
+      "name": "RELEASE-VERIFICATION.md",
+      "id": 766924788,
+      "size": 1176,
+      "sha256": "1febe13767e471b65b9aadb01806003729f1f6c2606e643c692f98e3f8500931"
+    },
+    {
+      "name": "SHA256SUMS-FIRST-PARTY.txt",
+      "id": 766924787,
+      "size": 655,
+      "sha256": "0a16fe4ce112c855378b10ee1acc67c52d2ced16d1481e887c0f038f2ede8a7d"
+    },
+    {
+      "name": "Sym-Setup-0.5.0-beta.44-windows-x64.exe",
+      "id": 766924772,
+      "size": 343074208,
+      "sha256": "ff3d6ed3114427f180f2411403f4c9ac26a9ca52e8185fa02523268993eb8b09"
+    },
+    {
+      "name": "Sym-Setup-0.5.0-beta.44-windows-x64.exe.blockmap",
+      "id": 766924786,
+      "size": 356465,
+      "sha256": "155c77cfede9ae786b9e0231c3652228db30583b169b8539a75526ce5a8265f3"
+    },
+    {
+      "name": "THIRD-PARTY-NOTICES.txt",
+      "id": 766924790,
+      "size": 1193570,
+      "sha256": "86009b73f83785a6f4dab26008949fd92bacb973a4299f132c7e4bdafe53c22f"
+    },
+    {
+      "name": "beta.yml",
+      "id": 766924814,
+      "size": 477,
+      "sha256": "6bd33298b95ea48feb22d7062e31b492b14ef77331aa9c628de6422c3473564d"
+    },
+    {
+      "name": "native-verification.json",
+      "id": 766924841,
+      "size": 4058,
+      "sha256": "a81626dff179310ba14e466e26c6be380a09239acd031b7f2222dab189f33859"
+    },
+    {
+      "name": "release-manifest.json",
+      "id": 766924845,
+      "size": 389,
+      "sha256": "78a25ddb47a346627b9640a9ba9bcaffa797a9ba65f4c163c6cd2f1a06e9a3e2"
+    }
+  ],
+  "excludedAssets": [],
+  "nativeAcceptance": true,
+  "releaseSignoff": true,
+  "evidence": [
+    {
+      "file": "0.5.0-beta.44-windows-preview.json",
+      "sha256": "a81626dff179310ba14e466e26c6be380a09239acd031b7f2222dab189f33859"
+    }
+  ]
+}
