@@ -5,9 +5,32 @@
   "latest": {
     "preview": "0.5.0-beta.39",
     "stable": null,
-    "windows_preview": "0.5.0-beta.46"
+    "windows_preview": "0.5.0-beta.47"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.47",
+      "tag": "v0.5.0-beta.47",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.47/RELEASE-VERIFICATION.md",
+      "source_commit": "ee3af2dd765d6916547ab12637b5787d9d85a1af",
+      "platforms": {
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.47-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.47/Sym-Setup-0.5.0-beta.47-windows-x64.exe",
+          "sha256": "564a9fdeb625fd34ed3fcedbb7c6a43aaef4cabd359c03726ac9f2ca308cff78",
+          "size_bytes": 223816714,
+          "source_commit": "ee3af2dd765d6916547ab12637b5787d9d85a1af",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Windows preview: retired bundled Codex/Claude adapters and SDK; saved settings/external apps untouched.188 Windows tests and exact-source native/package qualification passed. Unsigned; no installed-client/live-user-data acceptance. Mac/Linux unchanged."
+    },
     {
       "version": "0.5.0-beta.46",
       "tag": "v0.5.0-beta.46",
