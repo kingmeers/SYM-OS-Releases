@@ -1,0 +1,110 @@
+{
+  "version": "0.5.0-beta.48",
+  "source_commit": "88305a6a9c8b07e133d1cc853e007090afd99a73",
+  "source_pr": 96,
+  "package_run": 44827558869,
+  "policy_run": 44827568428,
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.48-linux-amd64.deb",
+      "sha256": "1b3e8b6c5b151416fd2eaff71d62f5f72a10e724f5b1e2cfe7e5f2fcd48635b6",
+      "size": 149543624,
+      "kind": "deb"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.48-linux-x86_64.AppImage",
+      "sha256": "3855237377fa6429cf815732e3288d37a7f35dc130f43468f46910d2faeae85e",
+      "size": 186327329,
+      "kind": "AppImage"
+    }
+  ],
+  "packages": {
+    "appimage": {
+      "version": "0.5.0-beta.48",
+      "kind": "appimage",
+      "source": "88305a6a9c8b07e133d1cc853e007090afd99a73",
+      "retiredRuntimeAbsent": true,
+      "retiredSDKAbsent": true,
+      "sourceModuleHashesMatch": true,
+      "nativeHelperHash": "9922e10da15a8fd870c2790577619c41b974b70d620336423fb0f35043201225",
+      "nativeStatusExecuted": true,
+      "nativeCaptureExecuted": false,
+      "installedCustomerApp": false,
+      "legalSources": 133
+    },
+    "debian": {
+      "version": "0.5.0-beta.48",
+      "kind": "debian",
+      "source": "88305a6a9c8b07e133d1cc853e007090afd99a73",
+      "retiredRuntimeAbsent": true,
+      "retiredSDKAbsent": true,
+      "sourceModuleHashesMatch": true,
+      "nativeHelperHash": "9922e10da15a8fd870c2790577619c41b974b70d620336423fb0f35043201225",
+      "nativeStatusExecuted": true,
+      "nativeCaptureExecuted": false,
+      "installedCustomerApp": false,
+      "legalSources": 133
+    }
+  },
+  "startup": {
+    "appimage": {
+      "version": "0.5.0-beta.48",
+      "platform": "linux",
+      "arch": "x64",
+      "packagedStartup": true,
+      "legacyCatalogueRendered": true,
+      "retiredRuntimeAbsent": true,
+      "retiredIpcRejected": true,
+      "docsAvailable": true,
+      "unauthenticatedToolsDenied": true,
+      "updaterSupported": true,
+      "liveProviderAuthentication": false
+    },
+    "debian": {
+      "version": "0.5.0-beta.48",
+      "platform": "linux",
+      "arch": "x64",
+      "packagedStartup": true,
+      "legacyCatalogueRendered": true,
+      "retiredRuntimeAbsent": true,
+      "retiredIpcRejected": true,
+      "docsAvailable": true,
+      "unauthenticatedToolsDenied": true,
+      "updaterSupported": true,
+      "liveProviderAuthentication": false
+    }
+  },
+  "network": {
+    "appimage": {
+      "platform": "linux",
+      "arch": "x64",
+      "unprivileged": true,
+      "bundledExecutables": true,
+      "noSystemCLI": true,
+      "separatePrivateState": true,
+      "parallelStartup": true,
+      "duplicateOwnerDenied": true,
+      "restart": true,
+      "ownerCrashRecovery": true,
+      "noSystemFallback": true,
+      "dnsUnchanged": true,
+      "enrolled": false
+    },
+    "debian": {
+      "platform": "linux",
+      "arch": "x64",
+      "unprivileged": true,
+      "bundledExecutables": true,
+      "noSystemCLI": true,
+      "separatePrivateState": true,
+      "parallelStartup": true,
+      "duplicateOwnerDenied": true,
+      "restart": true,
+      "ownerCrashRecovery": true,
+      "noSystemFallback": true,
+      "dnsUnchanged": true,
+      "enrolled": false
+    }
+  },
+  "customer_installation": false
+}

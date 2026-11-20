@@ -3,11 +3,45 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.39",
+    "preview": "0.5.0-beta.48",
     "stable": null,
     "windows_preview": "0.5.0-beta.47"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.48",
+      "tag": "v0.5.0-beta.48",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.48/RELEASE-VERIFICATION.md",
+      "source_commit": "88305a6a9c8b07e133d1cc853e007090afd99a73",
+      "platforms": {
+        "linux-x64.deb": {
+          "filename": "Sym-0.5.0-beta.48-linux-amd64.deb",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.48/Sym-0.5.0-beta.48-linux-amd64.deb",
+          "sha256": "1b3e8b6c5b151416fd2eaff71d62f5f72a10e724f5b1e2cfe7e5f2fcd48635b6",
+          "size_bytes": 149543624,
+          "source_commit": "88305a6a9c8b07e133d1cc853e007090afd99a73",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "deb",
+          "status": "preview-qualified-disposable-ubuntu24-with-live-limitations"
+        },
+        "linux-x64.AppImage": {
+          "filename": "Sym-0.5.0-beta.48-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.48/Sym-0.5.0-beta.48-linux-x86_64.AppImage",
+          "sha256": "3855237377fa6429cf815732e3288d37a7f35dc130f43468f46910d2faeae85e",
+          "size_bytes": 186327329,
+          "source_commit": "88305a6a9c8b07e133d1cc853e007090afd99a73",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-disposable-ubuntu24-with-live-limitations"
+        }
+      },
+      "notes": "Linux preview: bundled Codex/Claude runtime and SDK retired; external apps and saved data untouched. Exact AppImage and Debian native/network/startup qualification passed in disposable Ubuntu24.04. Windows47/Mac39 retained. Customer desktop and other distributions remain unqualified."
+    },
     {
       "version": "0.5.0-beta.47",
       "tag": "v0.5.0-beta.47",
