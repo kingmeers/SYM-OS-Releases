@@ -1,0 +1,21 @@
+{
+  "source_commit": "45e6ed77d300d6e512c6e3d7b3a61610d9dc0843",
+  "source_archive_sha256": "93fdb947fc83af105e7d843957268d0965b184fc50e924f63e10c199480bae41",
+  "version": "0.5.0-beta.45",
+  "artifact": "dist-gui/Sym-Setup-0.5.0-beta.45-windows-x64.exe",
+  "bytes": 339599618,
+  "sha256": "ea8665b781a150de1ebdcd244a4bb37df679d0c0fb9a3f0674db53a606b38dc2",
+  "policy_sha256": "fe796e848f95d756d7cbc8148226d2d45a010a77d6e771f62755760e3c5b744d",
+  "outlook-win32-x64/sym-outlook.exe": "3385eca37c209da5f31e6f87826c89f4bfe3ed6ba50eedda89c4adfbdc7c3501",
+  "outlook-win32-x64/sym-outlook.dll": "59cd26dd967bd8fdac10459310738d67fad0a4fd0c859345934f52c4f100298a",
+  "win32-x64/sym-computer.exe": "8ffa6cd2e8565db5dbb8a500b193c29d01cc1bdbaea92499c200e6b00da83923",
+  "qualification": {
+    "windows_node_tests": 45,
+    "native_boundary_fixture": "passed",
+    "native_compile": "passed",
+    "installed_app": false,
+    "real_send": false,
+    "published": false
+  },
+  "created_at": "2026-11-20T11:02:30.986Z"
+}
