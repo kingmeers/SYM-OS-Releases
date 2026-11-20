@@ -5,9 +5,32 @@
   "latest": {
     "preview": "0.5.0-beta.39",
     "stable": null,
-    "windows_preview": "0.5.0-beta.45"
+    "windows_preview": "0.5.0-beta.46"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.46",
+      "tag": "v0.5.0-beta.46",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.46/RELEASE-VERIFICATION.md",
+      "source_commit": "4fcc8c1b558a3eca94cb400edeed5fb709432e7f",
+      "platforms": {
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.46-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.46/Sym-Setup-0.5.0-beta.46-windows-x64.exe",
+          "sha256": "70e61db40ac2853643204cb4c0b5c41637e7fa62aefbb0d7f3b654cff73eb09d",
+          "size_bytes": 339605393,
+          "source_commit": "4fcc8c1b558a3eca94cb400edeed5fb709432e7f",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Windows preview: owner-bound materialized Outlook pagination, feature6, explicit enumeration limits and bounded diagnostics.182 Windows tests and exact-source native/package qualification passed. Unsigned; no installed-client, real-mailbox or real-profile-launch acceptance. Mac/Linux unchanged."
+    },
     {
       "version": "0.5.0-beta.45",
       "tag": "v0.5.0-beta.45",
