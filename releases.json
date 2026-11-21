@@ -3,11 +3,34 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.49",
+    "preview": "0.5.0-beta.50",
     "stable": null,
     "windows_preview": "0.5.0-beta.49"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.50",
+      "tag": "v0.5.0-beta.50",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.50/RELEASE-VERIFICATION.md",
+      "source_commit": "9990093f4ab688ec952cd4a41305a604501c40e8",
+      "platforms": {
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.50-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.50/Sym-0.5.0-beta.50-macos-x64.dmg",
+          "sha256": "97356b17be873e0dfb8effd287f5a3581a5795dea5f88ef051bd49db2e8c559f",
+          "size_bytes": 164729495,
+          "source_commit": "9990093f4ab688ec952cd4a41305a604501c40e8",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "signed-notarized-preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Intel Mac preview: current runtime recovery and retired built-in provider changes. Native Intel signing/notarization/packaged qualification passed. ARM39 and Windows/Linux49 retained. Customer recovery and installed automatic-upgrade acceptance remain separate."
+    },
     {
       "version": "0.5.0-beta.49",
       "tag": "v0.5.0-beta.49",
