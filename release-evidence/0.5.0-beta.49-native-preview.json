@@ -1,0 +1,116 @@
+{
+  "version": "0.5.0-beta.49",
+  "source_commit": "5de132ba10e554fe4ccba1a02e255a9007af9514",
+  "source_merge": "1813588d5d6dee5c4cf35f5e5a3d9bc9fb1d8b81",
+  "source_pr": 100,
+  "runtime_pr": 99,
+  "policy_ci": 44945573308,
+  "linux_package_ci": 44945571608,
+  "windows": {
+    "source_commit": "5de132ba10e554fe4ccba1a02e255a9007af9514",
+    "source_archive_sha256": "a4c1e5718876809984fdca086ed96ec8048d4440a3db37015d6d44d9738c3ea3",
+    "version": "0.5.0-beta.49",
+    "artifact": "dist-gui/Sym-Setup-0.5.0-beta.49-windows-x64.exe",
+    "path": "D:\\SymQA\\companion-beta49-build-20261122\\dist-gui\\Sym-Setup-0.5.0-beta.49-windows-x64.exe",
+    "bytes": 223819391,
+    "sha256": "6ea3d9cee52c976ac8402b01b98d6b8a82fdc4afde83b643a4a73f3fd72729ef",
+    "policy_sha256": "fe796e848f95d756d7cbc8148226d2d45a010a77d6e771f62755760e3c5b744d",
+    "retired_provider_runtime_absent": true,
+    "retired_sdk_absent": true,
+    "outlook-win32-x64/sym-outlook.exe": "3385eca37c209da5f31e6f87826c89f4bfe3ed6ba50eedda89c4adfbdc7c3501",
+    "outlook-win32-x64/sym-outlook.dll": "9e07210b1182b296a79693e7bd4f2f068a4c790f60ff311aedc15e7f8e30c354",
+    "win32-x64/sym-computer.exe": "8ffa6cd2e8565db5dbb8a500b193c29d01cc1bdbaea92499c200e6b00da83923",
+    "qualification": {
+      "windows_node_tests": 211,
+      "native_boundary_fixture": "passed",
+      "native_compile": "passed",
+      "installed_app": false,
+      "real_send": false,
+      "published": false,
+      "packaged_network_lifecycle": "passed",
+      "packaged_owner_crash_recovery": "passed",
+      "customer_installation": false,
+      "capture": false,
+      "real_sleep_wake": false
+    },
+    "created_at": "2026-11-21T20:25:08.682Z",
+    "authenticode_status": "NotSigned"
+  },
+  "linux": {
+    "appimage": {
+      "version": "0.5.0-beta.49",
+      "kind": "appimage",
+      "source": "5de132ba10e554fe4ccba1a02e255a9007af9514",
+      "retiredRuntimeAbsent": true,
+      "retiredSDKAbsent": true,
+      "sourceModuleHashesMatch": true,
+      "nativeHelperHash": "9922e10da15a8fd870c2790577619c41b974b70d620336423fb0f35043201225",
+      "nativeStatusExecuted": true,
+      "nativeCaptureExecuted": false,
+      "installedCustomerApp": false,
+      "legalSources": 133
+    },
+    "debian": {
+      "version": "0.5.0-beta.49",
+      "kind": "debian",
+      "source": "5de132ba10e554fe4ccba1a02e255a9007af9514",
+      "retiredRuntimeAbsent": true,
+      "retiredSDKAbsent": true,
+      "sourceModuleHashesMatch": true,
+      "nativeHelperHash": "9922e10da15a8fd870c2790577619c41b974b70d620336423fb0f35043201225",
+      "nativeStatusExecuted": true,
+      "nativeCaptureExecuted": false,
+      "installedCustomerApp": false,
+      "legalSources": 133
+    }
+  },
+  "independent_source_parity": {
+    "appimage": {
+      "archive": "/tmp/sym-beta49-extract-appimage/squashfs-root/resources/app.asar",
+      "version": "0.5.0-beta.49",
+      "files": 339,
+      "retired_runtime_sdk_paths": [],
+      "exact_source_modules": [
+        "bridge-runtime.js",
+        "startup-policy.js",
+        "main.js",
+        "retired-agent-plugins.js",
+        "agent-helper.js",
+        "plugin-runtime.js",
+        "plugin-host.js",
+        "plugin-updates.js",
+        "plugin-release-registry.json",
+        "app-management.js",
+        "device-settings.js",
+        "outlook-runtime.js",
+        "outlook-search-snapshots.js"
+      ],
+      "agents_registry_absent": true
+    },
+    "debian": {
+      "archive": "/tmp/sym-beta49-extract-debian/opt/Sym/resources/app.asar",
+      "version": "0.5.0-beta.49",
+      "files": 339,
+      "retired_runtime_sdk_paths": [],
+      "exact_source_modules": [
+        "bridge-runtime.js",
+        "startup-policy.js",
+        "main.js",
+        "retired-agent-plugins.js",
+        "agent-helper.js",
+        "plugin-runtime.js",
+        "plugin-host.js",
+        "plugin-updates.js",
+        "plugin-release-registry.json",
+        "app-management.js",
+        "device-settings.js",
+        "outlook-runtime.js",
+        "outlook-search-snapshots.js"
+      ],
+      "agents_registry_absent": true
+    }
+  },
+  "retained_macos": "0.5.0-beta.39",
+  "customer_installation": false,
+  "real_sleep_wake_acceptance": false
+}

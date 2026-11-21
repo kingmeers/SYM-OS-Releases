@@ -3,11 +3,56 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.48",
+    "preview": "0.5.0-beta.49",
     "stable": null,
-    "windows_preview": "0.5.0-beta.47"
+    "windows_preview": "0.5.0-beta.49"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.49",
+      "tag": "v0.5.0-beta.49",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.49/RELEASE-VERIFICATION.md",
+      "source_commit": "5de132ba10e554fe4ccba1a02e255a9007af9514",
+      "platforms": {
+        "linux-x64.deb": {
+          "filename": "Sym-0.5.0-beta.49-linux-amd64.deb",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.49/Sym-0.5.0-beta.49-linux-amd64.deb",
+          "sha256": "8919da934f308c008db901bab495102b0ce286e3b261f2b49077aad125213acc",
+          "size_bytes": 149544620,
+          "source_commit": "5de132ba10e554fe4ccba1a02e255a9007af9514",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "deb",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64.AppImage": {
+          "filename": "Sym-0.5.0-beta.49-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.49/Sym-0.5.0-beta.49-linux-x86_64.AppImage",
+          "sha256": "c6d84fd3d83831415ab9fc479c498d69999846ae34efb957d502a77f6f42cea0",
+          "size_bytes": 186327350,
+          "source_commit": "5de132ba10e554fe4ccba1a02e255a9007af9514",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.49-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.49/Sym-Setup-0.5.0-beta.49-windows-x64.exe",
+          "sha256": "6ea3d9cee52c976ac8402b01b98d6b8a82fdc4afde83b643a4a73f3fd72729ef",
+          "size_bytes": 223819391,
+          "source_commit": "5de132ba10e554fe4ccba1a02e255a9007af9514",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Windows and Linux preview: observed listener loss invalidates stale reachability proof with identity, probe and Off fences. Exact native packages and policy checks passed. Windows unsigned; Linux qualified in disposable Ubuntu24.04. Mac39 retained. Customer sleep/wake and live recovery acceptance remain separate."
+    },
     {
       "version": "0.5.0-beta.48",
       "tag": "v0.5.0-beta.48",
