@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "9990093f4ab688ec952cd4a41305a604501c40e8",
+  "nativePlatform": "Intel macOS14.5 x64",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.50-macos-x64.dmg",
+      "sha256": "97356b17be873e0dfb8effd287f5a3581a5795dea5f88ef051bd49db2e8c559f",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; stapler validate; spctl --assess; exact Apple notary log hash; final ZIP/DMG file inventory parity"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.50-macos-x64.zip",
+      "sha256": "51786e2f819ac92ab9218fa454d07f93fb2ad213b951c50bccaeb5b4a6253172",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; stapler validate; spctl --assess; exact Apple notary log hash; final ZIP/DMG file inventory parity"
+    }
+  ],
+  "qualification": {
+    "ok": true,
+    "source": "9990093f4ab688ec952cd4a41305a604501c40e8",
+    "version": "0.5.0-beta.50",
+    "platform": "darwin-x64",
+    "dmgSha256": "97356b17be873e0dfb8effd287f5a3581a5795dea5f88ef051bd49db2e8c559f",
+    "mountedSignedDmg": true,
+    "nativeBuild": true,
+    "allFourExecutablesNativeArchitecture": true,
+    "developerIDTeam": "JR2SHF8H9R",
+    "signedAndStapled": true,
+    "gatekeeperAccepted": true,
+    "packagedNetworkLifecycle": true,
+    "browserSetup": true,
+    "secureStorage": true,
+    "fixtureScreens": 50,
+    "updaterZipAppIdentical": true,
+    "pluginHostAndRegistrySourceParity": true,
+    "retiredProviderIpcRejected": true,
+    "realEmailsSent": 0,
+    "installedUserApp": false,
+    "limitations": [
+      "Fixture account; no provider sign-in",
+      "No installed app replacement or automatic-upgrade cycle",
+      "No desktop capture/input acceptance"
+    ]
+  },
+  "notarization": {
+    "app": {
+      "id": "aa399a3a-dc82-4f2c-934f-a3a3e1bc3d97",
+      "submittedSha256": "688265f5784af923da6798b7a8282939486028a75265e54065dec66ad1ec5421",
+      "status": "Accepted"
+    },
+    "dmg": {
+      "id": "da3efc01-2fa8-42e5-a320-f6ed2d9b08ce",
+      "submittedSha256": "9581802e36a974cd00522626507610f5a27908c03a4780ec2c9ab84aee3197f1",
+      "status": "Accepted"
+    }
+  },
+  "limits": [
+    "Apple Silicon not qualified; ARM39 retained",
+    "No customer installation, live reconnect acceptance or automatic upgrade cycle"
+  ],
+  "policyRun": "44947833985",
+  "nativeTests": 110
+}
