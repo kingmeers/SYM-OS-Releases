@@ -3,11 +3,59 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.51",
+    "preview": "0.5.0-beta.52",
     "stable": null,
-    "windows_preview": "0.5.0-beta.51"
+    "windows_preview": "0.5.0-beta.52"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.52",
+      "tag": "v0.5.0-beta.52",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.52/RELEASE-VERIFICATION.md",
+      "source_commit": "e46facda07c8f9daf6e43b655ace5ec5cf5414d0",
+      "platforms": {
+        "linux-x64.deb": {
+          "filename": "Sym-0.5.0-beta.52-linux-amd64.deb",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.52/Sym-0.5.0-beta.52-linux-amd64.deb",
+          "sha256": "d5417f991cf1676bfd9b246ec2c03f6bad8a40f263fedfe0895ddf929119ea62",
+          "size_bytes": 149563016,
+          "source_commit": "5539b2a64f754c25ce345ea3135b4d2a77fd7927",
+          "runtime_commit": "95677c1e800b5f80adb83047594b1a06757fdac2",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "deb",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64.AppImage": {
+          "filename": "Sym-0.5.0-beta.52-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.52/Sym-0.5.0-beta.52-linux-x86_64.AppImage",
+          "sha256": "449cb05bfd57548b8ba56d554bf268c8d6d4dbff823afa2ac9c8e1185e925d69",
+          "size_bytes": 186351983,
+          "source_commit": "5539b2a64f754c25ce345ea3135b4d2a77fd7927",
+          "runtime_commit": "95677c1e800b5f80adb83047594b1a06757fdac2",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.52-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.52/Sym-Setup-0.5.0-beta.52-windows-x64.exe",
+          "sha256": "dcd31932e94e0d6553b6c09ef351b25d6ac0ad0d0f7db5c5458065e6b8372e29",
+          "size_bytes": 223842637,
+          "source_commit": "e46facda07c8f9daf6e43b655ace5ec5cf5414d0",
+          "runtime_commit": "95677c1e800b5f80adb83047594b1a06757fdac2",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Windows/Linux52 preview: bounded daemon lifecycle/error fidelity, corrected native Outlook snapshot entry feature7/minGeneration4, packaged shared schema. Exact native packages and policy checks passed; Windows unsigned. Intel50/ARM39 preserved; customer installation and live recovery acceptance remain separate."
+    },
     {
       "version": "0.5.0-beta.51",
       "tag": "v0.5.0-beta.51",
