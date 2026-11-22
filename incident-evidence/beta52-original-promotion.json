@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "operation": "promotion",
+  "complete": false,
+  "failed": true,
+  "reason": "Promotion failed; inspect committed state before any recovery",
+  "committedOperation": {
+    "schemaVersion": 1,
+    "operation": "promotion",
+    "channel": "preview",
+    "previousSha256": "3dd8a1ab50f0056e648b9b79ce0a2b3a95ae5ada55d044746f4512b8d33f8e5b",
+    "nextSha256": "2bc07152ec393a13ec8e599f918cd6df442eb69172ea84696674b9327848c690",
+    "revision": 43,
+    "committed": true,
+    "verified": false,
+    "progress": {
+      "stage": "alias",
+      "completed": 49,
+      "path": "/latest/linux-release-manifest.json"
+    },
+    "failure": {
+      "phase": "head",
+      "status": 503,
+      "contentRange": null,
+      "requestedRange": null,
+      "attempts": 3,
+      "path": "/latest/linux-release-manifest.json",
+      "assertion": "Public HEAD failed"
+    }
+  }
+}
