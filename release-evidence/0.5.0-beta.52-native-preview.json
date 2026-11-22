@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.52",
+  "source_commit": "e46facda07c8f9daf6e43b655ace5ec5cf5414d0",
+  "source_merge": "97c80c3904bbfd17ef3b3a64bb7c8de35d864a1c",
+  "source_pr": 103,
+  "source_equivalence": {
+    "windowsBuildSource": "e46facda07c8f9daf6e43b655ace5ec5cf5414d0",
+    "linuxBuildSource": "5539b2a64f754c25ce345ea3135b4d2a77fd7927",
+    "changedFiles": [
+      "tools/verify-retired-agent-package.cjs"
+    ],
+    "productRuntimeAndDependenciesIdentical": true,
+    "qualificationToolChanged": true,
+    "sourceMerge": "97c80c3904bbfd17ef3b3a64bb7c8de35d864a1c",
+    "verifierPR": 105,
+    "verifierMerge": "21fcba3bcb7b88f664cd6a528955b8eec5bc2c85"
+  },
+  "qualification": [
+    {
+      "run": "45070548356",
+      "attempt": 2,
+      "jobs": [
+        {
+          "id": 137358632526,
+          "name": "policy (windows-latest)",
+          "attempt": 2,
+          "conclusion": "success"
+        },
+        {
+          "id": 137358675843,
+          "name": "policy (ubuntu-latest)",
+          "attempt": 2,
+          "conclusion": "success"
+        },
+        {
+          "id": 137358633518,
+          "name": "policy (macos-15-intel)",
+          "attempt": 2,
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run": "45070548360",
+      "attempt": 2,
+      "jobs": [
+        {
+          "id": 137358644026,
+          "name": "build (x64)",
+          "attempt": 2,
+          "conclusion": "success"
+        },
+        {
+          "id": 137358643747,
+          "name": "build (arm64)",
+          "attempt": 2,
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "windows": {
+    "source_commit": "e46facda07c8f9daf6e43b655ace5ec5cf5414d0",
+    "source_archive_sha256": "99e5086174305b097dff46a1eb012bb83f6fb1142d898dc766cca3c17f0d79d6",
+    "version": "0.5.0-beta.52",
+    "artifact": "dist-gui/Sym-Setup-0.5.0-beta.52-windows-x64.exe",
+    "path": "D:\\SymQA\\companion-beta52-build-20261123\\dist-gui\\Sym-Setup-0.5.0-beta.52-windows-x64.exe",
+    "bytes": 223842637,
+    "sha256": "dcd31932e94e0d6553b6c09ef351b25d6ac0ad0d0f7db5c5458065e6b8372e29",
+    "policy_sha256": "fe796e848f95d756d7cbc8148226d2d45a010a77d6e771f62755760e3c5b744d",
+    "retired_provider_runtime_absent": true,
+    "retired_sdk_absent": true,
+    "outlook-win32-x64/sym-outlook.exe": "3385eca37c209da5f31e6f87826c89f4bfe3ed6ba50eedda89c4adfbdc7c3501",
+    "outlook-win32-x64/sym-outlook.dll": "92d1f69fc2f41aec74d506cdeaf2c71353b14a78d5a8f98041574360e00c60a8",
+    "win32-x64/sym-computer.exe": "8ffa6cd2e8565db5dbb8a500b193c29d01cc1bdbaea92499c200e6b00da83923",
+    "qualification": {
+      "windows_node_tests": 258,
+      "native_boundary_fixture": "passed",
+      "native_compile": "passed",
+      "installed_app": false,
+      "real_send": false,
+      "published": false
+    },
+    "created_at": "2026-11-22T21:31:52.865Z"
+  },
+  "windows_authenticode": "NotSigned",
+  "linux_package_ci": 45073463352,
+  "linux": {
+    "appimage": {
+      "version": "0.5.0-beta.52",
+      "kind": "appimage",
+      "source": "5539b2a64f754c25ce345ea3135b4d2a77fd7927",
+      "retiredRuntimeAbsent": true,
+      "retiredSDKAbsent": true,
+      "sourceModuleHashesMatch": true,
+      "nativeHelperHash": "9922e10da15a8fd870c2790577619c41b974b70d620336423fb0f35043201225",
+      "nativeStatusExecuted": true,
+      "nativeCaptureExecuted": false,
+      "installedCustomerApp": false,
+      "legalSources": 133
+    },
+    "debian": {
+      "version": "0.5.0-beta.52",
+      "kind": "debian",
+      "source": "5539b2a64f754c25ce345ea3135b4d2a77fd7927",
+      "retiredRuntimeAbsent": true,
+      "retiredSDKAbsent": true,
+      "sourceModuleHashesMatch": true,
+      "nativeHelperHash": "9922e10da15a8fd870c2790577619c41b974b70d620336423fb0f35043201225",
+      "nativeStatusExecuted": true,
+      "nativeCaptureExecuted": false,
+      "installedCustomerApp": false,
+      "legalSources": 133
+    }
+  },
+  "independent_source_parity": {
+    "appimage": {
+      "archive": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta52/linux-extracted-appimage/resources/app.asar",
+      "version": "0.5.0-beta.52",
+      "files": 342,
+      "retired_runtime_sdk_paths": [],
+      "exact_source_modules": [
+        "bridge-runtime.js",
+        "startup-policy.js",
+        "main.js",
+        "retired-agent-plugins.js",
+        "agent-helper.js",
+        "plugin-runtime.js",
+        "plugin-host.js",
+        "plugin-updates.js",
+        "plugin-release-registry.json",
+        "app-management.js",
+        "device-settings.js",
+        "outlook-runtime.js",
+        "outlook-search-snapshots.js",
+        "browser-memory-controls.js",
+        "companion-diagnostics.js",
+        "plugin-management.js",
+        "app-management-contract.js"
+      ],
+      "agents_registry_absent": true,
+      "core_source_modules": [
+        "src/browser-memory.js",
+        "src/browser-memory-runtime.js",
+        "src/core/server.js",
+        "src/devices.js",
+        "src/app-management-contract.js",
+        "src/isolated-network.js",
+        "src/network-supervisor.js",
+        "src/setup-diagnostics.js",
+        "connector/browserExtensionContract.js"
+      ],
+      "build_source": "5539b2a64f754c25ce345ea3135b4d2a77fd7927",
+      "reviewed_source": "e46facda07c8f9daf6e43b655ace5ec5cf5414d0"
+    },
+    "debian": {
+      "archive": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta52/linux-extracted-debian/opt/Sym/resources/app.asar",
+      "version": "0.5.0-beta.52",
+      "files": 342,
+      "retired_runtime_sdk_paths": [],
+      "exact_source_modules": [
+        "bridge-runtime.js",
+        "startup-policy.js",
+        "main.js",
+        "retired-agent-plugins.js",
+        "agent-helper.js",
+        "plugin-runtime.js",
+        "plugin-host.js",
+        "plugin-updates.js",
+        "plugin-release-registry.json",
+        "app-management.js",
+        "device-settings.js",
+        "outlook-runtime.js",
+        "outlook-search-snapshots.js",
+        "browser-memory-controls.js",
+        "companion-diagnostics.js",
+        "plugin-management.js",
+        "app-management-contract.js"
+      ],
+      "agents_registry_absent": true,
+      "core_source_modules": [
+        "src/browser-memory.js",
+        "src/browser-memory-runtime.js",
+        "src/core/server.js",
+        "src/devices.js",
+        "src/app-management-contract.js",
+        "src/isolated-network.js",
+        "src/network-supervisor.js",
+        "src/setup-diagnostics.js",
+        "connector/browserExtensionContract.js"
+      ],
+      "build_source": "5539b2a64f754c25ce345ea3135b4d2a77fd7927",
+      "reviewed_source": "e46facda07c8f9daf6e43b655ace5ec5cf5414d0"
+    }
+  },
+  "retained_macos": {
+    "x64": "0.5.0-beta.50",
+    "arm64": "0.5.0-beta.39"
+  },
+  "customer_installation": false,
+  "real_sleep_wake_acceptance": false,
+  "outlookFeatureVersion": 7,
+  "outlookMinimumGeneration": 4
+}
