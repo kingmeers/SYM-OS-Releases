@@ -1,0 +1,331 @@
+{
+  "version": "0.5.0-beta.56",
+  "source_commit": "105f23a5a214cbb70a5816003313de24e89d035d",
+  "source_merge": "3b27f02a48e28db76e623ba518769247a34bd188",
+  "source_pr": 113,
+  "sourceTreeEqualsMerge": true,
+  "platform_policy": {
+    "source": "105f23a5a214cbb70a5816003313de24e89d035d",
+    "run": 45154067922,
+    "jobs": [
+      {
+        "id": 137622451524,
+        "name": "policy (windows-latest)",
+        "conclusion": "success"
+      },
+      {
+        "id": 137622451964,
+        "name": "policy (macos-15-intel)",
+        "conclusion": "success"
+      },
+      {
+        "id": 137622452160,
+        "name": "policy (ubuntu-latest)",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "windows": {
+    "source_commit": "105f23a5a214cbb70a5816003313de24e89d035d",
+    "source_archive_sha256": "c4e787375ebb1b8fd1335adb0c7e476d4de28f58cf63259550e57b8166e10733",
+    "version": "0.5.0-beta.56",
+    "artifact": "dist-gui/Sym-Setup-0.5.0-beta.56-windows-x64.exe",
+    "path": "D:\\SymQA\\companion-beta56-build-20261123\\dist-gui\\Sym-Setup-0.5.0-beta.56-windows-x64.exe",
+    "bytes": 224692928,
+    "sha256": "98e0462d1f33df7c22c1d7e37a7eb7b9de80587ccc9eb2d91e3981343981c416",
+    "policy_sha256": "fe796e848f95d756d7cbc8148226d2d45a010a77d6e771f62755760e3c5b744d",
+    "retired_provider_runtime_absent": true,
+    "retired_sdk_absent": true,
+    "outlook-win32-x64/sym-outlook.exe": "3385eca37c209da5f31e6f87826c89f4bfe3ed6ba50eedda89c4adfbdc7c3501",
+    "outlook-win32-x64/sym-outlook.dll": "45d00ac188cc5c2bf81c7b9fed54bc18c3fc4da5c0321f13c344ba4043d048f0",
+    "win32-x64/sym-computer.exe": "8ffa6cd2e8565db5dbb8a500b193c29d01cc1bdbaea92499c200e6b00da83923",
+    "qualification": {
+      "windows_node_tests": 307,
+      "native_boundary_fixture": "passed",
+      "native_compile": "passed",
+      "installed_app": false,
+      "real_send": false,
+      "published": false
+    },
+    "created_at": "2026-11-23T10:10:25.065Z",
+    "memory_wasm": {
+      "ok": true,
+      "electron": "43.4.1",
+      "node": "24.18.1",
+      "platform": "win32",
+      "arch": "x64",
+      "qualification": "actual-package SQLite FTS/encryption; no GUI or user-data acceptance"
+    },
+    "memory_wasm_receipt_sha256": "9d31b3ffc92bbf119823e260eed5bcbfba68ca1b3a985998dcc2b5f6904dd3fa",
+    "operation_diagnostics": {
+      "ok": true,
+      "platform": "win32",
+      "arch": "x64",
+      "node": "24.15.0",
+      "packagedModuleSha256": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+      "syntheticPersistenceRestart": true,
+      "customerData": false,
+      "network": false
+    },
+    "operation_diagnostics_receipt_sha256": "d8662d8a6a176310dd25aa8945b504b5d7861548d61e304014f81c8e7be9d9e2",
+    "plugin_feed": {
+      "ok": true,
+      "source": "105f23a5a214cbb70a5816003313de24e89d035d",
+      "platform": "win32",
+      "arch": "x64",
+      "electron": "43.4.1",
+      "requests": 8,
+      "fullEnvelopeReads": 5,
+      "unchangedBelowFloorBodyAvoided": true,
+      "fullSignatureBeforeActivation": true,
+      "installedPointerRestartVerified": true,
+      "invalidSignaturePreservesGeneration": true,
+      "customerData": false,
+      "network": false
+    },
+    "plugin_feed_module_hashes": {
+      "plugin-updates.js": "0a1ff53b7a476266226226cf1485181eb47ce68ec31b6ce490e7fe4e534521ad",
+      "retired-agent-plugins.js": "6ad62b8bec7dc999a1db2d3725c603ee13a71ffac2d2b41970dff09932203bbb"
+    }
+  },
+  "windows_authenticode": "NotSigned",
+  "linux_workflow": 45150371432,
+  "linux_download": {
+    "source": "105f23a5a214cbb70a5816003313de24e89d035d",
+    "workflow": 45150371432,
+    "packages": [
+      {
+        "filename": "Sym-0.5.0-beta.56-linux-x86_64.AppImage",
+        "bytes": 187482724,
+        "sha256": "0328dd97590e38463c918b2817a9d07de1a7b3f06be7ecbbf513c7539156cfe3",
+        "resources": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta56/linux-extracted-appimage/resources",
+        "parity": {
+          "archive": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta56/linux-extracted-appimage/resources/app.asar",
+          "version": "0.5.0-beta.56",
+          "files": 342,
+          "retired_runtime_sdk_paths": [],
+          "exact_source_modules": [
+            "operation-schema.js",
+            "bridge-runtime.js",
+            "startup-policy.js",
+            "main.js",
+            "preload.js",
+            "retired-agent-plugins.js",
+            "agent-helper.js",
+            "plugin-runtime.js",
+            "plugin-host.js",
+            "plugin-updates.js",
+            "plugin-release-registry.json",
+            "app-management.js",
+            "device-settings.js",
+            "outlook-runtime.js",
+            "outlook-search-snapshots.js",
+            "browser-memory-controls.js",
+            "companion-diagnostics.js",
+            "plugin-management.js",
+            "app-management-contract.js"
+          ],
+          "agents_registry_absent": true,
+          "core_source_modules": [
+            "src/operation-diagnostics.js",
+            "src/operation-diagnostics-schema.js",
+            "src/browser-memory.js",
+            "src/browser-memory-runtime.js",
+            "src/browser-memory-sqlite.js",
+            "src/browser-memory-archive.js",
+            "src/browser-memory-capture.js",
+            "src/browser-memory-recipes.js",
+            "src/browser-memory-redaction.js",
+            "src/browser-memory-errors.js",
+            "src/backends/ext.js",
+            "src/core/server.js",
+            "src/devices.js",
+            "src/app-management-contract.js",
+            "src/isolated-network.js",
+            "src/network-supervisor.js",
+            "src/setup-diagnostics.js",
+            "connector/browserExtensionContract.js"
+          ],
+          "build_source": "105f23a5a214cbb70a5816003313de24e89d035d",
+          "reviewed_source": "105f23a5a214cbb70a5816003313de24e89d035d"
+        },
+        "network_provenance": {
+          "version": "1.102.4",
+          "revision": "bbcd7d1fc2054b9189ebc1531acf74bd880ca0c8",
+          "platform": "linux",
+          "arch": "x64",
+          "go": "go version go1.27.1 linux/amd64",
+          "buildTags": [],
+          "windowsBuildRecipe": null,
+          "windowsRegistryWatcher": null,
+          "windowsPipeHardening": null,
+          "sha256": {
+            "tailscaled": "714b64bf447fc9a1ad503bb23ae614ca37d3ad5aa1a8aff5a1611e6369185e04",
+            "tailscale": "ab27f525c2acbc40d171b5a9f4bdfbb2bd65f020c4bd85c4e15a64ed07050e6e"
+          }
+        }
+      },
+      {
+        "filename": "Sym-0.5.0-beta.56-linux-amd64.deb",
+        "bytes": 150266544,
+        "sha256": "d6424802063de310e6151977bae0986964119d5511633c52ce31d25c727fa6ed",
+        "resources": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta56/linux-extracted-debian/opt/Sym/resources",
+        "parity": {
+          "archive": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta56/linux-extracted-debian/opt/Sym/resources/app.asar",
+          "version": "0.5.0-beta.56",
+          "files": 342,
+          "retired_runtime_sdk_paths": [],
+          "exact_source_modules": [
+            "operation-schema.js",
+            "bridge-runtime.js",
+            "startup-policy.js",
+            "main.js",
+            "preload.js",
+            "retired-agent-plugins.js",
+            "agent-helper.js",
+            "plugin-runtime.js",
+            "plugin-host.js",
+            "plugin-updates.js",
+            "plugin-release-registry.json",
+            "app-management.js",
+            "device-settings.js",
+            "outlook-runtime.js",
+            "outlook-search-snapshots.js",
+            "browser-memory-controls.js",
+            "companion-diagnostics.js",
+            "plugin-management.js",
+            "app-management-contract.js"
+          ],
+          "agents_registry_absent": true,
+          "core_source_modules": [
+            "src/operation-diagnostics.js",
+            "src/operation-diagnostics-schema.js",
+            "src/browser-memory.js",
+            "src/browser-memory-runtime.js",
+            "src/browser-memory-sqlite.js",
+            "src/browser-memory-archive.js",
+            "src/browser-memory-capture.js",
+            "src/browser-memory-recipes.js",
+            "src/browser-memory-redaction.js",
+            "src/browser-memory-errors.js",
+            "src/backends/ext.js",
+            "src/core/server.js",
+            "src/devices.js",
+            "src/app-management-contract.js",
+            "src/isolated-network.js",
+            "src/network-supervisor.js",
+            "src/setup-diagnostics.js",
+            "connector/browserExtensionContract.js"
+          ],
+          "build_source": "105f23a5a214cbb70a5816003313de24e89d035d",
+          "reviewed_source": "105f23a5a214cbb70a5816003313de24e89d035d"
+        },
+        "network_provenance": {
+          "version": "1.102.4",
+          "revision": "bbcd7d1fc2054b9189ebc1531acf74bd880ca0c8",
+          "platform": "linux",
+          "arch": "x64",
+          "go": "go version go1.27.1 linux/amd64",
+          "buildTags": [],
+          "windowsBuildRecipe": null,
+          "windowsRegistryWatcher": null,
+          "windowsPipeHardening": null,
+          "sha256": {
+            "tailscaled": "714b64bf447fc9a1ad503bb23ae614ca37d3ad5aa1a8aff5a1611e6369185e04",
+            "tailscale": "ab27f525c2acbc40d171b5a9f4bdfbb2bd65f020c4bd85c4e15a64ed07050e6e"
+          }
+        }
+      }
+    ]
+  },
+  "linux_packaged_fixtures": [
+    {
+      "ok": true,
+      "electron": "43.4.1",
+      "node": "24.18.1",
+      "platform": "linux",
+      "arch": "x64",
+      "qualification": "actual-package SQLite FTS/encryption; no GUI or user-data acceptance"
+    },
+    {
+      "ok": true,
+      "source": "105f23a5a214cbb70a5816003313de24e89d035d",
+      "platform": "linux",
+      "arch": "x64",
+      "electron": "43.4.1",
+      "requests": 8,
+      "fullEnvelopeReads": 5,
+      "unchangedBelowFloorBodyAvoided": true,
+      "fullSignatureBeforeActivation": true,
+      "installedPointerRestartVerified": true,
+      "invalidSignaturePreservesGeneration": true,
+      "customerData": false,
+      "network": false
+    },
+    {
+      "ok": true,
+      "platform": "linux",
+      "arch": "x64",
+      "node": "22.23.4",
+      "packagedModuleSha256": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+      "syntheticPersistenceRestart": true,
+      "customerData": false,
+      "network": false
+    },
+    {
+      "ok": true,
+      "electron": "43.4.1",
+      "node": "24.18.1",
+      "platform": "linux",
+      "arch": "x64",
+      "qualification": "actual-package SQLite FTS/encryption; no GUI or user-data acceptance"
+    },
+    {
+      "ok": true,
+      "source": "105f23a5a214cbb70a5816003313de24e89d035d",
+      "platform": "linux",
+      "arch": "x64",
+      "electron": "43.4.1",
+      "requests": 8,
+      "fullEnvelopeReads": 5,
+      "unchangedBelowFloorBodyAvoided": true,
+      "fullSignatureBeforeActivation": true,
+      "installedPointerRestartVerified": true,
+      "invalidSignaturePreservesGeneration": true,
+      "customerData": false,
+      "network": false
+    },
+    {
+      "ok": true,
+      "platform": "linux",
+      "arch": "x64",
+      "node": "22.23.4",
+      "packagedModuleSha256": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+      "syntheticPersistenceRestart": true,
+      "customerData": false,
+      "network": false
+    }
+  ],
+  "linux_fixture_receipt": {
+    "repo": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta56/linux-package-fixture",
+    "prepare": "set -eu; apt-get -o DPkg::Lock::Timeout=120 update -qq; apt-get -o DPkg::Lock::Timeout=120 install -y --no-install-recommends libnss3 libatk-bridge2.0-0 libgtk-3-0 libgbm1 libasound2",
+    "test": "set -eu; for kind in appimage debian; do ELECTRON_RUN_AS_NODE=1 SYM_MEMORY_PACKAGE_ROOT=/workspace/$kind/resources/sym-bridge /workspace/$kind/sym-bridge /workspace/$kind/test/browser-memory-wasm.electron.cjs; ELECTRON_RUN_AS_NODE=1 /workspace/$kind/sym-bridge /workspace/$kind/test/plugin-proof.cjs /workspace/$kind/plugin-modules; node /workspace/$kind/test/diagnostic-proof.cjs /workspace/$kind/resources/sym-bridge; done",
+    "postgres": false,
+    "started_at": 1795429298.7932587,
+    "status": "passed",
+    "network_during_tests": "none",
+    "untracked_files": "excluded",
+    "memory_limit": "16g",
+    "cpu_limit": 8,
+    "phase_timeout_seconds": 1800,
+    "commit": "8391378f9c4d2baea688471908613943ecdc00f5",
+    "tracked_content_sha256": "1c23f2cf17bde9296a8ccec364ef216a5154f5accee3ad106a5b8b8b4bdef280",
+    "image_id": "c9c598159660db004aaf94c4c72f1a4d3b7d410de41b2409c69e8f93eb8f58c6",
+    "exit_code": 0,
+    "finished_at": 1795429327.0124114
+  },
+  "customer_installation": false,
+  "real_sleep_wake_acceptance": false,
+  "retained_macos": "unchanged; frozen Intel55 and retained ARM are separate",
+  "outlookMinimumGeneration": 4
+}
