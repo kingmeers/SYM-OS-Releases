@@ -1,0 +1,61 @@
+{
+  "version": "1.1.0",
+  "tag": "plugins-1.1.0",
+  "keyId": "sym-plugins-v1",
+  "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAOmHs9yNYxs5j4i1+Uw1xYGmSMnBGCYoK+PKzsfAdsxs=\n-----END PUBLIC KEY-----\n",
+  "items": [
+    {
+      "asset": "outlook-desktop-win32-x64.json",
+      "qualification": {
+        "verified": true,
+        "sha256": "b16881ea61319c862105231db909a3b656ccf1784aabd0c92e701d4b4ced31fe",
+        "priorNodeTestsSha256": "fdfbe90df241d99985e67e32de2afc747142bee6cc6cc150824254848c11dc2c",
+        "platform": "win32",
+        "arch": "x64",
+        "hostApi": 1,
+        "checks": [
+          "62 Node tests on Windows, zero skipped",
+          "compiled synthetic native COM boundaries",
+          "exact plugin and qualified host runtime/native source parity",
+          "complete signed DLL/native inventory and file digests",
+          "actual packaged native .NET executable rejects unsupported operation before COM; no mailbox access",
+          "production signature, disabled policy, actual entry/native path, atomic pointer and reread verified"
+        ],
+        "verified_at": "2026-11-23T10:32:40.022Z",
+        "node": "v24.15.0",
+        "pluginSource": "105e285b79add6084429f35713e083c4732fb84f",
+        "generation": 4,
+        "version": "1.1.0",
+        "customerActions": false
+      },
+      "expectedGeneration": 1
+    }
+  ],
+  "evidence": {
+    "status": "qualified_awaiting_publication_review",
+    "pluginSource": "105e285b79add6084429f35713e083c4732fb84f",
+    "nativeSource": "105f23a5a214cbb70a5816003313de24e89d035d",
+    "signedArtifactSha256": "b16881ea61319c862105231db909a3b656ccf1784aabd0c92e701d4b4ced31fe",
+    "signedArtifactBytes": 99279246,
+    "generation": 4,
+    "nativeAuthenticodeSigned": false,
+    "deviceAcceptance": false,
+    "scope": "Outlook only; preserve all CLI and native installer channels",
+    "runtimeNoticesIncluded": true,
+    "pluginMerge": "627a8c898d945b295221625171a40ca0afdd248d",
+    "pluginPr": "https://github.com/kingmeers/sym-plugin-outlook/pull/1",
+    "nativeInstallerSha256": "98e0462d1f33df7c22c1d7e37a7eb7b9de80587ccc9eb2d91e3981343981c416",
+    "decodedBytes": 74433425,
+    "files": 200,
+    "qualifiedNativeFiles": 187,
+    "runtimePackage": "Microsoft.NETCore.App.Runtime.win-x64/8.0.33",
+    "localTests": {
+      "passed": 61,
+      "platformSkipped": 1,
+      "windowsPassed": 62,
+      "windowsSkipped": 0
+    },
+    "offlinePublisherProofSha256": "5c47dacdcc3b418e8b1ad8dcb223554814eca93841e27594095a3f0289aea735",
+    "sourceMergeProofSha256": "d43397bf845877573e200884a6882f2ee1a6b93a976c4259a2d631e3d319f4c7"
+  }
+}
