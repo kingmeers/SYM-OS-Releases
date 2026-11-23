@@ -1,0 +1,58 @@
+name: Verify beta58 committed preview (no promotion)
+on:
+  workflow_dispatch:
+    inputs:
+      expected_sha256:
+        description: Frozen committed beta58 revision48 SHA256
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: sym-downloads-preview
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    environment: sym-publisher-preview
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.sha }}
+          path: archive
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: Doghouse-Labs-inc/sym-ai-downloads-proxy
+          ref: bc10518f45e714a83b0079b14efc864b0769491e
+          path: publisher
+          fetch-depth: 0
+          ssh-key: ${{ secrets.PUBLISHER_DEPLOY_KEY }}
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: publisher/package-lock.json
+      - name: Verify exact pinned publisher
+        working-directory: publisher
+        run: npm ci --ignore-scripts && node scripts/bundle-serving.js --check && npm test
+      - name: Verify archive reconciliation guards
+        working-directory: archive
+        run: node --test tests/*.test.*
+      - name: Verify committed preview without changing channel
+        working-directory: archive
+        env:
+          VERIFY_EXPECTED_SHA256: ${{ inputs.expected_sha256 }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_R2_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}
+          CLOUDFLARE_R2_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_ACCESS_KEY }}
+        run: node scripts/run-verify-beta58-committed-preview.mjs
+      - name: Preserve sanitized verification receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: preview-verification-only-${{ github.run_id }}
+          path: archive/receipts
+          if-no-files-found: warn

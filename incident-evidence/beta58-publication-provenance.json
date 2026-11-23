@@ -1,0 +1,12 @@
+{
+  "publisherRun": 45185084225,
+  "event": "push",
+  "source": "549ab0629a2c0db6a373d49cfe193f9f86c126ea",
+  "approvalSha256": "a5de0e5f340546b5754b81ade5dbae819236e2a8230934a043fee228e137c486",
+  "failureReceiptSha256": "ec798cb3167cd296e146619b5c8e255f4bc9fa23dc24614c4f65f6a34c011583",
+  "channelSha256": "53e8ff603f5cd8c0ad2fd8fdf828a6122f7cf5a024954e7a60416098625bcde3",
+  "revision": 48,
+  "publishedManifestSha256": "895d69bbf81a43147b60dc163b36b2e301082406b43456a991446c342425568c",
+  "committed": true,
+  "verified": false
+}
