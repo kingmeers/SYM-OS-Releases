@@ -1,6 +1,6 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 import {verifyCommittedPreview} from '../scripts/verify-committed-preview.mjs';
-import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';
+import {resolve} from 'node:path';import os from 'node:os';import {pathToFileURL} from 'node:url';
 const publisher=resolve(process.env.PUBLISHER_DIR||'../publisher');const imp=p=>import(pathToFileURL(resolve(publisher,p)).href);
 const {canonical,validate}=await imp('lib/contracts.js');
 const {digest}=await imp('scripts/store.js');
@@ -27,8 +27,19 @@ test('missing ETag fails closed instead of undefined equality',async()=>{const f
 test('canonical updater feed failure prevents verified receipt',async()=>{const f=fixture();f.args.dependencies.publicVerify=async(a,o={})=>{if(o.url?.includes('/updates/'))throw Error('feed read failed')};await assert.rejects(verifyCommittedPreview(f.args));assert.equal(f.writes.length,0);assert.equal(f.saved[0].complete,false);assert(!JSON.stringify(f.saved).includes('feed read failed'));});
 test('existing marker with wrong revision cannot bypass checks',async()=>{const f=fixture();f.db.set(receiptKey,{value:{committed:true,verified:true,nextSha256:expected,revision:42,channel:'preview'}});await assert.rejects(verifyCommittedPreview(f.args));assert.equal(f.writes.length,0);});
 
-test('actual authenticated wrapper preparation resolves pinned imports/files and S3 maxAttempts1 offline',async()=>{
+test('actual authenticated wrapper preparation resolves pinned imports/files and S3 maxAttempts1 offline',async t=>{
+ // This one-time recovery wrapper is intentionally pinned to beta52. Later
+ // catalog releases must not change its frozen qualification fixture.
+ const archiveDirectory=fs.mkdtempSync(resolve(os.tmpdir(),'sym-beta52-wrapper-'));
+ t.after(()=>fs.rmSync(archiveDirectory,{recursive:true,force:true}));
+ for(const file of ['release-approvals/0.5.0-beta.52.json','incident-evidence/beta52-original-promotion.json']){
+  fs.mkdirSync(resolve(archiveDirectory,file,'..'),{recursive:true});fs.copyFileSync(resolve(file),resolve(archiveDirectory,file));
+ }
+ const catalogPath=resolve(archiveDirectory,'releases.json');
+ fs.writeFileSync(catalogPath,JSON.stringify({latest:{preview:'0.5.0-beta.52',windows_preview:'0.5.0-beta.52'}}));
  const {prepareVerification}=await import('../scripts/run-verify-committed-preview.mjs');
- const prepared=await prepareVerification({archiveDirectory:resolve('.'),publisherDirectory:publisher,env:{VERIFY_EXPECTED_SHA256:expected,GITHUB_REPOSITORY:'kingmeers/SYM-OS-Releases',CLOUDFLARE_ACCOUNT_ID:'a'.repeat(32),CLOUDFLARE_R2_ACCESS_KEY_ID:'offline-fixture-key',CLOUDFLARE_R2_SECRET_ACCESS_KEY:'offline-fixture-secret'}});
+ const prepared=await prepareVerification({archiveDirectory,publisherDirectory:publisher,env:{VERIFY_EXPECTED_SHA256:expected,GITHUB_REPOSITORY:'kingmeers/SYM-OS-Releases',CLOUDFLARE_ACCOUNT_ID:'a'.repeat(32),CLOUDFLARE_R2_ACCESS_KEY_ID:'offline-fixture-key',CLOUDFLARE_R2_SECRET_ACCESS_KEY:'offline-fixture-secret'}});
  try{assert.equal(prepared.client.constructor.name,'S3Client');assert.equal(await prepared.client.config.maxAttempts(),1);assert.equal(await prepared.client.config.region(),'auto');const endpoint=await prepared.client.config.endpoint();assert.equal(endpoint.hostname,'a'.repeat(32)+'.r2.cloudflarestorage.com');const credentials=await prepared.client.config.credentials();assert.equal(credentials.accessKeyId,'offline-fixture-key');assert.equal(credentials.secretAccessKey,'offline-fixture-secret');assert.equal(prepared.store.put,undefined);assert.equal(prepared.store.client,undefined);await assert.rejects(prepared.store.immutable('channels/preview.json','forbidden'));}finally{prepared.client.destroy();}
+ fs.writeFileSync(catalogPath,JSON.stringify({latest:{preview:'0.5.0-beta.54',windows_preview:'0.5.0-beta.54'}}));
+ await assert.rejects(prepareVerification({archiveDirectory,publisherDirectory:publisher,env:{VERIFY_EXPECTED_SHA256:expected,GITHUB_REPOSITORY:'kingmeers/SYM-OS-Releases'}}),{code:'ERR_ASSERTION',actual:'0.5.0-beta.54',expected:'0.5.0-beta.52'});
 });
