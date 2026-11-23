@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "version": "0.5.0-beta.54",
+  "source_commit": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+  "source_merge": "1ea1bd0054bae0f61cac70e63d88f5e899dfc021",
+  "source_pr": 110,
+  "source_equivalence": {
+    "windowsAndLinuxSameSource": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+    "mergeTreeEqualsSource": true
+  },
+  "qualification": [
+    {
+      "name": "policy (macos-15-intel)",
+      "id": 137402542162,
+      "conclusion": "success"
+    },
+    {
+      "name": "policy (ubuntu-latest)",
+      "id": 137402542024,
+      "conclusion": "success"
+    },
+    {
+      "name": "policy (windows-latest)",
+      "id": 137402542146,
+      "conclusion": "success"
+    }
+  ],
+  "windows": {
+    "source_commit": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+    "source_archive_sha256": "3b88d9d3adfc28ab5b7cec491419d6d466736f2c892b7879845c750f2400fcb0",
+    "version": "0.5.0-beta.54",
+    "artifact": "dist-gui/Sym-Setup-0.5.0-beta.54-windows-x64.exe",
+    "path": "D:\\SymQA\\companion-beta54-build-20261123\\dist-gui\\Sym-Setup-0.5.0-beta.54-windows-x64.exe",
+    "bytes": 224691994,
+    "sha256": "acfd0419b2b7e61ff9fcad0de966c576f8745deee53a259b99b855919abbed9c",
+    "policy_sha256": "fe796e848f95d756d7cbc8148226d2d45a010a77d6e771f62755760e3c5b744d",
+    "retired_provider_runtime_absent": true,
+    "retired_sdk_absent": true,
+    "outlook-win32-x64/sym-outlook.exe": "3385eca37c209da5f31e6f87826c89f4bfe3ed6ba50eedda89c4adfbdc7c3501",
+    "outlook-win32-x64/sym-outlook.dll": "bd31a03b440d8617b984ce60590775db800769445613754854f917324ed3b390",
+    "win32-x64/sym-computer.exe": "8ffa6cd2e8565db5dbb8a500b193c29d01cc1bdbaea92499c200e6b00da83923",
+    "qualification": {
+      "windows_node_tests": 302,
+      "native_boundary_fixture": "passed",
+      "native_compile": "passed",
+      "installed_app": false,
+      "real_send": false,
+      "published": false
+    },
+    "created_at": "2026-11-23T07:26:11.992Z",
+    "memory_wasm": {
+      "ok": true,
+      "electron": "43.4.1",
+      "node": "24.18.1",
+      "platform": "win32",
+      "arch": "x64",
+      "qualification": "actual-package SQLite FTS/encryption; no GUI or user-data acceptance"
+    },
+    "memory_wasm_receipt_sha256": "9d31b3ffc92bbf119823e260eed5bcbfba68ca1b3a985998dcc2b5f6904dd3fa",
+    "operation_diagnostics": {
+      "ok": true,
+      "platform": "win32",
+      "arch": "x64",
+      "node": "24.15.0",
+      "packagedModuleSha256": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+      "syntheticPersistenceRestart": true,
+      "customerData": false,
+      "network": false
+    },
+    "operation_diagnostics_receipt_sha256": "d8662d8a6a176310dd25aa8945b504b5d7861548d61e304014f81c8e7be9d9e2"
+  },
+  "windows_authenticode": "NotSigned",
+  "diagnostic_package_reachability": {
+    "source": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+    "runtimeReferences": [
+      {
+        "file": "connector/server.js",
+        "line": 13,
+        "text": "const {safeFailure}=require('./operation-schema');"
+      },
+      {
+        "file": "gui/bridge-runtime.js",
+        "line": 109,
+        "text": "      if(!Number.isSafeInteger(response.receivedAt)||response.receivedAt<=0||!require('./operation-schema').UUID.test(response.receiptId||'')||response.operationCount!==report.operations.length||(report.events.some(e=>e.failure)&&response.setupFailureCount!==report.events.filter(e=>e.failure).length))throw new Error('No complete diagnostic receipt received');"
+      },
+      {
+        "file": "gui/diagnostics-schema.js",
+        "line": 3,
+        "text": "const {sanitizeOperations}=require('./operation-schema');"
+      },
+      {
+        "file": "gui/diagnostics.js",
+        "line": 5,
+        "text": "const {sanitizeOperations,UUID}=require('./operation-schema');"
+      },
+      {
+        "file": "src/backends/ext.js",
+        "line": 142,
+        "text": "      if(conn.origin!==origin||msg.extensionId!==ID||!require('../operation-diagnostics-schema').UUID.test(msg.deviceId||''))throw Error('Invalid extension identity');"
+      },
+      {
+        "file": "src/managed-browser-api.js",
+        "line": 3,
+        "text": "const {codeOf,safeFailure}=require('./operation-diagnostics-schema');"
+      },
+      {
+        "file": "src/operation-diagnostics.js",
+        "line": 3,
+        "text": "const {UUID,sanitizeOperations,codeOf}=require('./operation-diagnostics-schema');"
+      }
+    ],
+    "schemaSha256": {
+      "connector/operation-schema.js": "67b6ff4ef3ea2cf07d22208e67ed0da94a93b911ee9ce08d76d6a762784c2621",
+      "src/operation-diagnostics-schema.js": "67b6ff4ef3ea2cf07d22208e67ed0da94a93b911ee9ce08d76d6a762784c2621",
+      "gui/operation-schema.js": "67b6ff4ef3ea2cf07d22208e67ed0da94a93b911ee9ce08d76d6a762784c2621"
+    },
+    "desktopConnectorFilter": [
+      "native-controls.js",
+      "symBridgeControlContract.json",
+      "visual-failure.js",
+      "browserExtensionContract.js"
+    ],
+    "omittedConnectorServerAndSchema": true,
+    "packagedRuntimeSchemas": "src/operation-diagnostics-schema.js and gui/operation-schema.js",
+    "scope": "Tracked source imports and package filter; dynamic runtime proven separately by packaged synthetic test"
+  },
+  "linux_memory": {
+    "appimage": {
+      "ok": true,
+      "electron": "43.4.1",
+      "node": "24.18.1",
+      "platform": "linux",
+      "arch": "x64",
+      "qualification": "actual-package SQLite FTS/encryption; no GUI or user-data acceptance"
+    },
+    "debian": {
+      "ok": true,
+      "electron": "43.4.1",
+      "node": "24.18.1",
+      "platform": "linux",
+      "arch": "x64",
+      "qualification": "actual-package SQLite FTS/encryption; no GUI or user-data acceptance"
+    }
+  },
+  "linux_memory_log_provenance": {
+    "appimage": {
+      "run": 45086032326,
+      "headSha": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+      "step": "Actual AppImage Electron SQLite WASM and encrypted FTS",
+      "conclusion": "success",
+      "logSha256": "df575afa1d76f6582570fbd07374e3e5c517b62732f57f338837aa545f30f372",
+      "receiptSha256": "55f0fbd04fb7b8dd65cda37757f780d747a433fd4563cf6a55b4f60cf40f5274"
+    },
+    "debian": {
+      "run": 45086032326,
+      "headSha": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+      "step": "Actual Debian Electron SQLite WASM and encrypted FTS",
+      "conclusion": "success",
+      "logSha256": "df575afa1d76f6582570fbd07374e3e5c517b62732f57f338837aa545f30f372",
+      "receiptSha256": "55f0fbd04fb7b8dd65cda37757f780d747a433fd4563cf6a55b4f60cf40f5274"
+    }
+  },
+  "linux_package_ci": 45086032326,
+  "linux_package_attempt": 2,
+  "linux_diagnostic_persistence": {
+    "passed": true,
+    "source": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+    "fixtureCommit": "d364f0ca36ef3f507ffbb68ebce647cdd6f992dd",
+    "contentSha256": "925be76e5664c0f03b6c5db0d16af02ca385fcf5128139cd0f7e15b5620d6b72",
+    "receiptSha256": "39b72716831b6b8d17b5a77ea6b6b26abc0342851aae168f8471f428639c28b6",
+    "artifactModuleProvenance": {
+      "source": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+      "workflow": 45086032326,
+      "attempt": 2,
+      "packages": {
+        "appimage": {
+          "src/operation-diagnostics.js": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+          "src/operation-diagnostics-schema.js": "67b6ff4ef3ea2cf07d22208e67ed0da94a93b911ee9ce08d76d6a762784c2621",
+          "connector/visual-failure.js": "b9511f7a897a03405e8ea1d34668b513bc7615f2d20e000ab86e696ed4711425"
+        },
+        "debian": {
+          "src/operation-diagnostics.js": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+          "src/operation-diagnostics-schema.js": "67b6ff4ef3ea2cf07d22208e67ed0da94a93b911ee9ce08d76d6a762784c2621",
+          "connector/visual-failure.js": "b9511f7a897a03405e8ea1d34668b513bc7615f2d20e000ab86e696ed4711425"
+        }
+      }
+    },
+    "results": [
+      {
+        "ok": true,
+        "platform": "linux",
+        "arch": "x64",
+        "node": "22.23.4",
+        "packagedModuleSha256": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+        "syntheticPersistenceRestart": true,
+        "customerData": false,
+        "network": false
+      },
+      {
+        "ok": true,
+        "platform": "linux",
+        "arch": "x64",
+        "node": "22.23.4",
+        "packagedModuleSha256": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+        "syntheticPersistenceRestart": true,
+        "customerData": false,
+        "network": false
+      }
+    ],
+    "runtimeScope": "Node22 isolated module/schema/persistence. Actual packaged Electron24 startup/memory is separately qualified by CI45086032326 attempt2.",
+    "crmTest": "localtest_sym_beta54_packaged_diagnostics_20261123_1"
+  },
+  "linux": {
+    "appimage": {
+      "version": "0.5.0-beta.54",
+      "kind": "appimage",
+      "source": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+      "retiredRuntimeAbsent": true,
+      "retiredSDKAbsent": true,
+      "sourceModuleHashesMatch": true,
+      "nativeHelperHash": "9922e10da15a8fd870c2790577619c41b974b70d620336423fb0f35043201225",
+      "nativeStatusExecuted": true,
+      "nativeCaptureExecuted": false,
+      "installedCustomerApp": false,
+      "legalSources": 135
+    },
+    "debian": {
+      "version": "0.5.0-beta.54",
+      "kind": "debian",
+      "source": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+      "retiredRuntimeAbsent": true,
+      "retiredSDKAbsent": true,
+      "sourceModuleHashesMatch": true,
+      "nativeHelperHash": "9922e10da15a8fd870c2790577619c41b974b70d620336423fb0f35043201225",
+      "nativeStatusExecuted": true,
+      "nativeCaptureExecuted": false,
+      "installedCustomerApp": false,
+      "legalSources": 135
+    }
+  },
+  "independent_source_parity": {
+    "appimage": {
+      "archive": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta54/linux-extracted-appimage/resources/app.asar",
+      "version": "0.5.0-beta.54",
+      "files": 342,
+      "retired_runtime_sdk_paths": [],
+      "exact_source_modules": [
+        "operation-schema.js",
+        "bridge-runtime.js",
+        "startup-policy.js",
+        "main.js",
+        "preload.js",
+        "retired-agent-plugins.js",
+        "agent-helper.js",
+        "plugin-runtime.js",
+        "plugin-host.js",
+        "plugin-updates.js",
+        "plugin-release-registry.json",
+        "app-management.js",
+        "device-settings.js",
+        "outlook-runtime.js",
+        "outlook-search-snapshots.js",
+        "browser-memory-controls.js",
+        "companion-diagnostics.js",
+        "plugin-management.js",
+        "app-management-contract.js"
+      ],
+      "agents_registry_absent": true,
+      "core_source_modules": [
+        "src/operation-diagnostics.js",
+        "src/operation-diagnostics-schema.js",
+        "src/browser-memory.js",
+        "src/browser-memory-runtime.js",
+        "src/browser-memory-sqlite.js",
+        "src/browser-memory-archive.js",
+        "src/browser-memory-capture.js",
+        "src/browser-memory-recipes.js",
+        "src/browser-memory-redaction.js",
+        "src/browser-memory-errors.js",
+        "src/backends/ext.js",
+        "src/core/server.js",
+        "src/devices.js",
+        "src/app-management-contract.js",
+        "src/isolated-network.js",
+        "src/network-supervisor.js",
+        "src/setup-diagnostics.js",
+        "connector/browserExtensionContract.js"
+      ],
+      "build_source": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+      "reviewed_source": "9be5547dd81bd27272a282c50eb56b980ada9b3c"
+    },
+    "debian": {
+      "archive": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta54/linux-extracted-debian/opt/Sym/resources/app.asar",
+      "version": "0.5.0-beta.54",
+      "files": 342,
+      "retired_runtime_sdk_paths": [],
+      "exact_source_modules": [
+        "operation-schema.js",
+        "bridge-runtime.js",
+        "startup-policy.js",
+        "main.js",
+        "preload.js",
+        "retired-agent-plugins.js",
+        "agent-helper.js",
+        "plugin-runtime.js",
+        "plugin-host.js",
+        "plugin-updates.js",
+        "plugin-release-registry.json",
+        "app-management.js",
+        "device-settings.js",
+        "outlook-runtime.js",
+        "outlook-search-snapshots.js",
+        "browser-memory-controls.js",
+        "companion-diagnostics.js",
+        "plugin-management.js",
+        "app-management-contract.js"
+      ],
+      "agents_registry_absent": true,
+      "core_source_modules": [
+        "src/operation-diagnostics.js",
+        "src/operation-diagnostics-schema.js",
+        "src/browser-memory.js",
+        "src/browser-memory-runtime.js",
+        "src/browser-memory-sqlite.js",
+        "src/browser-memory-archive.js",
+        "src/browser-memory-capture.js",
+        "src/browser-memory-recipes.js",
+        "src/browser-memory-redaction.js",
+        "src/browser-memory-errors.js",
+        "src/backends/ext.js",
+        "src/core/server.js",
+        "src/devices.js",
+        "src/app-management-contract.js",
+        "src/isolated-network.js",
+        "src/network-supervisor.js",
+        "src/setup-diagnostics.js",
+        "connector/browserExtensionContract.js"
+      ],
+      "build_source": "9be5547dd81bd27272a282c50eb56b980ada9b3c",
+      "reviewed_source": "9be5547dd81bd27272a282c50eb56b980ada9b3c"
+    }
+  },
+  "retained_macos": {
+    "x64": "0.5.0-beta.50",
+    "arm64": "0.5.0-beta.39"
+  },
+  "customer_installation": false,
+  "real_sleep_wake_acceptance": false,
+  "outlookFeatureVersion": 7,
+  "outlookMinimumGeneration": 4
+}
