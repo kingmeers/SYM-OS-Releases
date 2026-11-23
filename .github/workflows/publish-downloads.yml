@@ -46,6 +46,9 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
+    # Plugins publish only through reviewed main-branch plugin_version dispatch.
+    # Their GitHub release event must not attempt a native environment deployment.
+    if: ${{ github.event_name != 'release' || !startsWith(github.event.release.tag_name, 'plugins-') }}
     runs-on: ubuntu-latest
     # Publishing and promotion each verify public installer bytes. Mixed-platform
     # preview selections can exceed 45 minutes; retain every integrity check.
