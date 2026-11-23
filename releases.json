@@ -3,11 +3,59 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.54",
+    "preview": "0.5.0-beta.56",
     "stable": null,
-    "windows_preview": "0.5.0-beta.54"
+    "windows_preview": "0.5.0-beta.56"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.56",
+      "tag": "v0.5.0-beta.56",
+      "channel": "preview",
+      "published": false,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.56/RELEASE-VERIFICATION.md",
+      "source_commit": "105f23a5a214cbb70a5816003313de24e89d035d",
+      "platforms": {
+        "linux-x64.deb": {
+          "filename": "Sym-0.5.0-beta.56-linux-amd64.deb",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.56/Sym-0.5.0-beta.56-linux-amd64.deb",
+          "sha256": "d6424802063de310e6151977bae0986964119d5511633c52ce31d25c727fa6ed",
+          "size_bytes": 150266544,
+          "source_commit": "105f23a5a214cbb70a5816003313de24e89d035d",
+          "runtime_commit": "105f23a5a214cbb70a5816003313de24e89d035d",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "deb",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64.AppImage": {
+          "filename": "Sym-0.5.0-beta.56-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.56/Sym-0.5.0-beta.56-linux-x86_64.AppImage",
+          "sha256": "0328dd97590e38463c918b2817a9d07de1a7b3f06be7ecbbf513c7539156cfe3",
+          "size_bytes": 187482724,
+          "source_commit": "105f23a5a214cbb70a5816003313de24e89d035d",
+          "runtime_commit": "105f23a5a214cbb70a5816003313de24e89d035d",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.56-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.56/Sym-Setup-0.5.0-beta.56-windows-x64.exe",
+          "sha256": "98e0462d1f33df7c22c1d7e37a7eb7b9de80587ccc9eb2d91e3981343981c416",
+          "size_bytes": 224692928,
+          "source_commit": "105f23a5a214cbb70a5816003313de24e89d035d",
+          "runtime_commit": "105f23a5a214cbb70a5816003313de24e89d035d",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Windows/Linux56 adds verified conditional plugin-feed metadata caching with full signature verification before activation. Exact source/package/native qualifications passed; no customer incident repair claimed. Windows unsigned. Mac assets retained; installed and customer acceptance remain separate."
+    },
     {
       "version": "0.5.0-beta.54",
       "tag": "v0.5.0-beta.54",
