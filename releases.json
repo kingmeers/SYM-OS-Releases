@@ -12,7 +12,7 @@
       "version": "0.5.0-beta.56",
       "tag": "v0.5.0-beta.56",
       "channel": "preview",
-      "published": false,
+      "published": true,
       "product": "Sym",
       "release_url": "https://downloads.sym.so/releases/0.5.0-beta.56/RELEASE-VERIFICATION.md",
       "source_commit": "105f23a5a214cbb70a5816003313de24e89d035d",
