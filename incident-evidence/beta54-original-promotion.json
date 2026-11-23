@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "operation": "promotion",
+  "complete": false,
+  "failed": true,
+  "reason": "Promotion failed; inspect committed state before any recovery",
+  "committedOperation": {
+    "schemaVersion": 1,
+    "operation": "promotion",
+    "channel": "preview",
+    "previousSha256": "28b68e97e4f6930cf88215d8e9bfc827222bbcb0816d5142431566ba84a290bf",
+    "nextSha256": "d40a71986fcb976db16859a3939290009006ba2b6b55b22aab385490dd8fcf88",
+    "revision": 45,
+    "committed": true,
+    "verified": false,
+    "progress": {
+      "stage": "alias",
+      "completed": 14,
+      "path": "/latest/mac-linux-checksums.txt"
+    },
+    "failure": {
+      "phase": "resume",
+      "status": 503,
+      "contentRange": null,
+      "requestedRange": "bytes=0-410",
+      "attempts": 3,
+      "path": "/latest/mac-linux-checksums.txt",
+      "assertion": "Resume failed"
+    }
+  }
+}
