@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "d92adc17459531e890d546cb6e29d683ba2c24fc",
+  "reviewedHead": "7fdba409bfdbe77f949cf3c4edd6de12a089f033",
+  "sourceTree": "b7af741801c0ee1facb0a633293024642e8ae936",
+  "sourceMerge": "d62eedef6ae95fb5a9e67af24abfd27d0562fe4a",
+  "nativePlatform": "Apple Silicon macOS27.2 arm64",
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.61-macos-arm64.dmg",
+      "sha256": "05e5af801682b51a3a5e14ebfdafd9035453c425a6543a1ee08dc9c800528e22",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; stapler validate; spctl --assess; exact Apple notary log hash; final ZIP/DMG file inventory parity"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.61-macos-arm64.zip",
+      "sha256": "c10e28015dd89b3546d4086b5ebaca7c025fd488df35fccd38774af382175b0e",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; stapler validate; spctl --assess; exact Apple notary log hash; final ZIP/DMG file inventory parity"
+    }
+  ],
+  "qualification": {
+    "ok": true,
+    "source": "d92adc17459531e890d546cb6e29d683ba2c24fc",
+    "version": "0.5.0-beta.61",
+    "platform": "darwin-arm64",
+    "dmgSha256": "05e5af801682b51a3a5e14ebfdafd9035453c425a6543a1ee08dc9c800528e22",
+    "mountedSignedDmg": true,
+    "nativeBuild": true,
+    "allFourExecutablesNativeArchitecture": true,
+    "developerIDTeam": "JR2SHF8H9R",
+    "signedAndStapled": true,
+    "gatekeeperAccepted": true,
+    "packagedNetworkLifecycle": true,
+    "browserSetup": true,
+    "secureStorage": true,
+    "fixtureScreens": 50,
+    "updaterZipAppIdentical": true,
+    "pluginHostAndRegistrySourceParity": true,
+    "retiredProviderIpcRejected": true,
+    "realEmailsSent": 0,
+    "installedUserApp": false,
+    "limitations": [
+      "Fixture account; no provider sign-in",
+      "No installed app replacement or automatic-upgrade cycle",
+      "No desktop capture/input acceptance"
+    ]
+  },
+  "notarization": {
+    "app": {
+      "id": "48e296e0-d570-47b8-92b4-e22fb13beaae",
+      "submittedSha256": "3d5a22308e89551752cf03e6d4267da12e730551278d3d2faa0f67ee40e86392",
+      "status": "Accepted"
+    },
+    "dmg": {
+      "id": "37ed1c66-fceb-47df-8751-09a8b01a76cf",
+      "submittedSha256": "2e094c33c35635938ecc9ba5a5c36c950910f41451502a65ac5d33e521893651",
+      "status": "Accepted"
+    }
+  },
+  "limits": [
+    "Intel50 and Windows/Linux60 retained",
+    "No customer installation, live reconnect acceptance or automatic upgrade cycle"
+  ],
+  "policyRun": "45819554669",
+  "nativeTests": 118,
+  "additionalNode22PolicyPasses": 364,
+  "retainedWindowsOnlySkip": 1
+}

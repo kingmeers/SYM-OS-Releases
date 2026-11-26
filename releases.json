@@ -3,11 +3,34 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.60",
+    "preview": "0.5.0-beta.61",
     "stable": null,
     "windows_preview": "0.5.0-beta.60"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.61",
+      "tag": "v0.5.0-beta.61",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.61/RELEASE-VERIFICATION.md",
+      "source_commit": "d92adc17459531e890d546cb6e29d683ba2c24fc",
+      "platforms": {
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.61-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.61/Sym-0.5.0-beta.61-macos-arm64.dmg",
+          "sha256": "05e5af801682b51a3a5e14ebfdafd9035453c425a6543a1ee08dc9c800528e22",
+          "size_bytes": 159727441,
+          "source_commit": "d92adc17459531e890d546cb6e29d683ba2c24fc",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "signed-notarized-preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Apple Silicon preview: current runtime recovery and retired built-in provider changes. Native Apple Silicon signing/notarization/packaged qualification passed. Intel50 and Windows/Linux60 retained. Customer recovery and installed automatic-upgrade acceptance remain separate."
+    },
     {
       "version": "0.5.0-beta.60",
       "tag": "v0.5.0-beta.60",
