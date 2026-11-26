@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "operation": "promotion",
+  "complete": false,
+  "failed": true,
+  "reason": "Promotion failed; inspect committed state before any recovery",
+  "committedOperation": {
+    "schemaVersion": 1,
+    "operation": "promotion",
+    "channel": "preview",
+    "previousSha256": "53e8ff603f5cd8c0ad2fd8fdf828a6122f7cf5a024954e7a60416098625bcde3",
+    "nextSha256": "008d8dcaf1683b7967889095e84f3692ffb25201c475dbc6dc8fdf6cd565cef5",
+    "revision": 49,
+    "committed": true,
+    "verified": false,
+    "progress": {
+      "stage": "alias",
+      "completed": 44,
+      "path": "/preview/windows-third-party-notices.txt"
+    },
+    "failure": {
+      "phase": "full_get",
+      "status": 503,
+      "contentRange": null,
+      "requestedRange": null,
+      "attempts": 3,
+      "path": "/preview/windows-third-party-notices.txt",
+      "assertion": "Public GET failed"
+    }
+  }
+}
