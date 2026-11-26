@@ -3,11 +3,59 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.58",
+    "preview": "0.5.0-beta.59",
     "stable": null,
-    "windows_preview": "0.5.0-beta.58"
+    "windows_preview": "0.5.0-beta.59"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.59",
+      "tag": "v0.5.0-beta.59",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.59/RELEASE-VERIFICATION.md",
+      "source_commit": "03e46c9538461b19656111a5351e9e550514df57",
+      "platforms": {
+        "linux-x64.deb": {
+          "filename": "Sym-0.5.0-beta.59-linux-amd64.deb",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.59/Sym-0.5.0-beta.59-linux-amd64.deb",
+          "sha256": "6a5fe47d1414893c3c8ad3b2d0ac98d4e778fa941571929133e95f0c73f42dcf",
+          "size_bytes": 150278140,
+          "source_commit": "42bc0d8c90805df3d49526d6ee428d8ee336543a",
+          "runtime_commit": "03e46c9538461b19656111a5351e9e550514df57",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "deb",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64.AppImage": {
+          "filename": "Sym-0.5.0-beta.59-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.59/Sym-0.5.0-beta.59-linux-x86_64.AppImage",
+          "sha256": "c1bfc91f8688caf8d9707e65c038ef2185540ced304d0515b10f10f5ae6c16bc",
+          "size_bytes": 187499006,
+          "source_commit": "42bc0d8c90805df3d49526d6ee428d8ee336543a",
+          "runtime_commit": "03e46c9538461b19656111a5351e9e550514df57",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.59-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.59/Sym-Setup-0.5.0-beta.59-windows-x64.exe",
+          "sha256": "5631152b10c6ce99da6347814cf1e2144c8433d78835feaccc5ca2a0449c5f2d",
+          "size_bytes": 224785373,
+          "source_commit": "03e46c9538461b19656111a5351e9e550514df57",
+          "runtime_commit": "03e46c9538461b19656111a5351e9e550514df57",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Windows/Linux59 exposes installed Outlook rolling24h shared device/account cap and remaining usage. Exact approvals/send keys/pacing/admission remain unchanged; per-mailbox and reply exemptions are assessed but not implemented. Owner-only cap changes require coordinated backend support. Windows source03e; Linux42bc changes only bounded apt lock waits with equivalent runtime. Windows unsigned; Mac50/39 retained. No customer installation, live send or cap mutation is claimed."
+    },
     {
       "version": "0.5.0-beta.58",
       "tag": "v0.5.0-beta.58",
