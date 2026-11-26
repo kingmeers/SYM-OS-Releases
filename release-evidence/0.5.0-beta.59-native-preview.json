@@ -1,0 +1,1725 @@
+{
+  "version": "0.5.0-beta.59",
+  "source_commit": "03e46c9538461b19656111a5351e9e550514df57",
+  "source_merge": "61ab83cefa0a818e50cc83e0d734a2a36759b316",
+  "source_pr": 122,
+  "sourceTreeEqualsMerge": true,
+  "platform_policy": {
+    "source": "03e46c9538461b19656111a5351e9e550514df57",
+    "run": {
+      "id": 45729588887,
+      "name": "Automatic update safety",
+      "node_id": "WFR_kwLOUOEEKs8AAAAKpbImlw",
+      "head_branch": "codex/task964-send-budget-20261126",
+      "head_sha": "03e46c9538461b19656111a5351e9e550514df57",
+      "path": ".github/workflows/automatic-updates.yml",
+      "display_title": "Expose installed Outlook budget in Companion beta59",
+      "run_number": 142,
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "workflow_id": 396408166,
+      "check_suite_id": 123728204206,
+      "check_suite_node_id": "CS_kwDOUOEEKs8AAAAczsaRrg",
+      "url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45729588887",
+      "html_url": "https://github.com/kingmeers/sym-bridge/actions/runs/45729588887",
+      "pull_requests": [],
+      "created_at": "2026-11-26T00:33:31Z",
+      "updated_at": "2026-11-26T00:39:08Z",
+      "actor": {
+        "login": "kingmeers",
+        "id": 13828508,
+        "node_id": "MDQ6VXNlcjEzODI4NTA4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13828508?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kingmeers",
+        "html_url": "https://github.com/kingmeers",
+        "followers_url": "https://api.github.com/users/kingmeers/followers",
+        "following_url": "https://api.github.com/users/kingmeers/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kingmeers/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kingmeers/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kingmeers/subscriptions",
+        "organizations_url": "https://api.github.com/users/kingmeers/orgs",
+        "repos_url": "https://api.github.com/users/kingmeers/repos",
+        "events_url": "https://api.github.com/users/kingmeers/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kingmeers/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "run_attempt": 1,
+      "referenced_workflows": [],
+      "run_started_at": "2026-11-26T00:33:31Z",
+      "triggering_actor": {
+        "login": "kingmeers",
+        "id": 13828508,
+        "node_id": "MDQ6VXNlcjEzODI4NTA4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13828508?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/kingmeers",
+        "html_url": "https://github.com/kingmeers",
+        "followers_url": "https://api.github.com/users/kingmeers/followers",
+        "following_url": "https://api.github.com/users/kingmeers/following{/other_user}",
+        "gists_url": "https://api.github.com/users/kingmeers/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/kingmeers/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/kingmeers/subscriptions",
+        "organizations_url": "https://api.github.com/users/kingmeers/orgs",
+        "repos_url": "https://api.github.com/users/kingmeers/repos",
+        "events_url": "https://api.github.com/users/kingmeers/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/kingmeers/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "jobs_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45729588887/jobs",
+      "logs_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45729588887/logs",
+      "check_suite_url": "https://api.github.com/repos/kingmeers/sym-bridge/check-suites/123728204206",
+      "artifacts_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45729588887/artifacts",
+      "cancel_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45729588887/cancel",
+      "rerun_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45729588887/rerun",
+      "previous_attempt_url": null,
+      "workflow_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/workflows/396408166",
+      "head_commit": {
+        "id": "03e46c9538461b19656111a5351e9e550514df57",
+        "tree_id": "126b4587f924d47ddbed78aa55a14058ba0d3bd6",
+        "message": "Prepare beta59 budget telemetry and exact package qualification",
+        "timestamp": "2026-11-26T00:26:02Z",
+        "author": {
+          "name": "Sam Chahine",
+          "email": "13828508+kingmeers@users.noreply.github.com"
+        },
+        "committer": {
+          "name": "Sam Chahine",
+          "email": "13828508+kingmeers@users.noreply.github.com"
+        }
+      },
+      "repository": {
+        "id": 1356923946,
+        "node_id": "R_kgDOUOEEKg",
+        "name": "sym-bridge",
+        "full_name": "kingmeers/sym-bridge",
+        "private": true,
+        "owner": {
+          "login": "kingmeers",
+          "id": 13828508,
+          "node_id": "MDQ6VXNlcjEzODI4NTA4",
+          "avatar_url": "https://avatars.githubusercontent.com/u/13828508?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kingmeers",
+          "html_url": "https://github.com/kingmeers",
+          "followers_url": "https://api.github.com/users/kingmeers/followers",
+          "following_url": "https://api.github.com/users/kingmeers/following{/other_user}",
+          "gists_url": "https://api.github.com/users/kingmeers/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/kingmeers/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/kingmeers/subscriptions",
+          "organizations_url": "https://api.github.com/users/kingmeers/orgs",
+          "repos_url": "https://api.github.com/users/kingmeers/repos",
+          "events_url": "https://api.github.com/users/kingmeers/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/kingmeers/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/kingmeers/sym-bridge",
+        "description": "Local companion that connects Chrome profiles to Symposium.",
+        "fork": false,
+        "url": "https://api.github.com/repos/kingmeers/sym-bridge",
+        "forks_url": "https://api.github.com/repos/kingmeers/sym-bridge/forks",
+        "keys_url": "https://api.github.com/repos/kingmeers/sym-bridge/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/kingmeers/sym-bridge/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/kingmeers/sym-bridge/teams",
+        "hooks_url": "https://api.github.com/repos/kingmeers/sym-bridge/hooks",
+        "issue_events_url": "https://api.github.com/repos/kingmeers/sym-bridge/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/kingmeers/sym-bridge/events",
+        "assignees_url": "https://api.github.com/repos/kingmeers/sym-bridge/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/kingmeers/sym-bridge/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/kingmeers/sym-bridge/tags",
+        "blobs_url": "https://api.github.com/repos/kingmeers/sym-bridge/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/kingmeers/sym-bridge/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/kingmeers/sym-bridge/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/kingmeers/sym-bridge/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/kingmeers/sym-bridge/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/kingmeers/sym-bridge/languages",
+        "stargazers_url": "https://api.github.com/repos/kingmeers/sym-bridge/stargazers",
+        "contributors_url": "https://api.github.com/repos/kingmeers/sym-bridge/contributors",
+        "subscribers_url": "https://api.github.com/repos/kingmeers/sym-bridge/subscribers",
+        "subscription_url": "https://api.github.com/repos/kingmeers/sym-bridge/subscription",
+        "commits_url": "https://api.github.com/repos/kingmeers/sym-bridge/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/kingmeers/sym-bridge/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/kingmeers/sym-bridge/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/kingmeers/sym-bridge/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/kingmeers/sym-bridge/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/kingmeers/sym-bridge/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/kingmeers/sym-bridge/merges",
+        "archive_url": "https://api.github.com/repos/kingmeers/sym-bridge/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/kingmeers/sym-bridge/downloads",
+        "issues_url": "https://api.github.com/repos/kingmeers/sym-bridge/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/kingmeers/sym-bridge/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/kingmeers/sym-bridge/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/kingmeers/sym-bridge/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/kingmeers/sym-bridge/labels{/name}",
+        "releases_url": "https://api.github.com/repos/kingmeers/sym-bridge/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/kingmeers/sym-bridge/deployments"
+      },
+      "head_repository": {
+        "id": 1356923946,
+        "node_id": "R_kgDOUOEEKg",
+        "name": "sym-bridge",
+        "full_name": "kingmeers/sym-bridge",
+        "private": true,
+        "owner": {
+          "login": "kingmeers",
+          "id": 13828508,
+          "node_id": "MDQ6VXNlcjEzODI4NTA4",
+          "avatar_url": "https://avatars.githubusercontent.com/u/13828508?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kingmeers",
+          "html_url": "https://github.com/kingmeers",
+          "followers_url": "https://api.github.com/users/kingmeers/followers",
+          "following_url": "https://api.github.com/users/kingmeers/following{/other_user}",
+          "gists_url": "https://api.github.com/users/kingmeers/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/kingmeers/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/kingmeers/subscriptions",
+          "organizations_url": "https://api.github.com/users/kingmeers/orgs",
+          "repos_url": "https://api.github.com/users/kingmeers/repos",
+          "events_url": "https://api.github.com/users/kingmeers/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/kingmeers/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/kingmeers/sym-bridge",
+        "description": "Local companion that connects Chrome profiles to Symposium.",
+        "fork": false,
+        "url": "https://api.github.com/repos/kingmeers/sym-bridge",
+        "forks_url": "https://api.github.com/repos/kingmeers/sym-bridge/forks",
+        "keys_url": "https://api.github.com/repos/kingmeers/sym-bridge/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/kingmeers/sym-bridge/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/kingmeers/sym-bridge/teams",
+        "hooks_url": "https://api.github.com/repos/kingmeers/sym-bridge/hooks",
+        "issue_events_url": "https://api.github.com/repos/kingmeers/sym-bridge/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/kingmeers/sym-bridge/events",
+        "assignees_url": "https://api.github.com/repos/kingmeers/sym-bridge/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/kingmeers/sym-bridge/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/kingmeers/sym-bridge/tags",
+        "blobs_url": "https://api.github.com/repos/kingmeers/sym-bridge/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/kingmeers/sym-bridge/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/kingmeers/sym-bridge/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/kingmeers/sym-bridge/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/kingmeers/sym-bridge/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/kingmeers/sym-bridge/languages",
+        "stargazers_url": "https://api.github.com/repos/kingmeers/sym-bridge/stargazers",
+        "contributors_url": "https://api.github.com/repos/kingmeers/sym-bridge/contributors",
+        "subscribers_url": "https://api.github.com/repos/kingmeers/sym-bridge/subscribers",
+        "subscription_url": "https://api.github.com/repos/kingmeers/sym-bridge/subscription",
+        "commits_url": "https://api.github.com/repos/kingmeers/sym-bridge/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/kingmeers/sym-bridge/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/kingmeers/sym-bridge/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/kingmeers/sym-bridge/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/kingmeers/sym-bridge/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/kingmeers/sym-bridge/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/kingmeers/sym-bridge/merges",
+        "archive_url": "https://api.github.com/repos/kingmeers/sym-bridge/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/kingmeers/sym-bridge/downloads",
+        "issues_url": "https://api.github.com/repos/kingmeers/sym-bridge/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/kingmeers/sym-bridge/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/kingmeers/sym-bridge/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/kingmeers/sym-bridge/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/kingmeers/sym-bridge/labels{/name}",
+        "releases_url": "https://api.github.com/repos/kingmeers/sym-bridge/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/kingmeers/sym-bridge/deployments"
+      }
+    },
+    "jobs": [
+      {
+        "id": 139607969264,
+        "run_id": 45729588887,
+        "workflow_name": "Automatic update safety",
+        "head_branch": "codex/task964-send-budget-20261126",
+        "run_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45729588887",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOUOEEKs8AAAAggUiN8A",
+        "head_sha": "03e46c9538461b19656111a5351e9e550514df57",
+        "url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/jobs/139607969264",
+        "html_url": "https://github.com/kingmeers/sym-bridge/actions/runs/45729588887/job/139607969264",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-26T00:33:32Z",
+        "started_at": "2026-11-26T00:33:34Z",
+        "completed_at": "2026-11-26T00:38:24Z",
+        "name": "policy (macos-15-intel)",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-26T00:33:37Z",
+            "completed_at": "2026-11-26T00:33:40Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-26T00:33:40Z",
+            "completed_at": "2026-11-26T00:33:47Z"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-26T00:33:47Z",
+            "completed_at": "2026-11-26T00:33:47Z"
+          },
+          {
+            "name": "Run npm ci --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-26T00:33:47Z",
+            "completed_at": "2026-11-26T00:33:49Z"
+          },
+          {
+            "name": "Run npm ci --prefix gui --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-26T00:33:49Z",
+            "completed_at": "2026-11-26T00:33:51Z"
+          },
+          {
+            "name": "Runtime dependency notice collection regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-26T00:33:51Z",
+            "completed_at": "2026-11-26T00:33:51Z"
+          },
+          {
+            "name": "Scheduler, drain, identity, OS policy and installer failure regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-11-26T00:33:51Z",
+            "completed_at": "2026-11-26T00:33:58Z"
+          },
+          {
+            "name": "Consent-bound memory and lifecycle packaging regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-11-26T00:33:58Z",
+            "completed_at": "2026-11-26T00:34:50Z"
+          },
+          {
+            "name": "Windows memory and lifecycle fixtures on current-user temporary storage",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 9,
+            "started_at": "2026-11-26T00:34:50Z",
+            "completed_at": "2026-11-26T00:34:50Z"
+          },
+          {
+            "name": "Connector bounded transport and real TLS regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 10,
+            "started_at": "2026-11-26T00:34:50Z",
+            "completed_at": "2026-11-26T00:34:50Z"
+          },
+          {
+            "name": "Run actions/setup-dotnet@v4",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11,
+            "started_at": "2026-11-26T00:34:50Z",
+            "completed_at": "2026-11-26T00:34:50Z"
+          },
+          {
+            "name": "Native Outlook entry, recipient and enumeration boundaries (synthetic COM)",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12,
+            "started_at": "2026-11-26T00:34:50Z",
+            "completed_at": "2026-11-26T00:34:50Z"
+          },
+          {
+            "name": "Receipt durability on Linux and Mac",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13,
+            "started_at": "2026-11-26T00:34:50Z",
+            "completed_at": "2026-11-26T00:38:15Z"
+          },
+          {
+            "name": "Receipt durability on Windows local temporary storage",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 14,
+            "started_at": "2026-11-26T00:38:15Z",
+            "completed_at": "2026-11-26T00:38:15Z"
+          },
+          {
+            "name": "Mounted Outlook permission controls",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 15,
+            "started_at": "2026-11-26T00:38:15Z",
+            "completed_at": "2026-11-26T00:38:15Z"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 29,
+            "started_at": "2026-11-26T00:38:15Z",
+            "completed_at": "2026-11-26T00:38:15Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30,
+            "started_at": "2026-11-26T00:38:15Z",
+            "completed_at": "2026-11-26T00:38:15Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31,
+            "started_at": "2026-11-26T00:38:15Z",
+            "completed_at": "2026-11-26T00:38:16Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/kingmeers/sym-bridge/check-runs/139607969264",
+        "labels": [
+          "self-hosted",
+          "macOS",
+          "X64",
+          "sam-mac-build"
+        ],
+        "runner_id": 21,
+        "runner_name": "sam-macbook-intel",
+        "runner_group_id": 1,
+        "runner_group_name": "Default"
+      },
+      {
+        "id": 139607969662,
+        "run_id": 45729588887,
+        "workflow_name": "Automatic update safety",
+        "head_branch": "codex/task964-send-budget-20261126",
+        "run_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45729588887",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOUOEEKs8AAAAggUiPfg",
+        "head_sha": "03e46c9538461b19656111a5351e9e550514df57",
+        "url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/jobs/139607969662",
+        "html_url": "https://github.com/kingmeers/sym-bridge/actions/runs/45729588887/job/139607969662",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-26T00:33:32Z",
+        "started_at": "2026-11-26T00:33:34Z",
+        "completed_at": "2026-11-26T00:36:26Z",
+        "name": "policy (ubuntu-latest)",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-26T00:33:37Z",
+            "completed_at": "2026-11-26T00:33:40Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-26T00:33:40Z",
+            "completed_at": "2026-11-26T00:33:42Z"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-26T00:33:42Z",
+            "completed_at": "2026-11-26T00:33:54Z"
+          },
+          {
+            "name": "Run npm ci --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-26T00:33:54Z",
+            "completed_at": "2026-11-26T00:33:56Z"
+          },
+          {
+            "name": "Run npm ci --prefix gui --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-26T00:33:56Z",
+            "completed_at": "2026-11-26T00:33:58Z"
+          },
+          {
+            "name": "Runtime dependency notice collection regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-26T00:33:58Z",
+            "completed_at": "2026-11-26T00:33:58Z"
+          },
+          {
+            "name": "Scheduler, drain, identity, OS policy and installer failure regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-11-26T00:33:58Z",
+            "completed_at": "2026-11-26T00:34:05Z"
+          },
+          {
+            "name": "Consent-bound memory and lifecycle packaging regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-11-26T00:34:05Z",
+            "completed_at": "2026-11-26T00:34:09Z"
+          },
+          {
+            "name": "Windows memory and lifecycle fixtures on current-user temporary storage",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 9,
+            "started_at": "2026-11-26T00:34:09Z",
+            "completed_at": "2026-11-26T00:34:09Z"
+          },
+          {
+            "name": "Connector bounded transport and real TLS regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10,
+            "started_at": "2026-11-26T00:34:09Z",
+            "completed_at": "2026-11-26T00:34:17Z"
+          },
+          {
+            "name": "Run actions/setup-dotnet@v4",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11,
+            "started_at": "2026-11-26T00:34:17Z",
+            "completed_at": "2026-11-26T00:34:17Z"
+          },
+          {
+            "name": "Native Outlook entry, recipient and enumeration boundaries (synthetic COM)",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12,
+            "started_at": "2026-11-26T00:34:17Z",
+            "completed_at": "2026-11-26T00:34:17Z"
+          },
+          {
+            "name": "Receipt durability on Linux and Mac",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13,
+            "started_at": "2026-11-26T00:34:17Z",
+            "completed_at": "2026-11-26T00:34:42Z"
+          },
+          {
+            "name": "Receipt durability on Windows local temporary storage",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 14,
+            "started_at": "2026-11-26T00:34:42Z",
+            "completed_at": "2026-11-26T00:34:42Z"
+          },
+          {
+            "name": "Mounted Outlook permission controls",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15,
+            "started_at": "2026-11-26T00:34:42Z",
+            "completed_at": "2026-11-26T00:36:16Z"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 29,
+            "started_at": "2026-11-26T00:36:16Z",
+            "completed_at": "2026-11-26T00:36:16Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30,
+            "started_at": "2026-11-26T00:36:16Z",
+            "completed_at": "2026-11-26T00:36:16Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31,
+            "started_at": "2026-11-26T00:36:16Z",
+            "completed_at": "2026-11-26T00:36:17Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/kingmeers/sym-bridge/check-runs/139607969662",
+        "labels": [
+          "self-hosted",
+          "Linux",
+          "X64",
+          "sam-linux-isolated"
+        ],
+        "runner_id": 386,
+        "runner_name": "sam-sym-bridge-053bf1837795",
+        "runner_group_id": 1,
+        "runner_group_name": "Default"
+      },
+      {
+        "id": 139607969679,
+        "run_id": 45729588887,
+        "workflow_name": "Automatic update safety",
+        "head_branch": "codex/task964-send-budget-20261126",
+        "run_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45729588887",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOUOEEKs8AAAAggUiPjw",
+        "head_sha": "03e46c9538461b19656111a5351e9e550514df57",
+        "url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/jobs/139607969679",
+        "html_url": "https://github.com/kingmeers/sym-bridge/actions/runs/45729588887/job/139607969679",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-26T00:33:32Z",
+        "started_at": "2026-11-26T00:33:35Z",
+        "completed_at": "2026-11-26T00:39:07Z",
+        "name": "policy (windows-latest)",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-26T00:33:42Z",
+            "completed_at": "2026-11-26T00:33:46Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-26T00:33:46Z",
+            "completed_at": "2026-11-26T00:34:25Z"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-26T00:34:25Z",
+            "completed_at": "2026-11-26T00:34:29Z"
+          },
+          {
+            "name": "Run npm ci --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-26T00:34:29Z",
+            "completed_at": "2026-11-26T00:35:03Z"
+          },
+          {
+            "name": "Run npm ci --prefix gui --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-26T00:35:03Z",
+            "completed_at": "2026-11-26T00:36:04Z"
+          },
+          {
+            "name": "Runtime dependency notice collection regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-26T00:36:04Z",
+            "completed_at": "2026-11-26T00:36:07Z"
+          },
+          {
+            "name": "Scheduler, drain, identity, OS policy and installer failure regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-11-26T00:36:07Z",
+            "completed_at": "2026-11-26T00:36:17Z"
+          },
+          {
+            "name": "Consent-bound memory and lifecycle packaging regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 8,
+            "started_at": "2026-11-26T00:36:17Z",
+            "completed_at": "2026-11-26T00:36:17Z"
+          },
+          {
+            "name": "Windows memory and lifecycle fixtures on current-user temporary storage",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9,
+            "started_at": "2026-11-26T00:36:17Z",
+            "completed_at": "2026-11-26T00:36:28Z"
+          },
+          {
+            "name": "Connector bounded transport and real TLS regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 10,
+            "started_at": "2026-11-26T00:36:28Z",
+            "completed_at": "2026-11-26T00:36:28Z"
+          },
+          {
+            "name": "Run actions/setup-dotnet@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 11,
+            "started_at": "2026-11-26T00:36:28Z",
+            "completed_at": "2026-11-26T00:38:13Z"
+          },
+          {
+            "name": "Native Outlook entry, recipient and enumeration boundaries (synthetic COM)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 12,
+            "started_at": "2026-11-26T00:38:13Z",
+            "completed_at": "2026-11-26T00:38:34Z"
+          },
+          {
+            "name": "Receipt durability on Linux and Mac",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13,
+            "started_at": "2026-11-26T00:38:34Z",
+            "completed_at": "2026-11-26T00:38:34Z"
+          },
+          {
+            "name": "Receipt durability on Windows local temporary storage",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14,
+            "started_at": "2026-11-26T00:38:34Z",
+            "completed_at": "2026-11-26T00:38:53Z"
+          },
+          {
+            "name": "Mounted Outlook permission controls",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 15,
+            "started_at": "2026-11-26T00:38:53Z",
+            "completed_at": "2026-11-26T00:38:53Z"
+          },
+          {
+            "name": "Post Run actions/setup-dotnet@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 28,
+            "started_at": "2026-11-26T00:38:53Z",
+            "completed_at": "2026-11-26T00:38:56Z"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 29,
+            "started_at": "2026-11-26T00:38:56Z",
+            "completed_at": "2026-11-26T00:38:56Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30,
+            "started_at": "2026-11-26T00:38:56Z",
+            "completed_at": "2026-11-26T00:38:59Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31,
+            "started_at": "2026-11-26T00:38:59Z",
+            "completed_at": "2026-11-26T00:38:59Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/kingmeers/sym-bridge/check-runs/139607969679",
+        "labels": [
+          "self-hosted",
+          "Windows",
+          "X64",
+          "sam-windows-build"
+        ],
+        "runner_id": 23,
+        "runner_name": "sam-windows-office",
+        "runner_group_id": 1,
+        "runner_group_name": "Default"
+      }
+    ]
+  },
+  "windows": {
+    "source_commit": "03e46c9538461b19656111a5351e9e550514df57",
+    "source_archive_sha256": "3404d5b7bfa906ffbcd97f5169735581384ad1508b8f08daf9afcaf4292b3a68",
+    "version": "0.5.0-beta.59",
+    "artifact": "dist-gui/Sym-Setup-0.5.0-beta.59-windows-x64.exe",
+    "path": "D:\\SymQA\\companion-beta59-build-20261126\\dist-gui\\Sym-Setup-0.5.0-beta.59-windows-x64.exe",
+    "bytes": 224785373,
+    "sha256": "5631152b10c6ce99da6347814cf1e2144c8433d78835feaccc5ca2a0449c5f2d",
+    "policy_sha256": "fe796e848f95d756d7cbc8148226d2d45a010a77d6e771f62755760e3c5b744d",
+    "retired_provider_runtime_absent": true,
+    "retired_sdk_absent": true,
+    "outlook-win32-x64/sym-outlook.exe": "3385eca37c209da5f31e6f87826c89f4bfe3ed6ba50eedda89c4adfbdc7c3501",
+    "outlook-win32-x64/sym-outlook.dll": "4f66349a03e6e94dd2574d0e20ab070c8af57e8f7c37320a1f3060dde43ca8e2",
+    "win32-x64/sym-computer.exe": "8ffa6cd2e8565db5dbb8a500b193c29d01cc1bdbaea92499c200e6b00da83923",
+    "qualification": {
+      "windows_node_tests": 359,
+      "native_boundary_fixture": "passed",
+      "native_compile": "passed",
+      "installed_app": false,
+      "real_send": false,
+      "published": false
+    },
+    "created_at": "2026-11-26T00:45:54.396Z",
+    "memory_wasm": {
+      "ok": true,
+      "electron": "43.4.1",
+      "node": "24.18.1",
+      "platform": "win32",
+      "arch": "x64",
+      "qualification": "actual-package SQLite FTS/encryption; no GUI or user-data acceptance"
+    },
+    "memory_wasm_receipt_sha256": "9d31b3ffc92bbf119823e260eed5bcbfba68ca1b3a985998dcc2b5f6904dd3fa",
+    "operation_diagnostics": {
+      "ok": true,
+      "platform": "win32",
+      "arch": "x64",
+      "node": "24.15.0",
+      "packagedModuleSha256": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+      "syntheticPersistenceRestart": true,
+      "customerData": false,
+      "network": false
+    },
+    "operation_diagnostics_receipt_sha256": "d8662d8a6a176310dd25aa8945b504b5d7861548d61e304014f81c8e7be9d9e2",
+    "plugin_feed": {
+      "ok": true,
+      "source": "03e46c9538461b19656111a5351e9e550514df57",
+      "platform": "win32",
+      "arch": "x64",
+      "electron": "43.4.1",
+      "requests": 8,
+      "fullEnvelopeReads": 5,
+      "unchangedBelowFloorBodyAvoided": true,
+      "fullSignatureBeforeActivation": true,
+      "installedPointerRestartVerified": true,
+      "invalidSignaturePreservesGeneration": true,
+      "customerData": false,
+      "network": false
+    },
+    "plugin_feed_module_hashes": {
+      "plugin-updates.js": "0a1ff53b7a476266226226cf1485181eb47ce68ec31b6ce490e7fe4e534521ad",
+      "retired-agent-plugins.js": "6ad62b8bec7dc999a1db2d3725c603ee13a71ffac2d2b41970dff09932203bbb"
+    },
+    "runtime_notices": {
+      "source": "03e46c9538461b19656111a5351e9e550514df57",
+      "version": "0.5.0-beta.59",
+      "passed": true,
+      "helpers": [
+        {
+          "helper": "win32-x64",
+          "files": 471,
+          "inventory_sha256": "e7874b214423e766181e17d8cdff5084d7589acf260ad547dc3f6394a6f4211b",
+          "provenance_sha256": "fbd353eed0c6fdaa7a3df6a8d00f21d17be67aacd26866ce3322894965a09197",
+          "dependencies": [
+            {
+              "id": "microsoft.netcore.app.runtime.win-x64",
+              "version": "8.0.33",
+              "matched_runtime_files": 179,
+              "notices": 2
+            },
+            {
+              "id": "microsoft.windowsdesktop.app.runtime.win-x64",
+              "version": "8.0.33",
+              "matched_runtime_files": 59,
+              "notices": 1
+            },
+            {
+              "id": "microsoft.windows.sdk.net.ref",
+              "version": "10.0.19041.56",
+              "matched_runtime_files": 2,
+              "notices": 1
+            }
+          ]
+        },
+        {
+          "helper": "outlook-win32-x64",
+          "files": 190,
+          "inventory_sha256": "c432ecb67ad6bcf3c68b4a737d5b5bc5d6429b8f262b18dcd067c7a66ef295eb",
+          "provenance_sha256": "18f1e0b4006d6ac062039275bce10c11210924f20ce960c7e558ccd8a387a79d",
+          "dependencies": [
+            {
+              "id": "microsoft.netcore.app.runtime.win-x64",
+              "version": "8.0.33",
+              "matched_runtime_files": 182,
+              "notices": 2
+            }
+          ]
+        }
+      ],
+      "customerData": false
+    },
+    "runtime_notice_receipt_sha256": "97d01b42390c737be4a5ce42f5d0869f5bda8bbe12fd883df7da22fd38c83d6e"
+  },
+  "windows_packaged_adapters": {
+    "status": 0,
+    "signal": null,
+    "error": null,
+    "hashes": {
+      "src/browser-memory-adapter-recipes.js": "acb3948bddddfffb8c8fc2604dc2cf27e13a958375d4b60b2f54dc2229311782",
+      "src/browser-memory-runtime.js": "17011b37d728bf69f72e63548110ca2409dfe76b1473652646e81be6d1e4bb07",
+      "connector/memoryAdapterContract.js": "5a168a49b8d2d7972171fcb99c0895a1b9ad2ace9916e1ffc3cd1188e8b746c4",
+      "connector/browserExtensionContract.js": "ee9912b7dae3d67952f2774e124907b933db6493faa153ecc7ca1d1c3edee81e"
+    },
+    "syntheticOnly": true,
+    "customerActivation": false
+  },
+  "outlook_budget_packaged": {
+    "windows": {
+      "schema": "sym-outlook-send-budget-package/1",
+      "passed": true,
+      "platform": "win32",
+      "electron": "43.4.1",
+      "version": "0.5.0-beta.59",
+      "sourceParity": true,
+      "unknownCounted": true,
+      "accountIsolation": true,
+      "nativeDispatch": false
+    },
+    "linux": [
+      {
+        "schema": "sym-outlook-send-budget-package/1",
+        "passed": true,
+        "platform": "linux",
+        "electron": "43.4.1",
+        "version": "0.5.0-beta.59",
+        "sourceParity": true,
+        "unknownCounted": true,
+        "accountIsolation": true,
+        "nativeDispatch": false
+      },
+      {
+        "schema": "sym-outlook-send-budget-package/1",
+        "passed": true,
+        "platform": "linux",
+        "electron": "43.4.1",
+        "version": "0.5.0-beta.59",
+        "sourceParity": true,
+        "unknownCounted": true,
+        "accountIsolation": true,
+        "nativeDispatch": false
+      }
+    ]
+  },
+  "linux_build_source": "42bc0d8c90805df3d49526d6ee428d8ee336543a",
+  "linux_workflow_correction": {
+    "source": "42bc0d8c90805df3d49526d6ee428d8ee336543a",
+    "runtime_source": "03e46c9538461b19656111a5351e9e550514df57",
+    "source_pr": 123,
+    "merge": "9c26be0826b0f089a46ef14661abef2856c12efc",
+    "policy_run": 45731260147,
+    "runtime_byte_equivalence": true,
+    "changed_files": [
+      ".github/workflows/embedded-release.yml"
+    ],
+    "failed_original_run": 45730439604,
+    "jobs": [
+      {
+        "id": 139613548089,
+        "run_id": 45731260147,
+        "workflow_name": "Automatic update safety",
+        "head_branch": "codex/task964-linux-apt-wait",
+        "run_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45731260147",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOUOEEKs8AAAAggZ2uOQ",
+        "head_sha": "42bc0d8c90805df3d49526d6ee428d8ee336543a",
+        "url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/jobs/139613548089",
+        "html_url": "https://github.com/kingmeers/sym-bridge/actions/runs/45731260147/job/139613548089",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-26T00:47:39Z",
+        "started_at": "2026-11-26T00:47:42Z",
+        "completed_at": "2026-11-26T00:52:30Z",
+        "name": "policy (macos-15-intel)",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-26T00:47:44Z",
+            "completed_at": "2026-11-26T00:47:49Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-26T00:47:49Z",
+            "completed_at": "2026-11-26T00:47:53Z"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-26T00:47:53Z",
+            "completed_at": "2026-11-26T00:47:54Z"
+          },
+          {
+            "name": "Run npm ci --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-26T00:47:54Z",
+            "completed_at": "2026-11-26T00:47:55Z"
+          },
+          {
+            "name": "Run npm ci --prefix gui --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-26T00:47:55Z",
+            "completed_at": "2026-11-26T00:47:57Z"
+          },
+          {
+            "name": "Runtime dependency notice collection regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-26T00:47:57Z",
+            "completed_at": "2026-11-26T00:47:57Z"
+          },
+          {
+            "name": "Scheduler, drain, identity, OS policy and installer failure regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-11-26T00:47:57Z",
+            "completed_at": "2026-11-26T00:48:04Z"
+          },
+          {
+            "name": "Consent-bound memory and lifecycle packaging regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-11-26T00:48:04Z",
+            "completed_at": "2026-11-26T00:48:56Z"
+          },
+          {
+            "name": "Windows memory and lifecycle fixtures on current-user temporary storage",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 9,
+            "started_at": "2026-11-26T00:48:56Z",
+            "completed_at": "2026-11-26T00:48:56Z"
+          },
+          {
+            "name": "Connector bounded transport and real TLS regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 10,
+            "started_at": "2026-11-26T00:48:56Z",
+            "completed_at": "2026-11-26T00:48:56Z"
+          },
+          {
+            "name": "Run actions/setup-dotnet@v4",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11,
+            "started_at": "2026-11-26T00:48:56Z",
+            "completed_at": "2026-11-26T00:48:56Z"
+          },
+          {
+            "name": "Native Outlook entry, recipient and enumeration boundaries (synthetic COM)",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12,
+            "started_at": "2026-11-26T00:48:56Z",
+            "completed_at": "2026-11-26T00:48:56Z"
+          },
+          {
+            "name": "Receipt durability on Linux and Mac",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13,
+            "started_at": "2026-11-26T00:48:56Z",
+            "completed_at": "2026-11-26T00:52:20Z"
+          },
+          {
+            "name": "Receipt durability on Windows local temporary storage",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 14,
+            "started_at": "2026-11-26T00:52:20Z",
+            "completed_at": "2026-11-26T00:52:20Z"
+          },
+          {
+            "name": "Mounted Outlook permission controls",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 15,
+            "started_at": "2026-11-26T00:52:20Z",
+            "completed_at": "2026-11-26T00:52:20Z"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 29,
+            "started_at": "2026-11-26T00:52:20Z",
+            "completed_at": "2026-11-26T00:52:21Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30,
+            "started_at": "2026-11-26T00:52:21Z",
+            "completed_at": "2026-11-26T00:52:21Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31,
+            "started_at": "2026-11-26T00:52:21Z",
+            "completed_at": "2026-11-26T00:52:21Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/kingmeers/sym-bridge/check-runs/139613548089",
+        "labels": [
+          "self-hosted",
+          "macOS",
+          "X64",
+          "sam-mac-build"
+        ],
+        "runner_id": 21,
+        "runner_name": "sam-macbook-intel",
+        "runner_group_id": 1,
+        "runner_group_name": "Default"
+      },
+      {
+        "id": 139613548372,
+        "run_id": 45731260147,
+        "workflow_name": "Automatic update safety",
+        "head_branch": "codex/task964-linux-apt-wait",
+        "run_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45731260147",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOUOEEKs8AAAAggZ2vVA",
+        "head_sha": "42bc0d8c90805df3d49526d6ee428d8ee336543a",
+        "url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/jobs/139613548372",
+        "html_url": "https://github.com/kingmeers/sym-bridge/actions/runs/45731260147/job/139613548372",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-26T00:47:39Z",
+        "started_at": "2026-11-26T00:47:56Z",
+        "completed_at": "2026-11-26T00:54:02Z",
+        "name": "policy (windows-latest)",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-26T00:48:08Z",
+            "completed_at": "2026-11-26T00:48:48Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-26T00:48:48Z",
+            "completed_at": "2026-11-26T00:49:23Z"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-26T00:49:23Z",
+            "completed_at": "2026-11-26T00:49:26Z"
+          },
+          {
+            "name": "Run npm ci --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-26T00:49:26Z",
+            "completed_at": "2026-11-26T00:49:57Z"
+          },
+          {
+            "name": "Run npm ci --prefix gui --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-26T00:49:57Z",
+            "completed_at": "2026-11-26T00:50:55Z"
+          },
+          {
+            "name": "Runtime dependency notice collection regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-26T00:50:55Z",
+            "completed_at": "2026-11-26T00:50:57Z"
+          },
+          {
+            "name": "Scheduler, drain, identity, OS policy and installer failure regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-11-26T00:50:57Z",
+            "completed_at": "2026-11-26T00:51:07Z"
+          },
+          {
+            "name": "Consent-bound memory and lifecycle packaging regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 8,
+            "started_at": "2026-11-26T00:51:07Z",
+            "completed_at": "2026-11-26T00:51:07Z"
+          },
+          {
+            "name": "Windows memory and lifecycle fixtures on current-user temporary storage",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9,
+            "started_at": "2026-11-26T00:51:07Z",
+            "completed_at": "2026-11-26T00:51:17Z"
+          },
+          {
+            "name": "Connector bounded transport and real TLS regressions",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 10,
+            "started_at": "2026-11-26T00:51:17Z",
+            "completed_at": "2026-11-26T00:51:17Z"
+          },
+          {
+            "name": "Run actions/setup-dotnet@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 11,
+            "started_at": "2026-11-26T00:51:17Z",
+            "completed_at": "2026-11-26T00:53:10Z"
+          },
+          {
+            "name": "Native Outlook entry, recipient and enumeration boundaries (synthetic COM)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 12,
+            "started_at": "2026-11-26T00:53:10Z",
+            "completed_at": "2026-11-26T00:53:31Z"
+          },
+          {
+            "name": "Receipt durability on Linux and Mac",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 13,
+            "started_at": "2026-11-26T00:53:31Z",
+            "completed_at": "2026-11-26T00:53:31Z"
+          },
+          {
+            "name": "Receipt durability on Windows local temporary storage",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14,
+            "started_at": "2026-11-26T00:53:31Z",
+            "completed_at": "2026-11-26T00:53:48Z"
+          },
+          {
+            "name": "Mounted Outlook permission controls",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 15,
+            "started_at": "2026-11-26T00:53:48Z",
+            "completed_at": "2026-11-26T00:53:48Z"
+          },
+          {
+            "name": "Post Run actions/setup-dotnet@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 28,
+            "started_at": "2026-11-26T00:53:48Z",
+            "completed_at": "2026-11-26T00:53:50Z"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 29,
+            "started_at": "2026-11-26T00:53:50Z",
+            "completed_at": "2026-11-26T00:53:50Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30,
+            "started_at": "2026-11-26T00:53:50Z",
+            "completed_at": "2026-11-26T00:53:53Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31,
+            "started_at": "2026-11-26T00:53:53Z",
+            "completed_at": "2026-11-26T00:53:54Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/kingmeers/sym-bridge/check-runs/139613548372",
+        "labels": [
+          "self-hosted",
+          "Windows",
+          "X64",
+          "sam-windows-build"
+        ],
+        "runner_id": 23,
+        "runner_name": "sam-windows-office",
+        "runner_group_id": 1,
+        "runner_group_name": "Default"
+      },
+      {
+        "id": 139613548387,
+        "run_id": 45731260147,
+        "workflow_name": "Automatic update safety",
+        "head_branch": "codex/task964-linux-apt-wait",
+        "run_url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/runs/45731260147",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOUOEEKs8AAAAggZ2vYw",
+        "head_sha": "42bc0d8c90805df3d49526d6ee428d8ee336543a",
+        "url": "https://api.github.com/repos/kingmeers/sym-bridge/actions/jobs/139613548387",
+        "html_url": "https://github.com/kingmeers/sym-bridge/actions/runs/45731260147/job/139613548387",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-11-26T00:47:39Z",
+        "started_at": "2026-11-26T00:47:42Z",
+        "completed_at": "2026-11-26T00:50:39Z",
+        "name": "policy (ubuntu-latest)",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-11-26T00:47:43Z",
+            "completed_at": "2026-11-26T00:47:48Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-11-26T00:47:48Z",
+            "completed_at": "2026-11-26T00:47:51Z"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-11-26T00:47:51Z",
+            "completed_at": "2026-11-26T00:48:06Z"
+          },
+          {
+            "name": "Run npm ci --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-11-26T00:48:06Z",
+            "completed_at": "2026-11-26T00:48:09Z"
+          },
+          {
+            "name": "Run npm ci --prefix gui --ignore-scripts --no-audit --no-fund",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-11-26T00:48:09Z",
+            "completed_at": "2026-11-26T00:48:12Z"
+          },
+          {
+            "name": "Runtime dependency notice collection regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-11-26T00:48:12Z",
+            "completed_at": "2026-11-26T00:48:13Z"
+          },
+          {
+            "name": "Scheduler, drain, identity, OS policy and installer failure regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-11-26T00:48:13Z",
+            "completed_at": "2026-11-26T00:48:19Z"
+          },
+          {
+            "name": "Consent-bound memory and lifecycle packaging regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-11-26T00:48:19Z",
+            "completed_at": "2026-11-26T00:48:24Z"
+          },
+          {
+            "name": "Windows memory and lifecycle fixtures on current-user temporary storage",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 9,
+            "started_at": "2026-11-26T00:48:24Z",
+            "completed_at": "2026-11-26T00:48:24Z"
+          },
+          {
+            "name": "Connector bounded transport and real TLS regressions",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10,
+            "started_at": "2026-11-26T00:48:24Z",
+            "completed_at": "2026-11-26T00:48:32Z"
+          },
+          {
+            "name": "Run actions/setup-dotnet@v4",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 11,
+            "started_at": "2026-11-26T00:48:32Z",
+            "completed_at": "2026-11-26T00:48:32Z"
+          },
+          {
+            "name": "Native Outlook entry, recipient and enumeration boundaries (synthetic COM)",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 12,
+            "started_at": "2026-11-26T00:48:32Z",
+            "completed_at": "2026-11-26T00:48:32Z"
+          },
+          {
+            "name": "Receipt durability on Linux and Mac",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13,
+            "started_at": "2026-11-26T00:48:32Z",
+            "completed_at": "2026-11-26T00:48:57Z"
+          },
+          {
+            "name": "Receipt durability on Windows local temporary storage",
+            "status": "completed",
+            "conclusion": "skipped",
+            "number": 14,
+            "started_at": "2026-11-26T00:48:57Z",
+            "completed_at": "2026-11-26T00:48:57Z"
+          },
+          {
+            "name": "Mounted Outlook permission controls",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15,
+            "started_at": "2026-11-26T00:48:57Z",
+            "completed_at": "2026-11-26T00:50:30Z"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 29,
+            "started_at": "2026-11-26T00:50:30Z",
+            "completed_at": "2026-11-26T00:50:30Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 30,
+            "started_at": "2026-11-26T00:50:30Z",
+            "completed_at": "2026-11-26T00:50:30Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 31,
+            "started_at": "2026-11-26T00:50:30Z",
+            "completed_at": "2026-11-26T00:50:30Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/kingmeers/sym-bridge/check-runs/139613548387",
+        "labels": [
+          "self-hosted",
+          "Linux",
+          "X64",
+          "sam-linux-isolated"
+        ],
+        "runner_id": 388,
+        "runner_name": "sam-sym-bridge-fbdc20f4c7fa",
+        "runner_group_id": 1,
+        "runner_group_name": "Default"
+      }
+    ]
+  },
+  "windows_authenticode": "NotSigned",
+  "linux_workflow": 45732074359,
+  "linux_download": {
+    "source": "42bc0d8c90805df3d49526d6ee428d8ee336543a",
+    "runtime_source": "03e46c9538461b19656111a5351e9e550514df57",
+    "workflow": 45732074359,
+    "packages": [
+      {
+        "filename": "Sym-0.5.0-beta.59-linux-x86_64.AppImage",
+        "bytes": 187499006,
+        "sha256": "c1bfc91f8688caf8d9707e65c038ef2185540ced304d0515b10f10f5ae6c16bc",
+        "resources": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta59-task964/linux-extracted-appimage/resources",
+        "parity": {
+          "archive": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta59-task964/linux-extracted-appimage/resources/app.asar",
+          "version": "0.5.0-beta.59",
+          "files": 343,
+          "retired_runtime_sdk_paths": [],
+          "exact_source_modules": [
+            "operation-schema.js",
+            "bridge-runtime.js",
+            "startup-policy.js",
+            "main.js",
+            "preload.js",
+            "retired-agent-plugins.js",
+            "agent-helper.js",
+            "plugin-runtime.js",
+            "plugin-host.js",
+            "plugin-updates.js",
+            "plugin-release-registry.json",
+            "app-management.js",
+            "device-settings.js",
+            "outlook-runtime.js",
+            "outlook-search-snapshots.js",
+            "browser-memory-controls.js",
+            "companion-diagnostics.js",
+            "plugin-management.js",
+            "app-management-contract.js"
+          ],
+          "agents_registry_absent": true,
+          "core_source_modules": [
+            "src/operation-diagnostics.js",
+            "src/operation-diagnostics-schema.js",
+            "src/browser-memory.js",
+            "src/browser-memory-runtime.js",
+            "src/browser-memory-sqlite.js",
+            "src/browser-memory-archive.js",
+            "src/browser-memory-capture.js",
+            "src/browser-memory-recipes.js",
+            "src/browser-memory-redaction.js",
+            "src/browser-memory-errors.js",
+            "src/backends/ext.js",
+            "src/core/server.js",
+            "src/devices.js",
+            "src/app-management-contract.js",
+            "src/isolated-network.js",
+            "src/network-supervisor.js",
+            "src/setup-diagnostics.js",
+            "connector/browserExtensionContract.js",
+            "connector/memoryAdapterContract.js",
+            "src/browser-memory-adapter-recipes.js"
+          ],
+          "build_source": "42bc0d8c90805df3d49526d6ee428d8ee336543a",
+          "reviewed_source": "03e46c9538461b19656111a5351e9e550514df57"
+        },
+        "network_provenance": {
+          "version": "1.102.4",
+          "revision": "bbcd7d1fc2054b9189ebc1531acf74bd880ca0c8",
+          "platform": "linux",
+          "arch": "x64",
+          "go": "go version go1.27.1 linux/amd64",
+          "buildTags": [],
+          "windowsBuildRecipe": null,
+          "windowsRegistryWatcher": null,
+          "windowsPipeHardening": null,
+          "sha256": {
+            "tailscaled": "714b64bf447fc9a1ad503bb23ae614ca37d3ad5aa1a8aff5a1611e6369185e04",
+            "tailscale": "ab27f525c2acbc40d171b5a9f4bdfbb2bd65f020c4bd85c4e15a64ed07050e6e"
+          }
+        }
+      },
+      {
+        "filename": "Sym-0.5.0-beta.59-linux-amd64.deb",
+        "bytes": 150278140,
+        "sha256": "6a5fe47d1414893c3c8ad3b2d0ac98d4e778fa941571929133e95f0c73f42dcf",
+        "resources": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta59-task964/linux-extracted-debian/opt/Sym/resources",
+        "parity": {
+          "archive": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta59-task964/linux-extracted-debian/opt/Sym/resources/app.asar",
+          "version": "0.5.0-beta.59",
+          "files": 343,
+          "retired_runtime_sdk_paths": [],
+          "exact_source_modules": [
+            "operation-schema.js",
+            "bridge-runtime.js",
+            "startup-policy.js",
+            "main.js",
+            "preload.js",
+            "retired-agent-plugins.js",
+            "agent-helper.js",
+            "plugin-runtime.js",
+            "plugin-host.js",
+            "plugin-updates.js",
+            "plugin-release-registry.json",
+            "app-management.js",
+            "device-settings.js",
+            "outlook-runtime.js",
+            "outlook-search-snapshots.js",
+            "browser-memory-controls.js",
+            "companion-diagnostics.js",
+            "plugin-management.js",
+            "app-management-contract.js"
+          ],
+          "agents_registry_absent": true,
+          "core_source_modules": [
+            "src/operation-diagnostics.js",
+            "src/operation-diagnostics-schema.js",
+            "src/browser-memory.js",
+            "src/browser-memory-runtime.js",
+            "src/browser-memory-sqlite.js",
+            "src/browser-memory-archive.js",
+            "src/browser-memory-capture.js",
+            "src/browser-memory-recipes.js",
+            "src/browser-memory-redaction.js",
+            "src/browser-memory-errors.js",
+            "src/backends/ext.js",
+            "src/core/server.js",
+            "src/devices.js",
+            "src/app-management-contract.js",
+            "src/isolated-network.js",
+            "src/network-supervisor.js",
+            "src/setup-diagnostics.js",
+            "connector/browserExtensionContract.js",
+            "connector/memoryAdapterContract.js",
+            "src/browser-memory-adapter-recipes.js"
+          ],
+          "build_source": "42bc0d8c90805df3d49526d6ee428d8ee336543a",
+          "reviewed_source": "03e46c9538461b19656111a5351e9e550514df57"
+        },
+        "network_provenance": {
+          "version": "1.102.4",
+          "revision": "bbcd7d1fc2054b9189ebc1531acf74bd880ca0c8",
+          "platform": "linux",
+          "arch": "x64",
+          "go": "go version go1.27.1 linux/amd64",
+          "buildTags": [],
+          "windowsBuildRecipe": null,
+          "windowsRegistryWatcher": null,
+          "windowsPipeHardening": null,
+          "sha256": {
+            "tailscaled": "714b64bf447fc9a1ad503bb23ae614ca37d3ad5aa1a8aff5a1611e6369185e04",
+            "tailscale": "ab27f525c2acbc40d171b5a9f4bdfbb2bd65f020c4bd85c4e15a64ed07050e6e"
+          }
+        }
+      }
+    ]
+  },
+  "linux_packaged_fixtures": [
+    {
+      "ok": true,
+      "electron": "43.4.1",
+      "node": "24.18.1",
+      "platform": "linux",
+      "arch": "x64",
+      "qualification": "actual-package SQLite FTS/encryption; no GUI or user-data acceptance"
+    },
+    {
+      "ok": true,
+      "source": "03e46c9538461b19656111a5351e9e550514df57",
+      "platform": "linux",
+      "arch": "x64",
+      "electron": "43.4.1",
+      "requests": 8,
+      "fullEnvelopeReads": 5,
+      "unchangedBelowFloorBodyAvoided": true,
+      "fullSignatureBeforeActivation": true,
+      "installedPointerRestartVerified": true,
+      "invalidSignaturePreservesGeneration": true,
+      "customerData": false,
+      "network": false
+    },
+    {
+      "ok": true,
+      "platform": "linux",
+      "arch": "x64",
+      "node": "22.23.4",
+      "packagedModuleSha256": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+      "syntheticPersistenceRestart": true,
+      "customerData": false,
+      "network": false
+    },
+    {
+      "ok": true,
+      "electron": "43.4.1",
+      "node": "24.18.1",
+      "platform": "linux",
+      "arch": "x64",
+      "qualification": "actual-package SQLite FTS/encryption; no GUI or user-data acceptance"
+    },
+    {
+      "ok": true,
+      "source": "03e46c9538461b19656111a5351e9e550514df57",
+      "platform": "linux",
+      "arch": "x64",
+      "electron": "43.4.1",
+      "requests": 8,
+      "fullEnvelopeReads": 5,
+      "unchangedBelowFloorBodyAvoided": true,
+      "fullSignatureBeforeActivation": true,
+      "installedPointerRestartVerified": true,
+      "invalidSignaturePreservesGeneration": true,
+      "customerData": false,
+      "network": false
+    },
+    {
+      "ok": true,
+      "platform": "linux",
+      "arch": "x64",
+      "node": "22.23.4",
+      "packagedModuleSha256": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+      "syntheticPersistenceRestart": true,
+      "customerData": false,
+      "network": false
+    }
+  ],
+  "linux_fixture_receipt": {
+    "repo": "/home/sammmoura/Documents/Codex/2026-11-20/yo-x20/work/beta59-task964/linux-package-fixture",
+    "prepare": "set -eu; apt-get -o DPkg::Lock::Timeout=120 update -qq; apt-get -o DPkg::Lock::Timeout=120 install -y --no-install-recommends libnss3 libatk-bridge2.0-0 libgtk-3-0 libgbm1 libasound2",
+    "test": "set -eu; for kind in appimage debian; do ELECTRON_RUN_AS_NODE=1 SYM_MEMORY_PACKAGE_ROOT=/workspace/$kind/resources/sym-bridge /workspace/$kind/sym-bridge /workspace/$kind/test/browser-memory-wasm.electron.cjs; ELECTRON_RUN_AS_NODE=1 /workspace/$kind/sym-bridge /workspace/$kind/test/plugin-proof.cjs /workspace/$kind/plugin-modules; node /workspace/$kind/test/diagnostic-proof.cjs /workspace/$kind/resources/sym-bridge; ELECTRON_RUN_AS_NODE=1 /workspace/$kind/sym-bridge --test --test-reporter=tap /workspace/$kind/resources/sym-bridge/test/browser-memory-adapter-recipes.test.cjs /workspace/$kind/resources/sym-bridge/test/browser-memory-adapter-runtime.test.cjs; ELECTRON_RUN_AS_NODE=1 /workspace/$kind/sym-bridge /workspace/$kind/test/outlook-send-budget.packaged.cjs /workspace/$kind/resources; done",
+    "postgres": false,
+    "started_at": 1795655170.6465626,
+    "status": "passed",
+    "network_during_tests": "none",
+    "untracked_files": "excluded",
+    "memory_limit": "16g",
+    "cpu_limit": 8,
+    "phase_timeout_seconds": 1800,
+    "commit": "6b599c55f34e938425b97478a3856dcefc151d22",
+    "tracked_content_sha256": "51c08a2ce2a9362708b5f4b326ef862f97bd5827534f7fc499866b9e213767bf",
+    "image_id": "c9c598159660db004aaf94c4c72f1a4d3b7d410de41b2409c69e8f93eb8f58c6",
+    "exit_code": 0,
+    "finished_at": 1795655203.7063735
+  },
+  "linux_packaged_adapter_tests": 40,
+  "customer_installation": false,
+  "real_sleep_wake_acceptance": false,
+  "retained_macos": "Existing Mac channel pointers unchanged; no Mac installer built or qualified in this release.",
+  "outlookMinimumGeneration": 4
+}
