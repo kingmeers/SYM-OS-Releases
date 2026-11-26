@@ -1,0 +1,6 @@
+{
+  "mac-checksums.txt": "SHA256SUMS-FIRST-PARTY.txt",
+  "mac-arm64-verification.md": "RELEASE-VERIFICATION.md",
+  "mac-arm64-third-party-notices.txt": "THIRD-PARTY-NOTICES.txt",
+  "mac-arm64-release-manifest.json": "release-manifest.json"
+}
