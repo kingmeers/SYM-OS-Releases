@@ -1,0 +1,12 @@
+{
+  "publisherRun": 45740834933,
+  "event": "push",
+  "source": "6cf2ffc40a5eb51d287d6410bb7e57906320c2f0",
+  "approvalSha256": "5d42df747c09206444e2082b7810537237b017e9fafea0c482ae4d3b3cbaae00",
+  "failureReceiptSha256": "bdd7a68b9d5d01ede21c77538d7e69363191e240c22a186e1d5bb634631cc5e8",
+  "channelSha256": "008d8dcaf1683b7967889095e84f3692ffb25201c475dbc6dc8fdf6cd565cef5",
+  "revision": 49,
+  "publishedManifestSha256": "e238a11ce627025e56b49e4daa1682254d6c122f6e7046364afcc8eed5cac2d0",
+  "committed": true,
+  "verified": false
+}
