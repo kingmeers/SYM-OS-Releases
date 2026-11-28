@@ -1,0 +1,201 @@
+{
+  "version": "0.5.0-beta.67",
+  "source": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+  "merge": "6023a2a419cbe47ec54f7dd7319a42d7b387aca5",
+  "windows": {
+    "source_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+    "source_archive_sha256": "7312601e36d25655d753a07e46a60b10274326585ff82c2a5f25001d69aa435d",
+    "version": "0.5.0-beta.67",
+    "artifact": "dist-gui/Sym-Setup-0.5.0-beta.67-windows-x64.exe",
+    "bytes": 224850713,
+    "sha256": "3275e2afba5071a4d2a66973892258f85d47aa3a3d96cac9b5d71a4606f892ac",
+    "policy_sha256": "fe796e848f95d756d7cbc8148226d2d45a010a77d6e771f62755760e3c5b744d",
+    "retired_provider_runtime_absent": true,
+    "retired_sdk_absent": true,
+    "outlook-win32-x64/sym-outlook.exe": "3385eca37c209da5f31e6f87826c89f4bfe3ed6ba50eedda89c4adfbdc7c3501",
+    "outlook-win32-x64/sym-outlook.dll": "feea00a92ab2a91829420928662cfb304f4f845fc555f6fd68f86b3cafd461f5",
+    "win32-x64/sym-computer.exe": "8ffa6cd2e8565db5dbb8a500b193c29d01cc1bdbaea92499c200e6b00da83923",
+    "qualification": {
+      "required_ci_run": "46145882609",
+      "required_ci_passed": true,
+      "native_compile": "passed",
+      "installed_app": true,
+      "installed_ui_screens": 25,
+      "real_send": false,
+      "published": false,
+      "production_echo_invocation": "passed"
+    },
+    "created_at": "2026-11-28T13:05:21.275Z"
+  },
+  "mac_notarization": {
+    "arm64": {
+      "version": "0.5.0-beta.67",
+      "source": "d3be89a",
+      "arch": "arm64",
+      "unsigned_sha256": "45286f3d050bc245f825555589da2fbef24b5b3d0821ae8dc18c1bd9a050647e",
+      "published": false,
+      "installedAcceptance": false,
+      "app": {
+        "sha256": "688b60f71571ca25acca4d0a98277925e8ea9c54a83ef5f6613d19ae345d7961",
+        "submission_started": true,
+        "id": "931ac9b2-995d-4ace-b3ab-2bbdb81aa9a2",
+        "status": "Accepted"
+      },
+      "dmg": {
+        "sha256": "adedf06fd496e07b4aecb8b1c0fb39d9b17b3d141f190e44df061f3a997c1c4b",
+        "submission_started": true,
+        "id": "6a222943-695f-468b-8410-44c7215b2e8a",
+        "status": "Accepted"
+      },
+      "artifacts": [
+        {
+          "name": "Sym-0.5.0-beta.67-macos-arm64.zip",
+          "bytes": 162520820,
+          "sha256": "0baa059cd932fab9ff6e876146f3cbc81fccb3534effe427c32c5452c64767c9"
+        },
+        {
+          "name": "Sym-0.5.0-beta.67-macos-arm64.dmg",
+          "bytes": 194400426,
+          "sha256": "1b3c62f25d79a8483c7152a833379c96db61a9b8f81ffc77786b0ea22cd4606f"
+        }
+      ],
+      "trustVerified": true
+    },
+    "x64": {
+      "version": "0.5.0-beta.67",
+      "source": "d3be89a",
+      "arch": "x64",
+      "unsigned_sha256": "1b16adba4256b1d78de99084f5731bc0dfa7393bb36d7b77fa20a91f69c9516d",
+      "published": false,
+      "installedAcceptance": false,
+      "app": {
+        "sha256": "ded14a8c4e9e3a60734f18ad72b1ad2ce807f64dbd055d184e4d48109b1296bf",
+        "submission_started": true,
+        "id": "dd44e0d5-e1de-4b3d-8845-d54cbe272baf",
+        "status": "Accepted"
+      },
+      "dmg": {
+        "sha256": "4c2f9837d10eb5436f23e0b6357d2065fcec7a04cb8a5a82f3809a2f5dc2003b",
+        "submission_started": true,
+        "id": "af954708-3e98-4e6f-beaa-d83428dadb4c",
+        "status": "Accepted"
+      },
+      "artifacts": [
+        {
+          "name": "Sym-0.5.0-beta.67-macos-x64.zip",
+          "bytes": 168748214,
+          "sha256": "83ef234d9c5db00527901c289d0798d404443779c3b438735d79456f445abf83"
+        },
+        {
+          "name": "Sym-0.5.0-beta.67-macos-x64.dmg",
+          "bytes": 202566778,
+          "sha256": "718e2152e6bc8557de9c271d8b0cec81c13263b587768a3e3bf99fd71919571e"
+        }
+      ],
+      "trustVerified": true
+    }
+  },
+  "candidate_installed_acceptance": {
+    "linux-x64": {
+      "ui_screens": 25,
+      "passed": true,
+      "plugin_version": "1.1.1",
+      "settings_and_permissions_restored": true,
+      "network_state": "Running",
+      "production_mcp_invocation": "passed"
+    },
+    "win32-x64": {
+      "ui_screens": 25,
+      "passed": true,
+      "plugin_version": "1.1.1",
+      "settings_and_permissions_restored": true,
+      "network_state": "Running",
+      "production_mcp_invocation": "passed"
+    },
+    "darwin-arm64": {
+      "ui_screens": 25,
+      "passed": true,
+      "plugin_version": "1.1.1",
+      "settings_and_permissions_restored": true,
+      "network_state": "Running",
+      "production_mcp_invocation": "passed"
+    },
+    "darwin-x64": {
+      "ui_screens": 25,
+      "passed": true,
+      "plugin_version": "1.1.1",
+      "settings_and_permissions_restored": true,
+      "network_state": "Running",
+      "production_mcp_invocation": "passed"
+    }
+  },
+  "linux_appimage_ui_screens": 25,
+  "required_ci": {
+    "run": 46145882609,
+    "passed_jobs": 3
+  },
+  "local_tests": {
+    "focused": 32,
+    "policy_and_progress": 289,
+    "existing_skips": 1
+  },
+  "qualification_notes": [
+    "Intel first UI run failed on a detached Settings heading during resize; unchanged suite passed after signing workload completed. Both receipts retained.",
+    "Intel beta66 did not exit after AppleScript quit; candidate installation stopped before replacement. Existing app and child processes terminated with SIGTERM, then signature-verified candidate installed.",
+    "Beta67 scope is reconnect handling. No new Outlook email send or customer acceptance is claimed."
+  ],
+  "released_download_acceptance": false,
+  "customer_acceptance": false,
+  "installer_sha256": {
+    "Sym-0.5.0-beta.67-linux-x86_64.AppImage": "5cef7931d7bc91fea8d1c59ddad57922d69fb98412d09ebb38b2c9393179fdee",
+    "Sym-0.5.0-beta.67-linux-amd64.deb": "cb165327ec574199a21a5cf51af1addf03c44a9682e1c32b39189406570b0387",
+    "Sym-0.5.0-beta.67-macos-x64.dmg": "718e2152e6bc8557de9c271d8b0cec81c13263b587768a3e3bf99fd71919571e",
+    "Sym-0.5.0-beta.67-macos-x64.zip": "83ef234d9c5db00527901c289d0798d404443779c3b438735d79456f445abf83",
+    "Sym-0.5.0-beta.67-macos-arm64.dmg": "1b3c62f25d79a8483c7152a833379c96db61a9b8f81ffc77786b0ea22cd4606f",
+    "Sym-0.5.0-beta.67-macos-arm64.zip": "0baa059cd932fab9ff6e876146f3cbc81fccb3534effe427c32c5452c64767c9",
+    "Sym-Setup-0.5.0-beta.67-windows-x64.exe": "3275e2afba5071a4d2a66973892258f85d47aa3a3d96cac9b5d71a4606f892ac"
+  },
+  "schemaVersion": 1,
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.67-macos-arm64.zip",
+      "sha256": "0baa059cd932fab9ff6e876146f3cbc81fccb3534effe427c32c5452c64767c9",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun notarytool submit/wait Accepted; xcrun stapler validate; spctl --assess",
+      "appNotarizationId": "931ac9b2-995d-4ace-b3ab-2bbdb81aa9a2",
+      "dmgNotarizationId": "6a222943-695f-468b-8410-44c7215b2e8a"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.67-macos-arm64.dmg",
+      "sha256": "1b3c62f25d79a8483c7152a833379c96db61a9b8f81ffc77786b0ea22cd4606f",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun notarytool submit/wait Accepted; xcrun stapler validate; spctl --assess",
+      "appNotarizationId": "931ac9b2-995d-4ace-b3ab-2bbdb81aa9a2",
+      "dmgNotarizationId": "6a222943-695f-468b-8410-44c7215b2e8a"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.67-macos-x64.zip",
+      "sha256": "83ef234d9c5db00527901c289d0798d404443779c3b438735d79456f445abf83",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun notarytool submit/wait Accepted; xcrun stapler validate; spctl --assess",
+      "appNotarizationId": "dd44e0d5-e1de-4b3d-8845-d54cbe272baf",
+      "dmgNotarizationId": "af954708-3e98-4e6f-beaa-d83428dadb4c"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.67-macos-x64.dmg",
+      "sha256": "718e2152e6bc8557de9c271d8b0cec81c13263b587768a3e3bf99fd71919571e",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun notarytool submit/wait Accepted; xcrun stapler validate; spctl --assess",
+      "appNotarizationId": "dd44e0d5-e1de-4b3d-8845-d54cbe272baf",
+      "dmgNotarizationId": "af954708-3e98-4e6f-beaa-d83428dadb4c"
+    }
+  ]
+}
