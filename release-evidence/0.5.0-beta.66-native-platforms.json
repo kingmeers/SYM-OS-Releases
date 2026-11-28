@@ -1,0 +1,132 @@
+{
+  "version": "0.5.0-beta.66",
+  "source": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+  "merge": "31442f2e94aab49ff5f7f6e83906ac79e5e2be8e",
+  "windows": {
+    "source_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+    "source_archive_sha256": "574023443544ba66ccb995028dd40566d2df37146996b8f4f4bad7e3e9e55163",
+    "version": "0.5.0-beta.66",
+    "artifact": "dist-gui/Sym-Setup-0.5.0-beta.66-windows-x64.exe",
+    "bytes": 224851045,
+    "sha256": "6cb848bbe550fec3e332c4f2c00660d1118eea21c358dec2bc3f141122561b9f",
+    "policy_sha256": "fe796e848f95d756d7cbc8148226d2d45a010a77d6e771f62755760e3c5b744d",
+    "retired_provider_runtime_absent": true,
+    "retired_sdk_absent": true,
+    "outlook-win32-x64/sym-outlook.exe": "3385eca37c209da5f31e6f87826c89f4bfe3ed6ba50eedda89c4adfbdc7c3501",
+    "outlook-win32-x64/sym-outlook.dll": "22f729c41137e7f06e37a51c0a2d05db6a4be24adff6127ca7ba6d65297cb977",
+    "win32-x64/sym-computer.exe": "8ffa6cd2e8565db5dbb8a500b193c29d01cc1bdbaea92499c200e6b00da83923",
+    "qualification": {
+      "windows_node_tests": 431,
+      "native_boundary_fixture": "passed",
+      "native_compile": "passed",
+      "installed_app": false,
+      "real_send": false,
+      "published": false
+    },
+    "created_at": "2026-11-28T11:08:30.478Z"
+  },
+  "mac_notarization": {
+    "x64": {
+      "version": "0.5.0-beta.66",
+      "source": "c1d3f5c",
+      "arch": "x64",
+      "unsigned_sha256": "dca793200070c794d55d6416a75bb5dd8e01e22884dbc8839c4a504b86e1729a",
+      "published": false,
+      "installedAcceptance": false,
+      "app": {
+        "sha256": "2b4e0fd2dfa3335c5a783d5e280319dddac789061b86b6d6e60b202d3368ea9d",
+        "submission_started": true,
+        "id": "69b2c458-cb9d-49ff-8f9a-ae5f8c7b6a39",
+        "status": "Accepted"
+      },
+      "dmg": {
+        "sha256": "ec6413fa432266e26002163b917ff99e59e72ae3764c0acae97fd2060ce7660f",
+        "submission_started": true,
+        "id": "465df3c8-9df8-49ff-aff0-1f970d32b977",
+        "status": "Accepted"
+      },
+      "artifacts": [
+        {
+          "name": "Sym-0.5.0-beta.66-macos-x64.zip",
+          "bytes": 168748289,
+          "sha256": "49d1400ee55cb96c408b979fef9a6b1f2caabc9cc714fe9892ab6e9200fbde1a"
+        },
+        {
+          "name": "Sym-0.5.0-beta.66-macos-x64.dmg",
+          "bytes": 197697088,
+          "sha256": "d1a42c495a4f9c9169783a74d92b181fe06eddae5d8a7cadb6552c88d2bab797"
+        }
+      ],
+      "trustVerified": true
+    },
+    "arm64": {
+      "version": "0.5.0-beta.66",
+      "source": "c1d3f5c",
+      "arch": "arm64",
+      "unsigned_sha256": "c094a7309b005909dab8e4ffda6b16056f707b600d4fe82190aa82bc4e4e6afd",
+      "published": false,
+      "installedAcceptance": false,
+      "app": {
+        "sha256": "203fae6c9f276ddd0ef64e7e668d6cc56c59d3dda34e08a36b6f15e4d409dfb1",
+        "submission_started": true,
+        "id": "10bbc811-f88f-45d8-b274-82fa51dac8e6",
+        "status": "Accepted"
+      },
+      "dmg": {
+        "sha256": "c13e07eb7c27fe85a3b0f94d0aa01c16e51fbcd8f046a05352c988e08453dd2f",
+        "submission_started": true,
+        "id": "c8821f50-6861-4b12-8627-cea0c4ae85a8",
+        "status": "Accepted"
+      },
+      "artifacts": [
+        {
+          "name": "Sym-0.5.0-beta.66-macos-arm64.zip",
+          "bytes": 162520996,
+          "sha256": "9415608255d4fec9cc314227878c12266a65414e564acfc0d6deb934a419cce5"
+        },
+        {
+          "name": "Sym-0.5.0-beta.66-macos-arm64.dmg",
+          "bytes": 196342888,
+          "sha256": "81b13706f56004c8f8e3cb681fd65b56869aa67f1cad05e8bf8d6233e00bec0c"
+        }
+      ],
+      "trustVerified": true
+    }
+  },
+  "candidate_installed_acceptance": {
+    "linux-x64": {
+      "ui_screens": 25,
+      "mcp_lifecycle_tests": 2,
+      "passed": true
+    },
+    "win32-x64": {
+      "ui_screens": 25,
+      "mcp_lifecycle_tests": 2,
+      "passed": true
+    },
+    "darwin-x64": {
+      "ui_screens": 25,
+      "mcp_lifecycle_tests": 2,
+      "passed": true
+    },
+    "darwin-arm64": {
+      "ui_screens": 25,
+      "mcp_lifecycle_tests": 2,
+      "passed": true
+    }
+  },
+  "connector_tests": 74,
+  "companion_targeted_tests": 96,
+  "released_download_acceptance": false,
+  "production_private_update_acceptance": false,
+  "customer_acceptance": false,
+  "installer_sha256": {
+    "Sym-Setup-0.5.0-beta.66-windows-x64.exe": "6cb848bbe550fec3e332c4f2c00660d1118eea21c358dec2bc3f141122561b9f",
+    "Sym-0.5.0-beta.66-linux-amd64.deb": "722f9835cdc44d73d8d2464cb691b7b6e3f4526b168d11c3a1f38f4a518f749d",
+    "Sym-0.5.0-beta.66-linux-x86_64.AppImage": "40909e4c33e2f3eedde87c731cc1a3385f3d166f244649691d50deb9c52420cf",
+    "Sym-0.5.0-beta.66-macos-x64.zip": "49d1400ee55cb96c408b979fef9a6b1f2caabc9cc714fe9892ab6e9200fbde1a",
+    "Sym-0.5.0-beta.66-macos-x64.dmg": "d1a42c495a4f9c9169783a74d92b181fe06eddae5d8a7cadb6552c88d2bab797",
+    "Sym-0.5.0-beta.66-macos-arm64.zip": "9415608255d4fec9cc314227878c12266a65414e564acfc0d6deb934a419cce5",
+    "Sym-0.5.0-beta.66-macos-arm64.dmg": "81b13706f56004c8f8e3cb681fd65b56869aa67f1cad05e8bf8d6233e00bec0c"
+  }
+}
