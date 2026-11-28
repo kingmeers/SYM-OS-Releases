@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.66-macos-x64.zip",
+      "sha256": "49d1400ee55cb96c408b979fef9a6b1f2caabc9cc714fe9892ab6e9200fbde1a",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun stapler validate; spctl --assess --type execute (contained app)",
+      "notarizationId": "69b2c458-cb9d-49ff-8f9a-ae5f8c7b6a39"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.66-macos-x64.dmg",
+      "sha256": "d1a42c495a4f9c9169783a74d92b181fe06eddae5d8a7cadb6552c88d2bab797",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun stapler validate; spctl --assess --type open --context context:primary-signature",
+      "notarizationId": "465df3c8-9df8-49ff-aff0-1f970d32b977"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.66-macos-arm64.zip",
+      "sha256": "9415608255d4fec9cc314227878c12266a65414e564acfc0d6deb934a419cce5",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun stapler validate; spctl --assess --type execute (contained app)",
+      "notarizationId": "10bbc811-f88f-45d8-b274-82fa51dac8e6"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.66-macos-arm64.dmg",
+      "sha256": "81b13706f56004c8f8e3cb681fd65b56869aa67f1cad05e8bf8d6233e00bec0c",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun stapler validate; spctl --assess --type open --context context:primary-signature",
+      "notarizationId": "c8821f50-6861-4b12-8627-cea0c4ae85a8"
+    }
+  ]
+}

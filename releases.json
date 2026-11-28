@@ -3,11 +3,83 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.61",
+    "preview": "0.5.0-beta.66",
     "stable": null,
-    "windows_preview": "0.5.0-beta.65"
+    "windows_preview": "0.5.0-beta.66"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.66",
+      "tag": "v0.5.0-beta.66",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.66/RELEASE-VERIFICATION.md",
+      "source_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+      "platforms": {
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.66-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.66/Sym-0.5.0-beta.66-macos-arm64.dmg",
+          "sha256": "81b13706f56004c8f8e3cb681fd65b56869aa67f1cad05e8bf8d6233e00bec0c",
+          "size_bytes": 196342888,
+          "source_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+          "runtime_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.66-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.66/Sym-0.5.0-beta.66-macos-x64.dmg",
+          "sha256": "d1a42c495a4f9c9169783a74d92b181fe06eddae5d8a7cadb6552c88d2bab797",
+          "size_bytes": 197697088,
+          "source_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+          "runtime_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.66-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.66/Sym-Setup-0.5.0-beta.66-windows-x64.exe",
+          "sha256": "6cb848bbe550fec3e332c4f2c00660d1118eea21c358dec2bc3f141122561b9f",
+          "size_bytes": 224851045,
+          "source_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+          "runtime_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64.AppImage": {
+          "filename": "Sym-0.5.0-beta.66-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.66/Sym-0.5.0-beta.66-linux-x86_64.AppImage",
+          "sha256": "40909e4c33e2f3eedde87c731cc1a3385f3d166f244649691d50deb9c52420cf",
+          "size_bytes": 183272586,
+          "source_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+          "runtime_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64.deb": {
+          "filename": "Sym-0.5.0-beta.66-linux-amd64.deb",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.66/Sym-0.5.0-beta.66-linux-amd64.deb",
+          "sha256": "722f9835cdc44d73d8d2464cb691b7b6e3f4526b168d11c3a1f38f4a518f749d",
+          "size_bytes": 147340684,
+          "source_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+          "runtime_commit": "c1d3f5cd493e24024f2347db854cdfe2f62a087f",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "deb",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "All-platform preview with reviewed private MCP/OpenAPI imports, generic plugin UI and runtime, owner-configurable authority and independent signed updates. All four installed candidates qualified. Released-download and production feed acceptance remain separate. Windows unsigned; both Macs signed and notarized."
+    },
     {
       "version": "0.5.0-beta.65",
       "tag": "v0.5.0-beta.65",
