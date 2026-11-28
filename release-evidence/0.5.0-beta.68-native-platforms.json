@@ -149,5 +149,48 @@
     "Sym-0.5.0-beta.68-macos-x64.dmg": "ed48c92e83665e9e3a52349b6c16ffb1def50731e99fdf6a84609e69c806472a",
     "Sym-0.5.0-beta.68-linux-x86_64.AppImage": "742587e3a0d79f0f35c07332434dcf2e5274223b41d8a57062e3157aae7884a7",
     "Sym-0.5.0-beta.68-macos-x64.zip": "ee16769f8ab993b9afe8746aaa7513c56be67ff8610104e9d42e275d601c676e"
-  }
+  },
+  "schemaVersion": 1,
+  "artifacts": [
+    {
+      "filename": "Sym-0.5.0-beta.68-macos-arm64.zip",
+      "sha256": "79f46c241e6322ea7069ea7d910bde9df12aba854e00187058d1377fccb5068e",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun notarytool submit/wait Accepted; xcrun stapler validate; spctl --assess",
+      "appNotarizationId": "920ec33d-e425-4ef4-bd3b-99c740a019d2",
+      "dmgNotarizationId": "a7d98705-bd95-4c73-9393-0229357bed02"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.68-macos-arm64.dmg",
+      "sha256": "f0a04a47018c32a34240404c4b63bd3abbcdb71a1e6f18d11c0c75b6da53f024",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun notarytool submit/wait Accepted; xcrun stapler validate; spctl --assess",
+      "appNotarizationId": "920ec33d-e425-4ef4-bd3b-99c740a019d2",
+      "dmgNotarizationId": "a7d98705-bd95-4c73-9393-0229357bed02"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.68-macos-x64.zip",
+      "sha256": "ee16769f8ab993b9afe8746aaa7513c56be67ff8610104e9d42e275d601c676e",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun notarytool submit/wait Accepted; xcrun stapler validate; spctl --assess",
+      "appNotarizationId": "5aa6b9dc-cea8-4bfa-8d7e-f3bb304b8c87",
+      "dmgNotarizationId": "3d5b2125-945d-4e0a-9e54-70c2e825f79d"
+    },
+    {
+      "filename": "Sym-0.5.0-beta.68-macos-x64.dmg",
+      "sha256": "ed48c92e83665e9e3a52349b6c16ffb1def50731e99fdf6a84609e69c806472a",
+      "signatureVerified": true,
+      "notarizationVerified": true,
+      "signer": "Developer ID Application: Doghouse Labs Inc (JR2SHF8H9R)",
+      "command": "codesign --verify --deep --strict; xcrun notarytool submit/wait Accepted; xcrun stapler validate; spctl --assess",
+      "appNotarizationId": "5aa6b9dc-cea8-4bfa-8d7e-f3bb304b8c87",
+      "dmgNotarizationId": "3d5b2125-945d-4e0a-9e54-70c2e825f79d"
+    }
+  ]
 }
