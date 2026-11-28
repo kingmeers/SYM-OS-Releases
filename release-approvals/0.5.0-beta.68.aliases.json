@@ -1,0 +1,9 @@
+{
+  "checksums.txt": "SHA256SUMS-FIRST-PARTY.txt",
+  "verification.md": "RELEASE-VERIFICATION.md",
+  "release-manifest.json": "release-manifest.json",
+  "windows-checksums.txt": "SHA256SUMS-FIRST-PARTY.txt",
+  "windows-third-party-notices.txt": "THIRD-PARTY-NOTICES.txt",
+  "linux-third-party-notices.txt": "THIRD-PARTY-NOTICES.txt",
+  "macos-third-party-notices.txt": "THIRD-PARTY-NOTICES.txt"
+}

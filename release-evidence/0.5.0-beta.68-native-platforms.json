@@ -1,0 +1,153 @@
+{
+  "version": "0.5.0-beta.68",
+  "source": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+  "merge": "710033803785970ad9ade6f7f668e585425c3a34",
+  "windows": {
+    "source_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+    "source_archive_sha256": "fe6a6bddfb346d868af8069733e7e195eb8f012a23c695623c81dccc9fac01dc",
+    "version": "0.5.0-beta.68",
+    "artifact": "Sym-Setup-0.5.0-beta.68-windows-x64.exe",
+    "sha256": "5aa17f1bfde11b397234485994d303246f6f9ce9e44d409e2236a48f177ffb0f",
+    "bytes": 224853273,
+    "download_deadline_120s": true,
+    "development_fixtures_excluded": true,
+    "native": {
+      "outlook-win32-x64/sym-outlook.exe": "3385eca37c209da5f31e6f87826c89f4bfe3ed6ba50eedda89c4adfbdc7c3501",
+      "outlook-win32-x64/sym-outlook.dll": "7a9270d937798a5ed9ffe80f6f98baf59b047760034c6454994134509538d2b0",
+      "win32-x64/sym-computer.exe": "8ffa6cd2e8565db5dbb8a500b193c29d01cc1bdbaea92499c200e6b00da83923"
+    }
+  },
+  "mac_notarization": {
+    "arm64": {
+      "version": "0.5.0-beta.68",
+      "source": "83ffdb8",
+      "arch": "arm64",
+      "unsigned_sha256": "d32fa6f642164a3ee558ebeacf6e3b66df1f033374b9dd7948c2e980451cfffd",
+      "published": false,
+      "installedAcceptance": false,
+      "app": {
+        "sha256": "6d01f9d35d857ec4238a5e492c2c652073da40ecff683752a1a4987b5583431c",
+        "submission_started": true,
+        "id": "920ec33d-e425-4ef4-bd3b-99c740a019d2",
+        "status": "Accepted"
+      },
+      "dmg": {
+        "sha256": "68b950f9fbe30fd2f6847e7a806ed428f9ba46f4260c4d515cacd13db25bebe8",
+        "submission_started": true,
+        "id": "a7d98705-bd95-4c73-9393-0229357bed02",
+        "status": "Accepted"
+      },
+      "artifacts": [
+        {
+          "name": "Sym-0.5.0-beta.68-macos-arm64.zip",
+          "bytes": 162522697,
+          "sha256": "79f46c241e6322ea7069ea7d910bde9df12aba854e00187058d1377fccb5068e"
+        },
+        {
+          "name": "Sym-0.5.0-beta.68-macos-arm64.dmg",
+          "bytes": 194730888,
+          "sha256": "f0a04a47018c32a34240404c4b63bd3abbcdb71a1e6f18d11c0c75b6da53f024"
+        }
+      ],
+      "trustVerified": true
+    },
+    "x64": {
+      "version": "0.5.0-beta.68",
+      "source": "83ffdb8",
+      "arch": "x64",
+      "unsigned_sha256": "3200482a93eb4619831c9bb8dca8ca40dbdcb5c17dbb9c8db611be166c58463f",
+      "published": false,
+      "installedAcceptance": false,
+      "app": {
+        "sha256": "16e6f1d1193cbbf8f2e3c73a0831dfe913cf4edc090c3bb8b89724044c89c53f",
+        "submission_started": true,
+        "id": "5aa6b9dc-cea8-4bfa-8d7e-f3bb304b8c87",
+        "status": "Accepted"
+      },
+      "dmg": {
+        "sha256": "738998925ff5a696d832775eceee4500c7e3d09929fc0cc610df2c34298b121a",
+        "submission_started": true,
+        "id": "3d5b2125-945d-4e0a-9e54-70c2e825f79d",
+        "status": "Accepted"
+      },
+      "artifacts": [
+        {
+          "name": "Sym-0.5.0-beta.68-macos-x64.zip",
+          "bytes": 168750074,
+          "sha256": "ee16769f8ab993b9afe8746aaa7513c56be67ff8610104e9d42e275d601c676e"
+        },
+        {
+          "name": "Sym-0.5.0-beta.68-macos-x64.dmg",
+          "bytes": 198229587,
+          "sha256": "ed48c92e83665e9e3a52349b6c16ffb1def50731e99fdf6a84609e69c806472a"
+        }
+      ],
+      "trustVerified": true
+    }
+  },
+  "candidate_installed_acceptance": {
+    "linux-x64": {
+      "ui_screens": 25,
+      "passed": true,
+      "production_mcp_request_id": "55d2df46-982b-40b4-b74d-9bd3422a59cd",
+      "plugin_version": "1.1.1",
+      "settings_and_permissions_restored": true,
+      "existing_network_identity": "nWzS2Er4HJ11CNTRL",
+      "network_state": "Running"
+    },
+    "darwin-arm64": {
+      "ui_screens": 25,
+      "passed": true,
+      "production_mcp_request_id": "af19a059-c594-48c7-8517-67d0a8541f95",
+      "plugin_version": "1.1.1",
+      "settings_and_permissions_restored": true,
+      "existing_network_identity": "n2hwpA1WK611CNTRL",
+      "network_state": "Running"
+    },
+    "darwin-x64": {
+      "ui_screens": 25,
+      "passed": true,
+      "production_mcp_request_id": "7263f2ba-4eee-41e2-a4b9-2d4ecfb5c417",
+      "plugin_version": "1.1.1",
+      "settings_and_permissions_restored": true,
+      "existing_network_identity": "nh2VdaL6By11CNTRL",
+      "network_state": "Running"
+    },
+    "win32-x64": {
+      "ui_screens": 25,
+      "passed": true,
+      "production_mcp_request_id": "956dd42a-8c55-412f-84b9-4448990bb2a8",
+      "plugin_update": "1.4.5 to 1.4.6",
+      "plugin_generation": 13,
+      "settings_and_permissions_preserved": true,
+      "real_sends": 0
+    }
+  },
+  "linux_appimage_ui_screens": 25,
+  "required_ci": {
+    "automatic_updates": 46171269429,
+    "mac_native": 46171273291,
+    "passed_jobs": 5
+  },
+  "local_tests": {
+    "plugin_update_safety_receipt": "sym-plugin-download-window-20261129-a",
+    "outlook_native_windows": "passed"
+  },
+  "qualification_notes": [
+    "AppImage first fixture test encountered a detached conflict-panel element during refresh; identical suite passed on rerun. Failure retained.",
+    "Mac candidates replaced beta67 bundles after graceful shutdown, with no forced kill; Intel needed the normal Quit action after bounded SIGTERM was refused. Original bundles retained and credentials untouched.",
+    "Windows private Outlook update completed with exact installed/runtime146 generation13; settings/permissions unchanged.",
+    "The old uncertain customer email was not resent. iPhone/push and customer mailbox-scale acceptance remain separate."
+  ],
+  "released_download_acceptance": false,
+  "customer_acceptance": false,
+  "installer_sha256": {
+    "Sym-0.5.0-beta.68-macos-arm64.dmg": "f0a04a47018c32a34240404c4b63bd3abbcdb71a1e6f18d11c0c75b6da53f024",
+    "Sym-Setup-0.5.0-beta.68-windows-x64.exe": "5aa17f1bfde11b397234485994d303246f6f9ce9e44d409e2236a48f177ffb0f",
+    "Sym-0.5.0-beta.68-linux-amd64.deb": "69b4b6e593cbca53dce2c18d4068915719cc3d853ee67750600a43f9bba9a398",
+    "Sym-0.5.0-beta.68-macos-arm64.zip": "79f46c241e6322ea7069ea7d910bde9df12aba854e00187058d1377fccb5068e",
+    "Sym-0.5.0-beta.68-macos-x64.dmg": "ed48c92e83665e9e3a52349b6c16ffb1def50731e99fdf6a84609e69c806472a",
+    "Sym-0.5.0-beta.68-linux-x86_64.AppImage": "742587e3a0d79f0f35c07332434dcf2e5274223b41d8a57062e3157aae7884a7",
+    "Sym-0.5.0-beta.68-macos-x64.zip": "ee16769f8ab993b9afe8746aaa7513c56be67ff8610104e9d42e275d601c676e"
+  }
+}

@@ -1,0 +1,686 @@
+{
+  "release": {
+    "schemaVersion": 1,
+    "kind": "sym.release",
+    "product": "Sym",
+    "version": "0.5.0-beta.68",
+    "eligibility": [
+      "preview"
+    ],
+    "scope": [
+      "windows-x64.exe",
+      "linux-x64.AppImage",
+      "linux-x64.deb",
+      "macos-x64.dmg",
+      "macos-arm64.dmg"
+    ],
+    "updates": [
+      {
+        "target": "windows-x64.exe",
+        "mode": "electron",
+        "feed": "beta.yml"
+      },
+      {
+        "target": "linux-x64.AppImage",
+        "mode": "electron",
+        "feed": "beta-AppImage-linux.yml"
+      },
+      {
+        "target": "linux-x64.deb",
+        "mode": "electron",
+        "feed": "beta-deb-linux.yml"
+      },
+      {
+        "target": "macos-x64.dmg",
+        "mode": "electron",
+        "feed": "beta-x64-mac.yml"
+      },
+      {
+        "target": "macos-arm64.dmg",
+        "mode": "electron",
+        "feed": "beta-arm64-mac.yml"
+      }
+    ],
+    "notes": "Private plugin update timeout headroom and specific error stages; bounded Outlook folderless keyword search. Four installed platform UI suites passed. Linux and both Macs passed production Echo calls; Windows passed production Outlook145 to146 update and keyword search. Existing settings and permissions preserved. Windows unsigned; both Macs signed and notarized. Released-download acceptance remains separate.",
+    "assets": [
+      {
+        "version": "0.5.0-beta.68",
+        "target": "linux-x64.AppImage",
+        "role": "feed",
+        "os": "linux",
+        "arch": "x64",
+        "format": "yml",
+        "filename": "beta-AppImage-linux.yml",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/beta-AppImage-linux.yml",
+        "sha256": "ccd38b87e87089ab82de68497cf17f9de1b3d6a26b022e6ef024a1673064b4f5",
+        "size": 461,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Preview qualified on Ubuntu24.04 x64; other distributions and customer desktops unqualified",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "macos-arm64.dmg",
+        "role": "feed",
+        "os": "macos",
+        "arch": "arm64",
+        "format": "yml",
+        "filename": "beta-arm64-mac.yml",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/beta-arm64-mac.yml",
+        "sha256": "292ecc0b4ebc34b36065158ffbccb8deba3a7f8581dbfaa20ccd239bb7aba73b",
+        "size": 644,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "macOS12 minimum from package; native qualification macOS27.2",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "linux-x64.deb",
+        "role": "feed",
+        "os": "linux",
+        "arch": "x64",
+        "format": "yml",
+        "filename": "beta-deb-linux.yml",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/beta-deb-linux.yml",
+        "sha256": "c7dda9c4d3d4561fcf632a791fa245d8b97b8202cf9fe59b8195ded512d04452",
+        "size": 449,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Preview qualified on Ubuntu24.04 x64; other distributions and customer desktops unqualified",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "macos-x64.dmg",
+        "role": "feed",
+        "os": "macos",
+        "arch": "x64",
+        "format": "yml",
+        "filename": "beta-x64-mac.yml",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/beta-x64-mac.yml",
+        "sha256": "b9a48ad1734ae88d2551b60301f29e92e3d41b789d5fab4314f061809c83b4eb",
+        "size": 638,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Preview; see native qualification and limitations",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "windows-x64.exe",
+        "role": "feed",
+        "os": "windows",
+        "arch": "x64",
+        "format": "yml",
+        "filename": "beta.yml",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/beta.yml",
+        "sha256": "61e52ae1b72cc19ca48dd4d37ecc2e70f3650ce634534da7b704a69d71dfffa5",
+        "size": 461,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Windows10 x64 preview; see qualification limits",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "shared",
+        "role": "verification",
+        "os": "shared",
+        "arch": "none",
+        "format": "json",
+        "filename": "native-verification.json",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/native-verification.json",
+        "sha256": "1bdd1cc50fcde7c4abada13e05a423700978b80f8455db62c05d74793bf518d2",
+        "size": 6389,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "shared",
+        "role": "verification",
+        "os": "shared",
+        "arch": "none",
+        "format": "json",
+        "filename": "release-manifest.json",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/release-manifest.json",
+        "sha256": "3bca1c9beed5e46b465cfbac16b79eb290101cd01eb73799af2285a356d9325a",
+        "size": 530,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "shared",
+        "role": "verification",
+        "os": "shared",
+        "arch": "none",
+        "format": "md",
+        "filename": "RELEASE-VERIFICATION.md",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/RELEASE-VERIFICATION.md",
+        "sha256": "95ddf87ad6968caa30809e9bc2826fa77bfb856b6fdde2b888bc0174f2b4400d",
+        "size": 1196,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "shared",
+        "role": "checksum",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "filename": "SHA256SUMS-FIRST-PARTY.txt",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/SHA256SUMS-FIRST-PARTY.txt",
+        "sha256": "07498de13a6fb9711d401e868f168648ad8715202f4854c4e2fd5dd71e539628",
+        "size": 2086,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "linux-x64.deb",
+        "role": "installer",
+        "os": "linux",
+        "arch": "x64",
+        "format": "deb",
+        "filename": "Sym-0.5.0-beta.68-linux-amd64.deb",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-0.5.0-beta.68-linux-amd64.deb",
+        "sha256": "69b4b6e593cbca53dce2c18d4068915719cc3d853ee67750600a43f9bba9a398",
+        "size": 147341248,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Preview qualified on Ubuntu24.04 x64; other distributions and customer desktops unqualified",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "linux-x64.AppImage",
+        "role": "installer",
+        "os": "linux",
+        "arch": "x64",
+        "format": "AppImage",
+        "filename": "Sym-0.5.0-beta.68-linux-x86_64.AppImage",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-0.5.0-beta.68-linux-x86_64.AppImage",
+        "sha256": "742587e3a0d79f0f35c07332434dcf2e5274223b41d8a57062e3157aae7884a7",
+        "size": 183276544,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Preview qualified on Ubuntu24.04 x64; other distributions and customer desktops unqualified",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "macos-arm64.dmg",
+        "role": "installer",
+        "os": "macos",
+        "arch": "arm64",
+        "format": "dmg",
+        "filename": "Sym-0.5.0-beta.68-macos-arm64.dmg",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-0.5.0-beta.68-macos-arm64.dmg",
+        "sha256": "f0a04a47018c32a34240404c4b63bd3abbcdb71a1e6f18d11c0c75b6da53f024",
+        "size": 194730888,
+        "signing": {
+          "status": "verified",
+          "notarized": true,
+          "evidenceSha256": "1bdd1cc50fcde7c4abada13e05a423700978b80f8455db62c05d74793bf518d2"
+        },
+        "minimumOS": "macOS12 minimum from package; native qualification macOS27.2",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "macos-arm64.dmg",
+        "role": "updater",
+        "os": "macos",
+        "arch": "arm64",
+        "format": "zip",
+        "filename": "Sym-0.5.0-beta.68-macos-arm64.zip",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-0.5.0-beta.68-macos-arm64.zip",
+        "sha256": "79f46c241e6322ea7069ea7d910bde9df12aba854e00187058d1377fccb5068e",
+        "size": 162522697,
+        "signing": {
+          "status": "verified",
+          "notarized": true,
+          "evidenceSha256": "1bdd1cc50fcde7c4abada13e05a423700978b80f8455db62c05d74793bf518d2"
+        },
+        "minimumOS": "macOS12 minimum from package; native qualification macOS27.2",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "macos-x64.dmg",
+        "role": "installer",
+        "os": "macos",
+        "arch": "x64",
+        "format": "dmg",
+        "filename": "Sym-0.5.0-beta.68-macos-x64.dmg",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-0.5.0-beta.68-macos-x64.dmg",
+        "sha256": "ed48c92e83665e9e3a52349b6c16ffb1def50731e99fdf6a84609e69c806472a",
+        "size": 198229587,
+        "signing": {
+          "status": "verified",
+          "notarized": true,
+          "evidenceSha256": "1bdd1cc50fcde7c4abada13e05a423700978b80f8455db62c05d74793bf518d2"
+        },
+        "minimumOS": "Preview; see native qualification and limitations",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "macos-x64.dmg",
+        "role": "updater",
+        "os": "macos",
+        "arch": "x64",
+        "format": "zip",
+        "filename": "Sym-0.5.0-beta.68-macos-x64.zip",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-0.5.0-beta.68-macos-x64.zip",
+        "sha256": "ee16769f8ab993b9afe8746aaa7513c56be67ff8610104e9d42e275d601c676e",
+        "size": 168750074,
+        "signing": {
+          "status": "verified",
+          "notarized": true,
+          "evidenceSha256": "1bdd1cc50fcde7c4abada13e05a423700978b80f8455db62c05d74793bf518d2"
+        },
+        "minimumOS": "Preview; see native qualification and limitations",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "windows-x64.exe",
+        "role": "installer",
+        "os": "windows",
+        "arch": "x64",
+        "format": "exe",
+        "filename": "Sym-Setup-0.5.0-beta.68-windows-x64.exe",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-Setup-0.5.0-beta.68-windows-x64.exe",
+        "sha256": "5aa17f1bfde11b397234485994d303246f6f9ce9e44d409e2236a48f177ffb0f",
+        "size": 224853273,
+        "signing": {
+          "status": "unsigned",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Windows10 x64 preview; see qualification limits",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "windows-x64.exe",
+        "role": "updater",
+        "os": "windows",
+        "arch": "x64",
+        "format": "blockmap",
+        "filename": "Sym-Setup-0.5.0-beta.68-windows-x64.exe.blockmap",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-Setup-0.5.0-beta.68-windows-x64.exe.blockmap",
+        "sha256": "4180348c29320b391517ea01837766cbe688c6a4cafe2ad723751ef4317eef0b",
+        "size": 233360,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Windows10 x64 preview; see qualification limits",
+        "apiCompatibility": [
+          "sym.management.v1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "shared",
+        "role": "notice",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "filename": "THIRD-PARTY-NOTICES-PART1.txt",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/THIRD-PARTY-NOTICES-PART1.txt",
+        "sha256": "4702c930b01c1ec4de159259cfa757090ee69e84fee03b061bbb877e24b4aa3c",
+        "size": 12582912,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "shared",
+        "role": "notice",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "filename": "THIRD-PARTY-NOTICES-PART2.txt",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/THIRD-PARTY-NOTICES-PART2.txt",
+        "sha256": "68e7321c97a20225cb0df32f2d012cc8e4a46c57700c937ef02c8201db69674b",
+        "size": 12582912,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "shared",
+        "role": "notice",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "filename": "THIRD-PARTY-NOTICES-PART3.txt",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/THIRD-PARTY-NOTICES-PART3.txt",
+        "sha256": "195710e2e522a954863446969a6ac36681681606f2db6deb2235103ce8922fb9",
+        "size": 12582912,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "shared",
+        "role": "notice",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "filename": "THIRD-PARTY-NOTICES-PART4.txt",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/THIRD-PARTY-NOTICES-PART4.txt",
+        "sha256": "e8e5a052c657fcc849699437df1a56b97bb79c0fd265c7915f41a89c9843202a",
+        "size": 6754863,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "shared",
+        "role": "notice",
+        "os": "shared",
+        "arch": "none",
+        "format": "json",
+        "filename": "third-party-notices-provenance.json",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/third-party-notices-provenance.json",
+        "sha256": "ef5ff6cf7561e10c6131bd05a86ff834bd863bb0ca6f8a4af56b270b52a3e2ac",
+        "size": 106264,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      },
+      {
+        "version": "0.5.0-beta.68",
+        "target": "shared",
+        "role": "notice",
+        "os": "shared",
+        "arch": "none",
+        "format": "txt",
+        "filename": "THIRD-PARTY-NOTICES.txt",
+        "url": "https://downloads.sym.so/releases/0.5.0-beta.68/THIRD-PARTY-NOTICES.txt",
+        "sha256": "c47b1c40f453ecd3666eafc845fd59280e5539102921cb636f7fe738a7094548",
+        "size": 845,
+        "signing": {
+          "status": "not-applicable",
+          "notarized": false,
+          "evidenceSha256": null
+        },
+        "minimumOS": "Not applicable",
+        "apiCompatibility": [
+          "release-metadata-1"
+        ]
+      }
+    ]
+  },
+  "excludedAssets": [],
+  "evidence": [
+    {
+      "file": "0.5.0-beta.68-native-platforms.json",
+      "sha256": "1bdd1cc50fcde7c4abada13e05a423700978b80f8455db62c05d74793bf518d2"
+    }
+  ],
+  "schemaVersion": 1,
+  "finalized": true,
+  "nativeAcceptance": true,
+  "releaseSignoff": true,
+  "repository": "kingmeers/SYM-OS-Releases",
+  "tag": "v0.5.0-beta.68",
+  "releaseId": 461751904,
+  "revision": "2df0f26e2e7361fe516077c4ab142e7cef8896ff",
+  "approvedAssets": [
+    {
+      "id": 805546414,
+      "name": "beta-AppImage-linux.yml",
+      "size": 461,
+      "sha256": "ccd38b87e87089ab82de68497cf17f9de1b3d6a26b022e6ef024a1673064b4f5"
+    },
+    {
+      "id": 805546410,
+      "name": "beta-arm64-mac.yml",
+      "size": 644,
+      "sha256": "292ecc0b4ebc34b36065158ffbccb8deba3a7f8581dbfaa20ccd239bb7aba73b"
+    },
+    {
+      "id": 805546411,
+      "name": "beta-deb-linux.yml",
+      "size": 449,
+      "sha256": "c7dda9c4d3d4561fcf632a791fa245d8b97b8202cf9fe59b8195ded512d04452"
+    },
+    {
+      "id": 805546412,
+      "name": "beta-x64-mac.yml",
+      "size": 638,
+      "sha256": "b9a48ad1734ae88d2551b60301f29e92e3d41b789d5fab4314f061809c83b4eb"
+    },
+    {
+      "id": 805546409,
+      "name": "beta.yml",
+      "size": 461,
+      "sha256": "61e52ae1b72cc19ca48dd4d37ecc2e70f3650ce634534da7b704a69d71dfffa5"
+    },
+    {
+      "id": 805546451,
+      "name": "native-verification.json",
+      "size": 6389,
+      "sha256": "1bdd1cc50fcde7c4abada13e05a423700978b80f8455db62c05d74793bf518d2"
+    },
+    {
+      "id": 805546455,
+      "name": "release-manifest.json",
+      "size": 530,
+      "sha256": "3bca1c9beed5e46b465cfbac16b79eb290101cd01eb73799af2285a356d9325a"
+    },
+    {
+      "id": 805546467,
+      "name": "RELEASE-VERIFICATION.md",
+      "size": 1196,
+      "sha256": "95ddf87ad6968caa30809e9bc2826fa77bfb856b6fdde2b888bc0174f2b4400d"
+    },
+    {
+      "id": 805546449,
+      "name": "SHA256SUMS-FIRST-PARTY.txt",
+      "size": 2086,
+      "sha256": "07498de13a6fb9711d401e868f168648ad8715202f4854c4e2fd5dd71e539628"
+    },
+    {
+      "id": 805487844,
+      "name": "Sym-0.5.0-beta.68-linux-amd64.deb",
+      "size": 147341248,
+      "sha256": "69b4b6e593cbca53dce2c18d4068915719cc3d853ee67750600a43f9bba9a398"
+    },
+    {
+      "id": 805487816,
+      "name": "Sym-0.5.0-beta.68-linux-x86_64.AppImage",
+      "size": 183276544,
+      "sha256": "742587e3a0d79f0f35c07332434dcf2e5274223b41d8a57062e3157aae7884a7"
+    },
+    {
+      "id": 805487841,
+      "name": "Sym-0.5.0-beta.68-macos-arm64.dmg",
+      "size": 194730888,
+      "sha256": "f0a04a47018c32a34240404c4b63bd3abbcdb71a1e6f18d11c0c75b6da53f024"
+    },
+    {
+      "id": 805487847,
+      "name": "Sym-0.5.0-beta.68-macos-arm64.zip",
+      "size": 162522697,
+      "sha256": "79f46c241e6322ea7069ea7d910bde9df12aba854e00187058d1377fccb5068e"
+    },
+    {
+      "id": 805542208,
+      "name": "Sym-0.5.0-beta.68-macos-x64.dmg",
+      "size": 198229587,
+      "sha256": "ed48c92e83665e9e3a52349b6c16ffb1def50731e99fdf6a84609e69c806472a"
+    },
+    {
+      "id": 805542206,
+      "name": "Sym-0.5.0-beta.68-macos-x64.zip",
+      "size": 168750074,
+      "sha256": "ee16769f8ab993b9afe8746aaa7513c56be67ff8610104e9d42e275d601c676e"
+    },
+    {
+      "id": 805487845,
+      "name": "Sym-Setup-0.5.0-beta.68-windows-x64.exe",
+      "size": 224853273,
+      "sha256": "5aa17f1bfde11b397234485994d303246f6f9ce9e44d409e2236a48f177ffb0f"
+    },
+    {
+      "id": 805495761,
+      "name": "Sym-Setup-0.5.0-beta.68-windows-x64.exe.blockmap",
+      "size": 233360,
+      "sha256": "4180348c29320b391517ea01837766cbe688c6a4cafe2ad723751ef4317eef0b"
+    },
+    {
+      "id": 805491990,
+      "name": "THIRD-PARTY-NOTICES-PART1.txt",
+      "size": 12582912,
+      "sha256": "4702c930b01c1ec4de159259cfa757090ee69e84fee03b061bbb877e24b4aa3c"
+    },
+    {
+      "id": 805492000,
+      "name": "THIRD-PARTY-NOTICES-PART2.txt",
+      "size": 12582912,
+      "sha256": "68e7321c97a20225cb0df32f2d012cc8e4a46c57700c937ef02c8201db69674b"
+    },
+    {
+      "id": 805492005,
+      "name": "THIRD-PARTY-NOTICES-PART3.txt",
+      "size": 12582912,
+      "sha256": "195710e2e522a954863446969a6ac36681681606f2db6deb2235103ce8922fb9"
+    },
+    {
+      "id": 805492003,
+      "name": "THIRD-PARTY-NOTICES-PART4.txt",
+      "size": 6754863,
+      "sha256": "e8e5a052c657fcc849699437df1a56b97bb79c0fd265c7915f41a89c9843202a"
+    },
+    {
+      "id": 805492061,
+      "name": "third-party-notices-provenance.json",
+      "size": 106264,
+      "sha256": "ef5ff6cf7561e10c6131bd05a86ff834bd863bb0ca6f8a4af56b270b52a3e2ac"
+    },
+    {
+      "id": 805491991,
+      "name": "THIRD-PARTY-NOTICES.txt",
+      "size": 845,
+      "sha256": "c47b1c40f453ecd3666eafc845fd59280e5539102921cb636f7fe738a7094548"
+    }
+  ]
+}
