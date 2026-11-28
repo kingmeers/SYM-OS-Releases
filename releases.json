@@ -5,9 +5,33 @@
   "latest": {
     "preview": "0.5.0-beta.61",
     "stable": null,
-    "windows_preview": "0.5.0-beta.64"
+    "windows_preview": "0.5.0-beta.65"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.65",
+      "tag": "v0.5.0-beta.65",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.65/RELEASE-VERIFICATION.md",
+      "source_commit": "460c700f340a07ff927ddf5f21e0513bd44c65e0",
+      "platforms": {
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.65-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.65/Sym-Setup-0.5.0-beta.65-windows-x64.exe",
+          "sha256": "d601b9f804bf424977da8a3d3005f0736c882ed6e6c1c9558f268ee3566a09bf",
+          "size_bytes": 224811517,
+          "source_commit": "460c700f340a07ff927ddf5f21e0513bd44c65e0",
+          "runtime_commit": "460c700f340a07ff927ddf5f21e0513bd44c65e0",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Windows preview fixes private-plugin download timeouts caused by excessive secure-storage reads. Identity checks precede each bounded output block; integrity verification remains mandatory. Windows native/package and required source CI passed. Released installation and production private-feed acceptance remain separate milestones. Other platform and stable selections retained."
+    },
     {
       "version": "0.5.0-beta.64",
       "tag": "v0.5.0-beta.64",
