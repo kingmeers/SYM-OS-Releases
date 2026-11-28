@@ -3,11 +3,83 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.67",
+    "preview": "0.5.0-beta.68",
     "stable": null,
-    "windows_preview": "0.5.0-beta.67"
+    "windows_preview": "0.5.0-beta.68"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.68",
+      "tag": "v0.5.0-beta.68",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.68/RELEASE-VERIFICATION.md",
+      "source_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+      "platforms": {
+        "linux-x64-deb": {
+          "filename": "Sym-0.5.0-beta.68-linux-amd64.deb",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-0.5.0-beta.68-linux-amd64.deb",
+          "sha256": "69b4b6e593cbca53dce2c18d4068915719cc3d853ee67750600a43f9bba9a398",
+          "size_bytes": 147341248,
+          "source_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+          "runtime_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "deb",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64-appimage": {
+          "filename": "Sym-0.5.0-beta.68-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-0.5.0-beta.68-linux-x86_64.AppImage",
+          "sha256": "742587e3a0d79f0f35c07332434dcf2e5274223b41d8a57062e3157aae7884a7",
+          "size_bytes": 183276544,
+          "source_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+          "runtime_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.68-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-0.5.0-beta.68-macos-arm64.dmg",
+          "sha256": "f0a04a47018c32a34240404c4b63bd3abbcdb71a1e6f18d11c0c75b6da53f024",
+          "size_bytes": 194730888,
+          "source_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+          "runtime_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.68-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-0.5.0-beta.68-macos-x64.dmg",
+          "sha256": "ed48c92e83665e9e3a52349b6c16ffb1def50731e99fdf6a84609e69c806472a",
+          "size_bytes": 198229587,
+          "source_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+          "runtime_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.68-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.68/Sym-Setup-0.5.0-beta.68-windows-x64.exe",
+          "sha256": "5aa17f1bfde11b397234485994d303246f6f9ce9e44d409e2236a48f177ffb0f",
+          "size_bytes": 224853273,
+          "source_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+          "runtime_commit": "83ffdb81a7c2ddff9089f45aeb2434d8a97d0d3e",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Private plugin update timeout headroom and specific error stages; bounded Outlook folderless keyword search. Four installed platform UI suites passed. Linux and both Macs passed production Echo calls; Windows passed production Outlook145 to146 update and keyword search. Existing settings and permissions preserved. Windows unsigned; both Macs signed and notarized. Released-download acceptance remains separate."
+    },
     {
       "version": "0.5.0-beta.67",
       "tag": "v0.5.0-beta.67",
