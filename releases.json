@@ -3,11 +3,83 @@
   "product": "Symposium Bridge",
   "repository": "https://github.com/kingmeers/SYM-OS-Releases",
   "latest": {
-    "preview": "0.5.0-beta.66",
+    "preview": "0.5.0-beta.67",
     "stable": null,
-    "windows_preview": "0.5.0-beta.66"
+    "windows_preview": "0.5.0-beta.67"
   },
   "releases": [
+    {
+      "version": "0.5.0-beta.67",
+      "tag": "v0.5.0-beta.67",
+      "channel": "preview",
+      "published": true,
+      "product": "Sym",
+      "release_url": "https://downloads.sym.so/releases/0.5.0-beta.67/RELEASE-VERIFICATION.md",
+      "source_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+      "platforms": {
+        "linux-x64-deb": {
+          "filename": "Sym-0.5.0-beta.67-linux-amd64.deb",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.67/Sym-0.5.0-beta.67-linux-amd64.deb",
+          "sha256": "cb165327ec574199a21a5cf51af1addf03c44a9682e1c32b39189406570b0387",
+          "size_bytes": 147341032,
+          "source_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+          "runtime_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "deb",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "linux-x64-appimage": {
+          "filename": "Sym-0.5.0-beta.67-linux-x86_64.AppImage",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.67/Sym-0.5.0-beta.67-linux-x86_64.AppImage",
+          "sha256": "5cef7931d7bc91fea8d1c59ddad57922d69fb98412d09ebb38b2c9393179fdee",
+          "size_bytes": 183272578,
+          "source_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+          "runtime_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "AppImage",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-arm64": {
+          "filename": "Sym-0.5.0-beta.67-macos-arm64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.67/Sym-0.5.0-beta.67-macos-arm64.dmg",
+          "sha256": "1b3c62f25d79a8483c7152a833379c96db61a9b8f81ffc77786b0ea22cd4606f",
+          "size_bytes": 194400426,
+          "source_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+          "runtime_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "macos-x64": {
+          "filename": "Sym-0.5.0-beta.67-macos-x64.dmg",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.67/Sym-0.5.0-beta.67-macos-x64.dmg",
+          "sha256": "718e2152e6bc8557de9c271d8b0cec81c13263b587768a3e3bf99fd71919571e",
+          "size_bytes": 202566778,
+          "source_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+          "runtime_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "dmg",
+          "status": "preview-qualified-with-live-limitations"
+        },
+        "windows-x64": {
+          "filename": "Sym-Setup-0.5.0-beta.67-windows-x64.exe",
+          "download_url": "https://downloads.sym.so/releases/0.5.0-beta.67/Sym-Setup-0.5.0-beta.67-windows-x64.exe",
+          "sha256": "3275e2afba5071a4d2a66973892258f85d47aa3a3d96cac9b5d71a4606f892ac",
+          "size_bytes": 224850713,
+          "source_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+          "runtime_commit": "d3be89ae1ee89409fab17c842035fd67dcf63390",
+          "bundled_private_network": true,
+          "automatic_updates": true,
+          "format": "exe",
+          "status": "preview-qualified-with-live-limitations"
+        }
+      },
+      "notes": "Reconnect fix: wait for embedded network identity to settle before enrollment. Existing limits remain enforced. All four installed candidates passed plugin UI and real production MCP invocation; settings and permissions restored. Windows unsigned; Macs signed and notarized. Released-download acceptance remains separate."
+    },
     {
       "version": "0.5.0-beta.66",
       "tag": "v0.5.0-beta.66",
