@@ -1,0 +1,7 @@
+{
+  "windows-checksums.txt": "SHA256SUMS-FIRST-PARTY.txt",
+  "checksums.txt": "SHA256SUMS-FIRST-PARTY.txt",
+  "verification.md": "RELEASE-VERIFICATION.md",
+  "release-manifest.json": "release-manifest.json",
+  "windows-third-party-notices.txt": "THIRD-PARTY-NOTICES.txt"
+}

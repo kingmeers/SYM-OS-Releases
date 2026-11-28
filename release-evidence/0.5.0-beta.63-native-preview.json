@@ -1,0 +1,112 @@
+{
+  "source_commit": "2c23f0f99ddb5337c1c7f016f776f2c83e0e7013",
+  "source_archive_sha256": "405b5075a04e02c60583bc6cb9377c73e96259aca67e57c360ba42134c3082c3",
+  "version": "0.5.0-beta.63",
+  "artifact": "dist-gui/Sym-Setup-0.5.0-beta.63-windows-x64.exe",
+  "path": "D:\\SymQA\\companion-beta63-build-20261128\\dist-gui\\Sym-Setup-0.5.0-beta.63-windows-x64.exe",
+  "bytes": 224810456,
+  "sha256": "d33b1eb42974c2a598539ca91bb6a69e667c05d781e0adaf54a103d22729ace3",
+  "policy_sha256": "fe796e848f95d756d7cbc8148226d2d45a010a77d6e771f62755760e3c5b744d",
+  "retired_provider_runtime_absent": true,
+  "retired_sdk_absent": true,
+  "outlook-win32-x64/sym-outlook.exe": "3385eca37c209da5f31e6f87826c89f4bfe3ed6ba50eedda89c4adfbdc7c3501",
+  "outlook-win32-x64/sym-outlook.dll": "e0bccdb067d68d97b7e48dc8f7b06588e064bcfabdca9e0c4c38780099de7141",
+  "win32-x64/sym-computer.exe": "8ffa6cd2e8565db5dbb8a500b193c29d01cc1bdbaea92499c200e6b00da83923",
+  "qualification": {
+    "windows_node_tests": 384,
+    "native_boundary_fixture": "passed",
+    "native_compile": "passed",
+    "installed_app": false,
+    "real_send": false,
+    "published": false
+  },
+  "created_at": "2026-11-28T04:08:57.502Z",
+  "memory_wasm": {
+    "ok": true,
+    "electron": "43.4.1",
+    "node": "24.18.1",
+    "platform": "win32",
+    "arch": "x64",
+    "qualification": "actual-package SQLite FTS/encryption; no GUI or user-data acceptance"
+  },
+  "memory_wasm_receipt_sha256": "9d31b3ffc92bbf119823e260eed5bcbfba68ca1b3a985998dcc2b5f6904dd3fa",
+  "operation_diagnostics": {
+    "ok": true,
+    "platform": "win32",
+    "arch": "x64",
+    "node": "24.15.0",
+    "packagedModuleSha256": "d53726471733dc1e2af7684d1e27ad05c27a94ce7261005adf02312415f310a2",
+    "syntheticPersistenceRestart": true,
+    "customerData": false,
+    "network": false
+  },
+  "operation_diagnostics_receipt_sha256": "d8662d8a6a176310dd25aa8945b504b5d7861548d61e304014f81c8e7be9d9e2",
+  "plugin_feed": {
+    "ok": true,
+    "source": "2c23f0f99ddb5337c1c7f016f776f2c83e0e7013",
+    "platform": "win32",
+    "arch": "x64",
+    "electron": "43.4.1",
+    "requests": 8,
+    "fullEnvelopeReads": 5,
+    "unchangedBelowFloorBodyAvoided": true,
+    "fullSignatureBeforeActivation": true,
+    "installedPointerRestartVerified": true,
+    "invalidSignaturePreservesGeneration": true,
+    "customerData": false,
+    "network": false
+  },
+  "plugin_feed_module_hashes": {
+    "plugin-updates.js": "e453356b92aa194552d12d6d4b91c88f392c5ee0f05be9cd90e40333d3bbb46f",
+    "retired-agent-plugins.js": "6ad62b8bec7dc999a1db2d3725c603ee13a71ffac2d2b41970dff09932203bbb"
+  },
+  "runtime_notices": {
+    "source": "2c23f0f99ddb5337c1c7f016f776f2c83e0e7013",
+    "version": "0.5.0-beta.63",
+    "passed": true,
+    "helpers": [
+      {
+        "helper": "win32-x64",
+        "files": 471,
+        "inventory_sha256": "b33640628c2918f43b49242d0121835b6a512bea32b5c269794f3d3c970bcd33",
+        "provenance_sha256": "fbd353eed0c6fdaa7a3df6a8d00f21d17be67aacd26866ce3322894965a09197",
+        "dependencies": [
+          {
+            "id": "microsoft.netcore.app.runtime.win-x64",
+            "version": "8.0.33",
+            "matched_runtime_files": 179,
+            "notices": 2
+          },
+          {
+            "id": "microsoft.windowsdesktop.app.runtime.win-x64",
+            "version": "8.0.33",
+            "matched_runtime_files": 59,
+            "notices": 1
+          },
+          {
+            "id": "microsoft.windows.sdk.net.ref",
+            "version": "10.0.19041.56",
+            "matched_runtime_files": 2,
+            "notices": 1
+          }
+        ]
+      },
+      {
+        "helper": "outlook-win32-x64",
+        "files": 190,
+        "inventory_sha256": "c29bdbefe36e5f44abcc191b64b81d825a8bae79b2a65d5929f0875874696afe",
+        "provenance_sha256": "18f1e0b4006d6ac062039275bce10c11210924f20ce960c7e558ccd8a387a79d",
+        "dependencies": [
+          {
+            "id": "microsoft.netcore.app.runtime.win-x64",
+            "version": "8.0.33",
+            "matched_runtime_files": 182,
+            "notices": 2
+          }
+        ]
+      }
+    ],
+    "customerData": false
+  },
+  "runtime_notice_receipt_sha256": "bb40640cc686e058b7a2679f3abf2a069677a40e7422033e4f459a1518592cd7"
+}
